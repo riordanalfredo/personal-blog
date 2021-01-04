@@ -6,16 +6,16 @@ In this post, I would like to share my experience/approach for my hack in applyi
 
 ## Pre-requisites
 
-* Read this [article](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf) OR Pub/sub layer architecture
-* Basic of EventEmitter in NodeJS
-* Basic of socket.io
+- Read this [article](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf) OR Pub/sub layer architecture
+- Basic of EventEmitter in NodeJS
+- Basic of socket.io
 
 ## Motivations
 
-* At that time, the architecture is following suggestions in this [article](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
-* One day, the stakeholders request to build live-update communication from the server.
-* Browsing internet and found socket.io
-* Since this architecture has pubs/subs layer, it would be interesting to combine socket.io with it.
+- At that time, the architecture is following suggestions in this [article](https://dev.to/santypk4/bulletproof-node-js-project-architecture-4epf)
+- One day, the stakeholders request to build live-update communication from the server.
+- Browsing internet and found socket.io
+- Since this architecture has pubs/subs layer, it would be interesting to combine socket.io with it.
 
 ## 1) The Hack! (How it works)
 
@@ -33,5 +33,5 @@ In this post, I would like to share my experience/approach for my hack in applyi
 
 ## 3) Self-reflections
 
-* Might consider better approaches to make it a lot simpler and cleaner.
-* Should have used Redis to cache and handle the pub/sub layers
+- Might consider better approaches to make it a lot simpler and cleaner.
+- Should have used Redis to cache and handle the pub/sub layers
