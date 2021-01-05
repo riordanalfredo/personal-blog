@@ -10,7 +10,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        Riordan Dervin Alfredo
+        myself
       </a>
       .
     </footer>
