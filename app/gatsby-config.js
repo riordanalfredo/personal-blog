@@ -1,12 +1,16 @@
 module.exports = {
   pathPrefix: "/app",
   siteMetadata: {
-    title: `RiordanAlfredo`,
+    title: `RIORDAN DERVIN ALFREDO`,
     author: {
       name: `@riordanalfredo`,
       summary: `web dev`,
     },
-    description:  `Riordan Dervin Alfredo personal blog`,
+    social:{
+      instagram: `riordanalfredo`,
+      twitter: `riordanalfredo`,
+    },
+    description:  `Riordan's personal blog`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
     defaultImage: "images/bg.jpeg",
   },
@@ -59,13 +63,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Ryz`,
-        short_name: `Ryz`,
+        name: `Riordan`,
+        short_name: `rio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
