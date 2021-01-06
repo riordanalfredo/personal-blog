@@ -1,19 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
-import { scale } from "../utils/typography"
+import { scale } from "../../utils/typography"
+import {isMobile} from "../../utils/mobile"
 
-import { Toggler } from "./items/toggler"
-import Footer from "./footer"
-import "./global.css"
+import { Toggler } from "../toggler/toggler"
+import Footer from "../footer"
+import "../global.css"
+import "./layout.css"
 
-const Layout = ({ location, title, children }) => {
- 
+const Layout = ({ location, title, children }) => { 
+
   const header = (
     <>
       <Toggler/>
       <h2
         style={{
-          ...scale(1),
+          ...scale(isMobile?0.5 : 1),
           marginBottom: 0,
           marginTop: 0,
           fontFamily: `Montserrat, sans-serif`,
