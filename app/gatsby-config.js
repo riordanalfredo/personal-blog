@@ -6,11 +6,11 @@ module.exports = {
       name: `@riordanalfredo`,
       summary: `web dev`,
     },
-    social:{
+    social: {
       instagram: `riordanalfredo`,
       twitter: `riordanalfredo`,
     },
-    description:  `Riordan's personal blog`,
+    description: `Riordan's personal blog`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
     defaultImage: "images/bg.jpeg",
   },
@@ -69,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `/assets/`,
+        icon: `content/assets/gatsby-icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

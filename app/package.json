@@ -27,6 +27,8 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.5.13",
+    "install": "^0.13.0",
+    "npm": "^6.14.10",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -34,6 +36,7 @@
     "react-typography": "^0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
+    "typeface-raleway": "^1.1.13",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
