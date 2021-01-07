@@ -1,21 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
-import { scale } from "../../utils/typography"
-import {isMobile} from "../../utils/mobile"
+import { scale } from "../utils/typography"
+import { useMediaQuery, getIsMobileBoolean } from "../utils/mobile"
 
-import { Toggler } from "../toggler/toggler"
-import Footer from "../footer"
-import "../global.css"
+import { Toggler } from "./toggler"
+import Footer from "./footer"
+import "./global.css"
 import "./layout.css"
 
-const Layout = ({ location, title, children }) => { 
-
-  const header = (
+const Layout = ({ location, title, children }) => {
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
+  const desktopHeader = (
     <>
-      <Toggler/>
       <h2
         style={{
-          ...scale(isMobile?0.5 : 1),
+          ...scale(1),
           marginBottom: 0,
           marginTop: 0,
           fontFamily: `Montserrat, sans-serif`,
@@ -49,13 +49,14 @@ const Layout = ({ location, title, children }) => {
           className="md:h-screen p-4 flex flex-col justify-center items-center"
           style={{ minHeight: 200 }}
         >
-          {header}
-          <Footer />
+          <Toggler />
+          {isMobile ? "menubar" : desktopHeader}
         </div>
       </div>
 
       <div className="main-content relative">
         <main>{children}</main>
+        <Footer />
       </div>
     </div>
   )
