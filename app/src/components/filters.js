@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import FilterCard from './filter-card'
 import ResetButton from './reset-button'
 
-const Filters = ({ data, selectCategory }) => {
-  const [categories, setCategories] = useState(data) //TODO: refactor it to use MOBX Store
+const Filters = ({ categories, selectCategory }) => {
+  const [cats, setCategories] = useState(categories) // refactor to use redux
   const [isActive, setIsActive] = useState(false)
 
   useEffect(() => {
@@ -18,13 +18,13 @@ const Filters = ({ data, selectCategory }) => {
     setCategories(prevState => ({ ...prevState, ...obj })) // preserve the old states and add the new one
   }
 
-  const selectCategory = id => {
-    setCategories(prevState => {
-      const bool = !prevState[id].isSelected
-      return { ...prevState, [id]: { ...prevState[id], isSelected: bool } }
-    })
-    console.log(categories[id])
-  }
+  // const selectCategory = id => {
+  //   setCategories(prevState => {
+  //     const bool = !prevState[id].isSelected
+  //     return { ...prevState, [id]: { ...prevState[id], isSelected: bool } }
+  //   })
+  //   console.log(categories[id])
+  // }
 
   // Styles
   const outerStyle = {

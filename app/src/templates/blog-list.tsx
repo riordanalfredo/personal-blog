@@ -2,11 +2,10 @@
 import React, {Fragment} from "react"
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Filters from "./filters"
+import Filters from "../containers/filters"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Tags from "../components/tags"
-import {filterCategories} from '../utils/filter-categories'
 
 type PageContext = {
   currentPage: number
@@ -53,7 +52,7 @@ const BlogIndex = ({
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Filters data={filterCategories}/>
+      <Filters />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

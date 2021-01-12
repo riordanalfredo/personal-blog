@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import categoryFilter from './reducers/categoryFilter'
+import categories from './reducers/categories'
 
 export default combineReducers({
-  categoryFilter,
+  categories,
 })

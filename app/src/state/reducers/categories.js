@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions'
-import Map from 'immutable'
-import actions from '../actions/categoryFilter'
+import actions from '../actions/categories'
+import { filterCategories } from '../../utils/filter-categories'
 
 function selectCategory(map, action) {
   const category = action.payload
@@ -12,5 +12,5 @@ export default handleActions(
   {
     [actions.selectCategory]: selectCategory,
   },
-  Map()
+  filterCategories
 )
