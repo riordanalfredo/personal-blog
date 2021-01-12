@@ -6,7 +6,6 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import { Toggler } from './toggler'
 import Menu from './menu'
 import Footer from './footer'
-import Subtitle from './subtitle'
 import './global.css'
 
 const Layout = ({ location, title, children }) => {

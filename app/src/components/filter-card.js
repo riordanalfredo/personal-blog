@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './filter-card.css'
 import './global.css'
 
@@ -20,7 +20,6 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${style.imgUrl})`,
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
   }
   const selectedStyle = {
     ...outerStyle,
@@ -29,8 +28,8 @@ const FilterCard = ({ categories, id, selectFunction }) => {
   }
   const nonSelectedStyle = {
     ...outerStyle,
-    opacity: 0.4,
-    border: '5px solid var(--textNormal)',
+    opacity: 0.3,
+    // border: '5px solid var(--textNormal)',
   }
 
   return (
