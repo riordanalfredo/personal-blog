@@ -1,12 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const ProjectsPage = ({ data, location }) => {
   return (
-    <Layout location={location} title={"HOME"}>
+    <Layout location={location} title={'BLOG'}>
       <SEO title="Everything about Riordan" />
       <h1> Projects Page </h1>
     </Layout>
