@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import FilterCard from '../components/filter-card'
-import ResetButton from '../components/reset-button'
+import FilterCard from './filter-card'
+import ResetButton from './reset-button'
 
-const Filters = ({ data }) => {
+const Filters = ({ data, selectCategory }) => {
   const [categories, setCategories] = useState(data) //TODO: refactor it to use MOBX Store
   const [isActive, setIsActive] = useState(false)
 
