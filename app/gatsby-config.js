@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: "/app",
+  pathPrefix: '/app',
   siteMetadata: {
-    title: `RIORDAN DERVIN ALFREDO`,
+    title: `RIORDAN ALFREDO`,
     author: {
       name: `@riordanalfredo`,
       summary: `web dev`,
@@ -10,9 +10,9 @@ module.exports = {
       instagram: `riordanalfredo`,
       twitter: `riordanalfredo`,
     },
-    description: `Riordan's personal blog`,
+    description: `Full-stack software engineer (React-Django), software educator, and avid reader 🦥.`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
-    defaultImage: "images/bg.jpeg",
+    defaultImage: 'images/bg.jpeg',
   },
   plugins: [
     {
@@ -82,7 +82,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
-    "gatsby-plugin-dark-mode",
+    'gatsby-plugin-dark-mode',
     `gatsby-plugin-postcss`,
   ],
 }

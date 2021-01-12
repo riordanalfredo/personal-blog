@@ -6,8 +6,6 @@ categories: [code, iot]
 comments: true
 ---
 
-# Hello
-
 Hello readers! Have you ever imagined that applying a traditional encoding telecommunication method could actually open an alternative in the real-world application of security system? Does it sound interesting to you?
 
 Let me introduce the **Internet of Things (IoT) prototype: Morse Code Lockbox**

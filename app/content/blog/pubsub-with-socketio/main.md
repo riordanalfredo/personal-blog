@@ -6,8 +6,6 @@ categories: [code]
 comments: true
 ---
 
-# HELLO
-
 In this post, I would like to share my experience/approach for my hack in applying Socket.io with EventEmitter in NodeJS
 
 > **Attention!** This solution might **NOT be optimal and clean**. There are 2 reasons: 1) time constraint and stakeholders' pressure (common issues in this industry) that made me could not apply better architecture methods and practices. I put some my own reflections at the end of this post. 2) I am still learning :). I hope that you could share some ideas, questions, or feedback to my approach in the discussion below!
