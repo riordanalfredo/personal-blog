@@ -73,6 +73,25 @@ const SEO = ({ description, lang, meta, title }) => {
     />
   )
 }
+// <!-- Primary Meta Tags -->
+// <title>Riordan Dervin Alfredo</title>
+// <meta name="title" content="Riordan Dervin Alfredo">
+// <meta name="description" content="Full-stack software engineer, software educator, and avid reader 🦥.">
+
+// <!-- Open Graph / Facebook -->
+// <meta property="og:type" content="website">
+// <meta property="og:url" content="https://rioalfredo.com/">
+// <meta property="og:title" content="Riordan Dervin Alfredo">
+// <meta property="og:description" content="Full-stack software engineer, software educator, and avid reader 🦥.">
+// <meta property="og:image" content="">
+
+// <!-- Twitter -->
+// <meta property="twitter:card" content="summary_large_image">
+// <meta property="twitter:url" content="https://rioalfredo.com/">
+// <meta property="twitter:title" content="Riordan Dervin Alfredo">
+// <meta property="twitter:description" content="Full-stack software engineer, software educator, and avid reader 🦥.">
+// <meta property="twitter:image" content="">
+// }
 
 SEO.defaultProps = {
   lang: `en`,

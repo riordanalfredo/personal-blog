@@ -4,8 +4,9 @@ body {
   --bg: #fff;
   --lightBg: #f5f5f5;
   --textNormal: #181818;
-  --textTitle: #181818;
+  --textTitle: #0d2b63;
   --textLink: #0d2b63;
+  --shadow: rgba(63, 63, 63, 0.5);
   --hr: hsla(0, 20%, 1%, 0.2);
 
   background-color: var(--bg);
@@ -17,8 +18,9 @@ body.dark {
   --bg: #1e1e1e;
   --lightBg: #0f0f0f;
   --textNormal: #e0e0e0;
-  --textTitle: #fff;
-  --textLink: rgb(250, 216, 160);
+  --textTitle: rgb(255, 227, 170);
+  --textLink: rgb(255, 227, 170);
+  --shadow: grey;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -32,7 +34,62 @@ a.gatsby-resp-image-link:hover {
   box-shadow: 0px 6px 13px 2px rgba(0, 0, 0, 0.25);
 }
 
-h1,
+/* Slightly moving up the object */
+.nudge:hover {
+  transform: translateY(-0.1rem);
+}
+
+/* For the blog posts*/
+.box {
+  position: relative;
+  display: inline-block;
+  width: 60vw;
+  min-height: 5vh;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 0.5rem;
+  background-color: var(--bg);
+  border-radius: 1rem;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+  content: '';
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: 0px 5px 5px 0px var(--shadow);
+  -moz-box-shadow: 0px 5px 5px 0px var(--shadow);
+  box-shadow: 0px 5px 5px 0px var(--shadow);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: translateY('200px');
+  transform: translateY('200px');
+}
+
+.box:hover::after {
+  opacity: 1;
+}
+/** === end of box === */
+/** Filters */
+
+.filters {
+  background-color: var(--bg);
+}
+
+h1 {
+  color: var(--textTitle);
+  transition: 300ms all;
+}
+
 h2,
 h3,
 h4,
@@ -40,7 +97,11 @@ h5,
 h6,
 blockquote {
   transition: 300ms all;
-  color: var(--textTitle);
+  color: var(--textNormal);
+}
+
+p {
+  color: var(--textNormal);
 }
 
 .footnotes {

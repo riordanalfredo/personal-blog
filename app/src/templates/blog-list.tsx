@@ -1,10 +1,11 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
+import React, {Fragment} from "react"
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Highlights from "./highlights"
+import Filters from "./filters"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Tags from "../components/tags"
 
 type PageContext = {
   currentPage: number
@@ -24,6 +25,7 @@ type Data = {
           title: string
           date: string
           description: string
+          categories: [string]
         }
         fields: {
           slug: string
@@ -50,35 +52,37 @@ const BlogIndex = ({
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Highlights/> 
+      <Filters />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article key={node.fields.slug}>
-            
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+          <Fragment>
+            <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <article key={node.fields.slug} style={{transition: '300ms all'}} className={"box"}>
+                  <header>
+                    <h3
+                      style={{
+                        color: `inherit`,
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <small>{node.frontmatter.date}</small> 
+                  </header>
+                  <section>
+                    <p
+                       dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                    <Tags data={node.frontmatter.categories} />
+                  </section>
+                </article>
+            </Link> 
+          </Fragment>
         )
       })}
-
       <nav>
         <ul
           style={{
@@ -133,6 +137,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            categories
           }
         }
       }
