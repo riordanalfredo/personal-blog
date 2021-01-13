@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Form from './contact/form'
 
 const ContactPage = ({ data, location }) => {
   return (
@@ -14,6 +15,7 @@ const ContactPage = ({ data, location }) => {
         steps away. Please write down your <code>name</code>, <code>email</code>
         , and<code> message </code> below. I will reply it as soon as I can.
       </blockquote>
+      <Form />
     </Layout>
   )
 }
