@@ -7,8 +7,13 @@ import SEO from '../components/seo'
 const ContactPage = ({ data, location }) => {
   return (
     <Layout location={location} title={'BLOG'}>
-      <SEO title="Everything about Riordan" />
-      <h1>Contact Me!</h1>
+      <SEO title="Contact Me" />
+      <h1 align="center">KEEP IN TOUCH</h1>
+      <blockquote>
+        Thank you for your eagerness to reaching me out! There are only few
+        steps away. Please write down your <code>name</code>, <code>email</code>
+        , and<code> message </code> below. I will reply it as soon as I can.
+      </blockquote>
     </Layout>
   )
 }

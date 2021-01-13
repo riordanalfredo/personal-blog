@@ -24,6 +24,7 @@ const Layout = ({ location, title, children }) => {
       >
         <Link
           style={{
+            color: 'var(--textTitle)',
             boxShadow: `none`,
           }}
           to={`/`}

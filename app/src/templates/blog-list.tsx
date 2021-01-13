@@ -6,6 +6,7 @@ import Filters from "../containers/filters"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Tags from "../components/tags"
+import {filterCategories} from '../utils/filter-categories'
 
 type PageContext = {
   currentPage: number
@@ -52,12 +53,12 @@ const BlogIndex = ({
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Filters />
+      <Filters data={filterCategories}/>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <Fragment>
-            <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+            <Link style={{ boxShadow: `none`, color: 'var(--textTitle)'}} to={node.fields.slug}>
               <article key={node.fields.slug} style={{transition: '300ms all'}} className={"box"}>
                   <header>
                     <h3

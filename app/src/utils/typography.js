@@ -1,21 +1,31 @@
-import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import Typography from 'typography'
+import Wordpress2016 from 'typography-theme-wordpress-2016'
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
     a: {
-      color: "var(--textLink)",
+      color: 'var(--textLink)',
+      boxShadow: 'none',
+      transition: '0.3s',
+    },
+    'a:hover': {
+      color: 'var(--hover)',
+      boxShadow: '0px 6px 13px 2px rgba(0, 0, 0, 0.25)',
+      textDecoration: 'none',
+      textShadow:
+        '1px 1px 0 var(--bg), -1px 1px 0 var(--bg), 2px 0 0 var(--bg), -2px 0 0 var(--bg)',
+      boxShadow: 'inset 0 -1px 0 0 var(--bg), inset 0 -3px 0 0 var(--hover)',
     },
     // gatsby-remark-autolink-headers - don't underline when hidden
-    "a.anchor": {
-      boxShadow: "none",
+    'a.anchor': {
+      boxShadow: 'none',
     },
     // gatsby-remark-autolink-headers - use theme colours for the link icon
     'a.anchor svg[aria-hidden="true"]': {
-      stroke: "var(--textLink)",
+      stroke: 'var(--textLink)',
     },
     hr: {
-      background: "var(--hr)",
+      background: 'var(--hr)',
     },
   }
 }

@@ -10,7 +10,7 @@ module.exports = {
       instagram: `riordanalfredo`,
       twitter: `riordanalfredo`,
     },
-    description: `Full-stack software engineer (React-Django), software educator, and avid reader 🦥.`,
+    description: `Full-stack software engineer (React-Django), software educator, and avid reader.`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
     defaultImage: 'images/bg.jpeg',
   },

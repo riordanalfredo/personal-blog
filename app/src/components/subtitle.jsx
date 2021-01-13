@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subtitle = () => {
     const textStyle = {
-        fontStyle:'italic',
+        // fontStyle:'italic',
         color: 'darkgrey',
         fontFamily: 'Montserrat, sans-serif'
     }
