@@ -1,7 +1,7 @@
 const creditsData = [
   {
     text: 'Leonids, Gatsby template',
-    comment: '',
+    comment: 'The basis of this blog application',
     link: 'https://www.gatsbyjs.com/starters/renyuanz/leonids',
   },
   {
@@ -13,7 +13,7 @@ const creditsData = [
   },
   {
     text: 'A Guide to Flexbox',
-    comment: '',
+    comment: 'quick reference to ',
     link: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',
   },
   {
@@ -27,6 +27,12 @@ const creditsData = [
     comment: '',
     link:
       'https://walterebert.com/blog/underlined-links-css3-box-shadow-text-shadow/',
+  },
+  {
+    text: 'React-Netlify-Forms',
+    comment: '',
+    link:
+      'https://pyrax.github.io/react-netlify-forms/examples/react-hook-form/',
   },
 ]
 

@@ -3,7 +3,7 @@ import React from 'react'
 const AboutText = () => (
   <div
     style={{
-      minWidth: 600,
+      minWidth: 300,
       width: '40vw',
       marginLeft: '3rem',
       textAlign: 'justify',

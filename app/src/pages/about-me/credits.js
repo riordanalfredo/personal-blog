@@ -11,11 +11,12 @@ const CreditSection = ({ data }) => {
     <div>
       <h3 style={{ color: 'var(--textTitle)' }}>Credits/References </h3>
       <div style={outerStyle}>
-        {data.map(d => {
+        {data.map((d, index) => {
           return (
-            <div>
+            <div key={index}>
               🦥 <a href={d.link}>{d.text}</a>
-              <p>{!!d.comment ? d.comment : ''}</p>
+              <br />
+              <small>{!!d.comment ? d.comment : ''}</small>
             </div>
           )
         })}

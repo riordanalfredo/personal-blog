@@ -9,7 +9,7 @@ const PhotoProfile = () => {
     backgroundImage: `url(${photo})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    marginBottom: '2rem',
+    marginBottom: '2.5rem',
   }
 
   return (

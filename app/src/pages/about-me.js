@@ -39,8 +39,8 @@ const AboutPage = ({ data, location }) => {
         </div>
         <blockquote style={{ marginBottom: 0 }}>
           My crafts are synthesising software engineering and data science
-          knowledge, along with the entrepreneurial mindset, to shape and
-          develop our society.
+          knowledge, along with the entrepreneurial mindset to advance our
+          society further.
         </blockquote>
         {/* <SocialMedia /> */}
       </div>
