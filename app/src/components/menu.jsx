@@ -13,13 +13,14 @@ const Menu = () => {
   return (
     <div>
       <Subtitle/>
-      {menu.map(item =>
+      {menu.map((item,index) =>
+      <div key={index}>
         <Link to={item.link} style={{ boxShadow: `none`}} >
           <h4 className="nudge" style={{ marginBottom: '10px', fontFamily:`Montserrat, sans-serif` }}>
             {item.text}
           </h4>
-        </Link>)
-      }
+        </Link></div>
+      )}
     </div>
   )
 }

@@ -31,7 +31,7 @@ body.dark {
 }
 
 code {
-  color: var(--textLink);
+  color: var(--textTitle);
   text-decoration: italic;
 }
 
