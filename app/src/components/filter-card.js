@@ -4,7 +4,6 @@ import './global.css'
 
 const FilterCard = ({ categories, id, selectFunction }) => {
   const { text, style } = categories[id]
-  console.log(style.imgUrl)
   const [isSelected, setIsSelected] = useState(categories[id].isSelected)
 
   const selectCategory = () => {

@@ -1,12 +1,12 @@
 // Gatsby supports TypeScript natively!
-import React, {Fragment} from "react"
-import { PageProps, Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import Filters from "../containers/filters"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
-import Tags from "../components/tags"
-import {filterCategories} from '../utils/filter-categories'
+import React, { Fragment } from 'react'
+import { PageProps, Link, graphql } from 'gatsby'
+import Layout from '../components/layout'
+import Filters from '../containers/filters'
+import SEO from '../components/seo'
+import { rhythm } from '../utils/typography'
+import Tags from '../components/tags'
+import { filterCategories } from '../utils/filter-categories'
 
 type PageContext = {
   currentPage: number
@@ -47,40 +47,47 @@ const BlogIndex = ({
 
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
+  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Filters data={filterCategories}/>
-      {posts.map(({ node }) => {
+      <Filters />
+      {posts.map(({ node }, index) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <Fragment>
-            <Link style={{ boxShadow: `none`, color: 'var(--textTitle)'}} to={node.fields.slug}>
-              <article key={node.fields.slug} style={{transition: '300ms all'}} className={"box"}>
-                  <header>
-                    <h3
-                      style={{
-                        color: `inherit`,
-                        marginBottom: rhythm(1 / 4),
-                      }}
-                    >
-                      {title}
-                    </h3>
-                    <small>{node.frontmatter.date}</small> 
-                  </header>
-                  <section>
-                    <p
-                       dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                    <Tags data={node.frontmatter.categories} />
-                  </section>
-                </article>
-            </Link> 
+          <Fragment key={index}>
+            <Link
+              style={{ boxShadow: `none`, color: 'var(--textTitle)' }}
+              to={node.fields.slug}
+            >
+              <article
+                key={node.fields.slug}
+                style={{ transition: '300ms all' }}
+                className={'box'}
+              >
+                <header>
+                  <h3
+                    style={{
+                      color: `inherit`,
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    {title}
+                  </h3>
+                  <small>{node.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                  <Tags data={node.frontmatter.categories} />
+                </section>
+              </article>
+            </Link>
           </Fragment>
         )
       })}

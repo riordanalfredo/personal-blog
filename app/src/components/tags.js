@@ -18,9 +18,9 @@ const Tags = ({ data }) => {
 
   return (
     <div style={outerStyle}>
-      {data.map(item => {
+      {data.map((item, index) => {
         return (
-          <div style={innerStyle}>
+          <div key={index} style={innerStyle}>
             <small style={{ fontSize: '70%' }}>{item}</small>
           </div>
         )

@@ -44,9 +44,10 @@ const Filters = ({ categories, selectCategory }) => {
 
   return (
     <div style={outerStyle} className={'filters'}>
-      {Object.keys(categories).map(val => {
+      {Object.keys(categories).map((val, index) => {
         return (
           <FilterCard
+            key={index}
             categories={categories}
             id={val}
             selectFunction={selectCategory}

@@ -3,6 +3,7 @@ import { selectCategory } from '../state/actions/categories'
 import Filters from '../components/filters'
 
 function mapDispatchToProps(dispatch) {
+  console.log(selectCategory)
   return {
     selectCategory: category => {
       dispatch(selectCategory(category))
