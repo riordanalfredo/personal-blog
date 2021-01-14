@@ -4,7 +4,7 @@ module.exports = {
     title: `RIORDAN ALFREDO`,
     author: {
       name: `@riordanalfredo`,
-      summary: `web dev`,
+      summary: `a 🦥 software engineer & educator`,
     },
     social: {
       instagram: `riordanalfredo`,
@@ -69,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -79,7 +79,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
