@@ -1,10 +1,15 @@
+import astronomyPic from '../assets/filter/astronomy.jpg'
+import businessPic from '../assets/filter/business.jpg'
+import educationPic from '../assets/filter/education.jpg'
+import technologyPic from '../assets/filter/technology.jpg'
+
 export const filterCategories = {
   astronomy: {
     text: 'Astronomy and Astrology',
     categories: ['astrology', 'capricorn', 'software'],
     isSelected: true,
     style: {
-      imgUrl: `https://pixabay.com/get/55e6d54b4a50a514f1dc8460da29317f153bdde4535177_640.jpg`,
+      imgUrl: astronomyPic,
     },
   },
   business: {
@@ -12,7 +17,7 @@ export const filterCategories = {
     categories: ['art-of-war', 'leadership', 'management'],
     isSelected: true,
     style: {
-      imgUrl: `https://pixabay.com/get/57e2d54a4c56ac14f1dc8460da29317f153bdde4515477_640.jpg`,
+      imgUrl: businessPic,
     },
   },
   education: {
@@ -20,7 +25,7 @@ export const filterCategories = {
     categories: ['study', 'habit', 'teaching'],
     isSelected: true,
     style: {
-      imgUrl: `https://pixabay.com/get/57e0d0414a53ac14f1dc8460da29317f153bdde4525970_640.jpg`,
+      imgUrl: educationPic,
     },
   },
   technology: {
@@ -36,7 +41,7 @@ export const filterCategories = {
     ],
     isSelected: true,
     style: {
-      imgUrl: `https://pixabay.com/get/57e0d2454f51aa14f1dc8460da29317f153bdde4525574_640.jpg`,
+      imgUrl: technologyPic,
     },
   },
 }
