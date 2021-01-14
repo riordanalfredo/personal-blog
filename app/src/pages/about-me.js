@@ -37,7 +37,14 @@ const AboutPage = ({ data, location }) => {
           <PhotoProfile />
           <AboutText />
         </div>
-        <blockquote style={{ marginBottom: 0 }}>
+        <blockquote
+          style={{
+            marginBottom: 0,
+            minWidth: 500,
+            width: '55vw',
+            alignSelf: 'center',
+          }}
+        >
           My crafts are synthesising software engineering and data science
           knowledge, along with the entrepreneurial mindset to advance our
           society further.

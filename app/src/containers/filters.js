@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { selectCategory } from '../state/actions/categories'
+import { resetFilter, selectCategory } from '../state/actions/categories'
 import Filters from '../components/filters'
 
 function mapDispatchToProps(dispatch) {
@@ -7,6 +7,9 @@ function mapDispatchToProps(dispatch) {
   return {
     selectCategory: category => {
       dispatch(selectCategory(category))
+    },
+    resetFilter: category => {
+      dispatch(resetFilter(category))
     },
   }
 }

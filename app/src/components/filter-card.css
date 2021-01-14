@@ -1,7 +1,7 @@
 .filter-card {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   transition: 300ms all;
   position: relative;
 }

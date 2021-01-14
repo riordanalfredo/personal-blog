@@ -36,7 +36,7 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     <div
       id={id}
       style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
-      className="nudge filter-card"
+      className="filter-card"
       onClick={() => selectCategory()}
     >
       <p>{text}</p>

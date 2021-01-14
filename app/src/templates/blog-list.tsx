@@ -6,7 +6,6 @@ import Filters from '../containers/filters'
 import SEO from '../components/seo'
 import { rhythm } from '../utils/typography'
 import Tags from '../components/tags'
-import { filterCategories } from '../utils/filter-categories'
 
 type PageContext = {
   currentPage: number
@@ -54,43 +53,55 @@ const BlogIndex = ({
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Filters />
-      {posts.map(({ node }, index) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <Fragment key={index}>
-            <Link
-              style={{ boxShadow: `none`, color: 'var(--textTitle)' }}
-              to={node.fields.slug}
-            >
-              <article
-                key={node.fields.slug}
-                style={{ transition: '300ms all' }}
-                className={'box'}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        {posts.map(({ node }, index) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <Fragment key={index}>
+              <Link
+                style={{ boxShadow: `none`, color: 'var(--textTitle)' }}
+                to={node.fields.slug}
               >
-                <header>
-                  <h3
-                    style={{
-                      color: `inherit`,
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    {title}
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                  <Tags data={node.frontmatter.categories} />
-                </section>
-              </article>
-            </Link>
-          </Fragment>
-        )
-      })}
+                <article
+                  key={node.fields.slug}
+                  style={{
+                    transition: '300ms all',
+                    width: '50vw',
+                    minWidth: 400,
+                  }}
+                  className={'box'}
+                >
+                  <header>
+                    <h3
+                      style={{
+                        color: `inherit`,
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    <small>{node.frontmatter.date}</small>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                    <Tags data={node.frontmatter.categories} />
+                  </section>
+                </article>
+              </Link>
+            </Fragment>
+          )
+        })}
+      </div>
       <nav>
         <ul
           style={{

@@ -20,8 +20,12 @@ function selectCategory(map, action) {
   return newMap
 }
 
-function selectAll(map) {
+function resetFilter(map) {
   const newMap = { ...map }
+  const arr = Object.keys(newMap)
+  arr.forEach(category => {
+    newMap[category].isSelected = true
+  })
   return newMap
 }
 
@@ -30,7 +34,7 @@ function selectAll(map) {
 export default handleActions(
   {
     [actions.selectCategory]: selectCategory,
-    [actions.selectAllCategories]: selectAll,
+    [actions.resetFilter]: resetFilter,
   },
   filterCategories // init state
 )
