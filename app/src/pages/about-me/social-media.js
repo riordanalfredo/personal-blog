@@ -1,10 +1,11 @@
 import React from 'react'
+import SocialMedia from '../../components/social-media'
 import { ImWhatsapp as WA } from '@react-icons/all-files/im/ImWhatsapp'
 import { MdEmail as Email } from '@react-icons/all-files/md/MdEmail'
 import { FaLinkedinIn as LinkedIn } from '@react-icons/all-files/fa/FaLinkedinIn'
 import { ImGithub as Github } from '@react-icons/all-files/im/ImGithub'
 
-const SocialMedia = () => {
+const SocialMediaContainer = () => {
   let uri = 'Hello from /me website'
   const res = encodeURI(uri)
 
@@ -42,16 +43,11 @@ const SocialMedia = () => {
           marginTop: '3vh',
         }}
       >
-        {data.map(d => (
-          <div>
-            <a style={{ boxShadow: 'none' }} href={d.link}>
-              {d.icon}
-            </a>
-            <p>{d.text}</p>
-          </div>
+        {data.map((d, index) => (
+          <SocialMedia key={index} data={d} />
         ))}
       </div>
     </div>
   )
 }
-export default SocialMedia
+export default SocialMediaContainer
