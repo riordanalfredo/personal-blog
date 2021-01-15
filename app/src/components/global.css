@@ -31,8 +31,11 @@ body.dark {
 }
 
 code {
-  color: var(--textTitle);
-  text-decoration: italic;
+  color: var(--bg);
+  background-color: var(--textTitle);
+  padding: 2px 6px;
+  margin: 1px 0px;
+  border-radius: 0.3em;
 }
 
 a.gatsby-resp-image-link {
