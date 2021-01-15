@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { resetFilter, selectCategory } from '../state/actions/categories'
-import Filters from '../components/filters'
+import { resetFilter, selectCategory } from '../actions/categories'
+import Filters from '../../components/filters'
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -13,8 +13,8 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-function mapStateToProps({ categories }) {
-  return { categories }
+function mapStateToProps({ categories, posts }) {
+  return { categories, posts }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filters)

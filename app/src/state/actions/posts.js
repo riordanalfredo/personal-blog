@@ -1,6 +1,6 @@
 import { createAction } from 'redux-actions'
 
-export const setPostsIds = createAction('SET_POSTS_SLUG')
+export const setPostsCategories = createAction('SET_POSTS_CATEGORIES')
 export const filterPosts = createAction('FILTER_POSTS')
 
-export default { setPostsIds, filterPosts }
+export default { setPostsCategories, filterPosts }

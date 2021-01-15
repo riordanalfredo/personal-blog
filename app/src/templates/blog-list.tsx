@@ -5,8 +5,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PageNavigation from '../components/page-navigation'
 
-import FiltersContainer from '../containers/filters'
-import PostsContainer from '../containers/posts'
+import FiltersContainer from '../state/containers/filters'
+import PostsContainer from '../state/containers/posts'
 
 // type PageContext = {
 //   currentPage: number
@@ -37,7 +37,7 @@ type Data = {
 }
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
-  const initPosts = data.allMarkdownRemark.edges
+  const allPosts = data.allMarkdownRemark.edges || []
   const siteTitle = data.site.siteMetadata.title
 
   const styles = {
@@ -53,7 +53,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="All posts" />
       <FiltersContainer />
       <div style={styles.outer}>
-        <PostsContainer initPosts={initPosts} />
+        <PostsContainer allPosts={allPosts} />
       </div>
       {/* <PageNavigation context={pageContext} /> */}
     </Layout>
