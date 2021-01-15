@@ -1,4 +1,10 @@
-# Hello
+---
+title: Morse Lockbox
+date: "2021-01-06T07:26:03.284Z"
+description: "An innovative way to secure things without memorizing passwords"
+categories: [code, iot]
+comments: true
+---
 
 Hello readers! Have you ever imagined that applying a traditional encoding telecommunication method could actually open an alternative in the real-world application of security system? Does it sound interesting to you?
 
@@ -16,9 +22,9 @@ Here, I will try my best to present it to all kind of readers (non-tech to tech-
 
 ## 1. Motivations
 
-* There are many types of locks
-* Latest type: biometric and iris
-* Several potentials
+- There are many types of locks
+- Latest type: biometric and iris
+- Several potentials
 
 ---
 
@@ -26,7 +32,7 @@ Here, I will try my best to present it to all kind of readers (non-tech to tech-
 
 ### Morse code
 
-* Definition
+- Definition
 
 ### How does it work
 
@@ -36,7 +42,7 @@ Here, I will try my best to present it to all kind of readers (non-tech to tech-
 
 ### Box (Arduino)
 
-* Nice
+- Nice
 
 ### The key (web app)
 
@@ -46,17 +52,17 @@ Here, I will try my best to present it to all kind of readers (non-tech to tech-
 
 ### Wifi module or RaspberryPi
 
-* Explain what I had tried with this implementation, even though I failed it.
+- Explain what I had tried with this implementation, even though I failed it.
 
 ### Speed-up the visible light reading sensors
 
-* Improve the sensor (instead of prototype)
+- Improve the sensor (instead of prototype)
 
 ---
 
 ## 5. ACK (acknowledgements) and References
 
-* My fellas and teaching team in that unit, very insightful!
-* Thanks to unit ENG1003, where I got the idea from my first year assignment.
-* Since I did not have enough time to conduct proper literature review (the project was done in parallel with ), here are some references that I found after the assessment
-* If you are happy and found this post is interesting enough, please share and.
+- My fellas and teaching team in that unit, very insightful!
+- Thanks to unit ENG1003, where I got the idea from my first year assignment.
+- Since I did not have enough time to conduct proper literature review (the project was done in parallel with ), here are some references that I found after the assessment
+- If you are happy and found this post is interesting enough, please share and.
