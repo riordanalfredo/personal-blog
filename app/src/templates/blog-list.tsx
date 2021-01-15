@@ -8,10 +8,10 @@ import PageNavigation from '../components/page-navigation'
 import FiltersContainer from '../containers/filters'
 import PostsContainer from '../containers/posts'
 
-type PageContext = {
-  currentPage: number
-  numPages: number
-}
+// type PageContext = {
+//   currentPage: number
+//   numPages: number
+// }
 type Data = {
   site: {
     siteMetadata: {
@@ -36,11 +36,7 @@ type Data = {
   }
 }
 
-const BlogIndex = ({
-  data,
-  location,
-  pageContext,
-}: PageProps<Data, PageContext>) => {
+const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const initPosts = data.allMarkdownRemark.edges
   const siteTitle = data.site.siteMetadata.title
 
@@ -67,20 +63,16 @@ const BlogIndex = ({
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query blogPageQuery($skip: Int!, $limit: Int!) {
+  query {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 250)
           fields {
             slug
           }

@@ -66,8 +66,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   alignItems: 'flex-start',
                 }}
               >
-                <small>Previous</small>
-                <Link to={previous.fields.slug} rel="prev">
+                <small>Older Post</small>
+                <Link to={`/posts${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               </div>
@@ -82,8 +82,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   alignItems: 'flex-end',
                 }}
               >
-                <small>Next</small>
-                <Link to={next.fields.slug} rel="next">
+                <small>Newer Post</small>
+                <Link to={`/posts${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               </div>

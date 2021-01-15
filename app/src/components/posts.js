@@ -10,8 +10,8 @@ const Posts = ({ initPosts, posts, setPostsIds }) => {
 
   return (
     <Fragment>
-      {!!posts.length &&
-        posts.map(({ node }, index) => {
+      {!!initPosts.length &&
+        initPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
           return <Post node={node} index={index} title={title} />
         })}
