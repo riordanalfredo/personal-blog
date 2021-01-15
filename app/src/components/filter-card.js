@@ -39,7 +39,7 @@ const FilterCard = ({ categories, id, selectFunction }) => {
       className="filter-card"
       onClick={() => selectCategory()}
     >
-      <p>{text}</p>
+      <p style={{ fontFamily: 'Montserrat, sans-serif' }}>{text}</p>
     </div>
   )
 }

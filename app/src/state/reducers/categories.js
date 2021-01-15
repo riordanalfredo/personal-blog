@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions'
-import actions from '../actions/categories'
 import { filterCategories } from '../../utils/filter-categories'
+import actions from '../actions/categories'
 
 function selectCategory(map, action) {
   const newMap = { ...map }
