@@ -15,6 +15,7 @@ const Contact = ({}) => {
     action: '/thanks',
     honeypotName: 'bot-field',
     onSuccess: (response, context) => {
+      console.log(response, context)
       console.log('Successfully sent form data to Netlify Server')
     },
   })

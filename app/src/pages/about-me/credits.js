@@ -14,7 +14,10 @@ const CreditSection = ({ data }) => {
         {data.map((d, index) => {
           return (
             <div key={index}>
-              🦥 <a href={d.link}>{d.text}</a>
+              <span role="img" aria-label="sloth emoji">
+                🦥
+              </span>{' '}
+              <a href={d.link}>{d.text}</a>
               <br />
               <small>{!!d.comment ? d.comment : ''}</small>
             </div>

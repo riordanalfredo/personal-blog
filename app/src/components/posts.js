@@ -2,44 +2,61 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
-  const [activePostsIndices, setActivePostIndices] = useState(
-    allPosts.map((_, i) => i)
-  )
+  const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]
+  const [activePostsIndices, setActivePostIndices] = useState(allPostsIndices)
 
+  // initial input
+  // TODO: I think it is not optimal, I believe I can put it somewhere else...
   useEffect(() => {
     const newInitPosts = [...allPosts]
     setPostsCategories(newInitPosts)
-  }, [])
+  }, [allPosts, setPostsCategories])
 
-  // If there are any changes in categories
+  // If there are any changes in categories, it will select posts accordingly
+  // TODO: Need to maintain these indices in redux to avoid exhaustive deps.
   useEffect(() => {
-    var arr = []
-    // let res = activePostsIndices
-    Object.keys(categories).forEach(
-      c => {
-        if (categories[c].isSelected == true) arr.push(posts[c])
-      } // push all related
+    let arr = []
+    let isNotSelectedCounter = 0
+    const categoryKeys = Object.keys(categories)
+    // push all related post
+    categoryKeys.forEach(c => {
+      console.log(categories[c].isSelected)
+      categories[c].isSelected === true
+        ? arr.push(posts[c])
+        : (isNotSelectedCounter += 1)
+    })
+    // flatten and then sort posts
+    const result = [...new Set(arr.flat())].sort()
+
+    // if result is empty, print all
+    setActivePostIndices(
+      result.length > 0
+        ? result
+        : isNotSelectedCounter === 4
+        ? []
+        : allPostsIndices
     )
-
-    let res = arr.reduce(function (a, b) {
-      return b.map(function (e, i) {
-        return a[i] instanceof Object ? a[i] : e
-      })
-    }, [])
-
-    if (res.length > 0) setActivePostIndices(res)
   }, [categories])
+
+  const currentPosts = activePostsIndices
+    .map(i => allPosts[i])
+    .filter(e => typeof e !== 'undefined')
 
   return (
     <Fragment>
-      {!!allPosts.length &&
-        activePostsIndices
-          .map(i => allPosts[i])
-          .filter(e => typeof e !== 'undefined')
-          .map(({ node }, index) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return <Post node={node} index={index} title={title} />
-          })}
+      {!!currentPosts.length ? (
+        currentPosts.map(({ node }, index) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return <Post node={node} index={index} title={title} />
+        })
+      ) : (
+        <h3>
+          Hmmm.. nothing to see here.. I think you need to select a category{' '}
+          <span role="img" aria-label="investigate">
+            🧐
+          </span>
+        </h3>
+      )}
     </Fragment>
   )
 }

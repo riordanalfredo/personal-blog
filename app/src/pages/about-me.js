@@ -9,7 +9,7 @@ import creditsData from './about-me/credits-data'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
-import SocialMedia from './about-me/social-media'
+// import SocialMedia from './about-me/social-media'
 
 const AboutPage = ({ data, location }) => {
   const description = data.site.siteMetadata.description

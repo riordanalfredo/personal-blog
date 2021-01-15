@@ -16,8 +16,9 @@ Object.keys(filterCategories).forEach(e => {
  * @param {*} action
  */
 function setPostsCategories(map, action) {
-  const newMap = { ...map }
+  const newMap = { ...init }
   const posts = action.payload
+  let indicesTobeDeleted = []
   // Loop all posts
   posts.forEach((e, index) => {
     // O(N) -- each post
@@ -30,14 +31,14 @@ function setPostsCategories(map, action) {
       })
       const tagsAreIncludedInCategory = postTags.some(
         el => obj[el] !== undefined
-      )
+      ) // O(M)
       // store the post index if any of post's tags are included in the category
       if (tagsAreIncludedInCategory) {
         newMap[c] = [...newMap[c], index]
+        indicesTobeDeleted.push(index)
       }
     })
   })
-  console.log(newMap)
 
   return newMap
 }

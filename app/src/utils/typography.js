@@ -10,7 +10,6 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     'a:hover': {
       color: 'var(--hover)',
-      boxShadow: '0px 6px 13px 2px rgba(0, 0, 0, 0.25)',
       textDecoration: 'none',
       textShadow:
         '1px 1px 0 var(--bg), -1px 1px 0 var(--bg), 2px 0 0 var(--bg), -2px 0 0 var(--bg)',

@@ -6,7 +6,7 @@ import { rhythm } from '../utils/typography'
 const Post = ({ node, index, title }) => {
   const styles = {
     article: {
-      transition: '300ms all',
+      transition: '0.3s',
       width: '50vw',
       minWidth: 400,
     },

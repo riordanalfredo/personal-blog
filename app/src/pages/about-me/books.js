@@ -9,3 +9,5 @@ const BooksList = () => {
     </div>
   )
 }
+
+export default BooksList

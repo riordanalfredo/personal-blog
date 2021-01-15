@@ -19,7 +19,13 @@ const ResetButton = ({ isActive, resetFilter }) => {
   }
 
   return (
-    <small style={isActive ? activeStyle : inactiveStyle} onClick={resetFilter}>
+    <small
+      style={isActive ? activeStyle : inactiveStyle}
+      onClick={resetFilter}
+      onKeyDown={resetFilter}
+      tabIndex={0}
+      role="button"
+    >
       SELECT ALL
     </small>
   )

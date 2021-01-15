@@ -33,14 +33,14 @@ const FilterCard = ({ categories, id, selectFunction }) => {
   }
 
   return (
-    <div
+    <button
       id={id}
       style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
       className="filter-card"
-      onClick={() => selectCategory()}
+      onClick={selectCategory}
     >
       <p style={{ fontFamily: 'Montserrat, sans-serif' }}>{text}</p>
-    </div>
+    </button>
   )
 }
 export default FilterCard
