@@ -3,12 +3,13 @@ module.exports = {
   siteMetadata: {
     title: `RIORDAN ALFREDO`,
     author: {
-      name: `@riordanalfredo`,
+      name: `Riordan Dervin Alfredo`,
       summary: `a 🦥 software engineer & educator`,
     },
     social: {
       instagram: `riordanalfredo`,
       twitter: `riordanalfredo`,
+      linkedin: `riordan-alfredo`,
     },
     description: `Full-stack software engineer (React-Django), software educator, and avid reader.`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,

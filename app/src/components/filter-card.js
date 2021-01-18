@@ -17,7 +17,7 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     height: 250,
     borderRadius: `10px`,
     cursor: 'pointer',
-    background: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${style.imgUrl})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${style.imgUrl})`,
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
   }
@@ -39,7 +39,12 @@ const FilterCard = ({ categories, id, selectFunction }) => {
       className="filter-card"
       onClick={selectCategory}
     >
-      <p style={{ fontFamily: 'Montserrat, sans-serif' }}>{text}</p>
+      <p
+        style={{ fontFamily: 'Montserrat, sans-serif' }}
+        className={categories[id].isSelected ? 'visible' : ''}
+      >
+        {text}
+      </p>
     </button>
   )
 }

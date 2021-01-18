@@ -7,7 +7,7 @@ const Tags = ({ data }) => {
     margin: '0 1px 0 1px',
     textAlign: 'center',
     minWidth: '4rem',
-    padding: '0 0.8rem',
+    padding: '0 0.5rem',
   }
 
   const outerStyle = {
@@ -21,7 +21,7 @@ const Tags = ({ data }) => {
       {data.map((item, index) => {
         return (
           <div key={index} style={innerStyle}>
-            <small style={{ fontSize: '70%' }}>{item}</small>
+            <span style={{ fontSize: '70%' }}>{item}</span>
           </div>
         )
       })}

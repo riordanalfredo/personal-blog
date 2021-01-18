@@ -37,10 +37,9 @@ const ContactPage = ({ data, location }) => {
           >
             Hello, thank you for the willingness to reaching me out! There are
             only few steps away. Please write down <code>name</code>,{' '}
-            <code>email</code>, and your
-            <code> message </code> below. Alternatively, you may contact me
-            through provided social media platforms. I will reach out to you
-            ASAP!
+            <code>email</code>, and your <code>message</code> below.
+            Alternatively, you may contact me through provided social media
+            platforms. I will reach out to you ASAP!
           </p>
           <Form />
           <SocialMedia />

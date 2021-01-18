@@ -5,6 +5,7 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import Tags from '../components/tags'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -22,6 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <h1
             style={{
               marginBottom: 0,
+              textAlign: 'center',
             }}
           >
             {post.frontmatter.title}
@@ -31,9 +33,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               ...scale(-1 / 5),
               display: `block`,
               marginBottom: rhythm(1),
+              textAlign: 'center',
             }}
           >
-            {post.frontmatter.date}
+            {post.frontmatter.date} | Tags:&nbsp;
+            {post.frontmatter.categories.map((e, index) => (
+              <span>
+                {index === 0 ? '' : ', '}
+                <code>{e}</code>
+              </span>
+            ))}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -112,6 +121,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        categories
       }
     }
   }

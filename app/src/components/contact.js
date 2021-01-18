@@ -109,7 +109,7 @@ const Contact = ({}) => {
         <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
           {netlify.success && (
             <p sx={{ variant: 'alerts.success', p: 3 }}>
-              Thanks for contacting us!
+              Thanks for contacting me!
             </p>
           )}
           {netlify.error && (

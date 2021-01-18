@@ -6,7 +6,8 @@
  */
 
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import { ImLinkedin as LinkedIn } from '@react-icons/all-files/im/ImLinkedin'
 import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'
@@ -28,7 +29,7 @@ const Bio = () => {
             summary
           }
           social {
-            instagram
+            linkedin
           }
         }
       }
@@ -56,9 +57,16 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+
       <p>
-        Written by <strong>{author.name}</strong>, {author.summary} -{' '}
-        <a href={`https://instagram.com/${social.instagram}`}>instagram</a>
+        Written by <strong>{author.name}</strong> - {author.summary}(
+        <a
+          href={`https://linkedin.com/in/${social.linkedin}`}
+          style={{ boxShadow: 'none' }}
+        >
+          LinkedIn
+        </a>
+        )
       </p>
     </div>
   )
