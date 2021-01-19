@@ -34,6 +34,12 @@ const creditsData = [
     link:
       'https://pyrax.github.io/react-netlify-forms/examples/react-hook-form/',
   },
+  {
+    text: 'Hamburger Menu',
+    comment: '',
+    link:
+      'https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/',
+  },
 ]
 
 export default creditsData
