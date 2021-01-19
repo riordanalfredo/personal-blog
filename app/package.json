@@ -44,6 +44,7 @@
     "react-typography": "^0.16.19",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
+    "styled-components": "^5.2.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "^1.1.13",
     "typeface-roboto": "^1.1.13",
