@@ -3,53 +3,53 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 // Sections
 import creditsData from './about-me/credits-data'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
-// import SocialMedia from './about-me/social-media'
 
 const AboutPage = ({ data, location }) => {
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
+  const styles = {
+    outer: {
+      display: 'flex',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    profile: {
+      display: 'flex',
+      flexDirection: isMobile ? 'column' : 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    quote: {
+      marginBottom: 0,
+      minWidth: 350,
+      width: '55vw',
+      alignSelf: 'center',
+    },
+  }
   const description = data.site.siteMetadata.description
   return (
     <Layout location={location} title={'BLOG'}>
       <SEO title="A software engineer &amp; educator" />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
+      <div style={styles.outer}>
         <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
         <p style={{ color: 'grey' }}>{description}</p>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-          }}
-        >
+        <div style={styles.profile}>
           <PhotoProfile />
-          <AboutText />
+          <AboutText isMobile={isMobile} />
         </div>
-        <blockquote
-          style={{
-            marginBottom: 0,
-            minWidth: 500,
-            width: '55vw',
-            alignSelf: 'center',
-          }}
-        >
+        <blockquote style={styles.quote}>
           My crafts are synthesising software engineering and data science
           knowledge, along with the entrepreneurial mindset to advance our
-          society further.
+          society.
         </blockquote>
-        {/* <SocialMedia /> */}
       </div>
       <CreditSection data={creditsData} />
     </Layout>
