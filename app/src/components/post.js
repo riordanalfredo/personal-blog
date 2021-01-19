@@ -7,8 +7,7 @@ const Post = ({ node, index, title }) => {
   const styles = {
     article: {
       transition: '0.3s',
-      width: '50vw',
-      minWidth: 400,
+      minWidth: 320,
     },
   }
   return (

@@ -12,7 +12,6 @@ const Menu = () => {
 
   return (
     <div>
-      <Subtitle/>
       {menu.map((item,index) =>
       <div key={index}>
         <Link to={item.link} style={{ boxShadow: `none`}} >
