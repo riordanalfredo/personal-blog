@@ -15,7 +15,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type='submit'] {
-  background-color: var(--hover);
+  background: linear-gradient(90deg, var(--textTitle), var(--textTitle2));
   color: white;
   padding: 12px 20px;
   border: none;
