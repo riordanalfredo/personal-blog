@@ -8,6 +8,7 @@
     "url": "https://github.com/riordanalfredo/personal-blog/issues"
   },
   "dependencies": {
+    "@isamrish/gatsby-plugin-google-adsense": "^1.2.0",
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^4.5.3",
     "firebase": "^8.2.3",
@@ -37,6 +38,7 @@
     "pdf-viewer-reactjs": "^2.1.2",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
+    "react-adsense": "^0.1.0",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",

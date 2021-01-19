@@ -5,10 +5,6 @@ require('dotenv').config({
   path: `.env.${activeEnv}`,
 })
 
-require('dotenv').config({
-  path: `.env.${activeEnv}`,
-})
-
 module.exports = {
   pathPrefix: '/app',
   siteMetadata: {
@@ -68,7 +64,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-62251910-1`,
+        trackingId: `${process.env.GOOGLE_ANALYTICS_ID}`,
       },
     },
     `gatsby-plugin-feed`,
@@ -96,5 +92,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-postcss`,
+    {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: process.env.ADSENSE_ID,
+        head: false, // Optional
+      },
+    },
   ],
 }
