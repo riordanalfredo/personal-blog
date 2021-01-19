@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react"
+import { useLayoutEffect, useState } from 'react'
 
 const useMediaQuery = () => {
   const [screenSize, setScreenSize] = useState([0, 0])
@@ -7,16 +7,16 @@ const useMediaQuery = () => {
     function updateScreenSize() {
       setScreenSize([window.innerWidth, window.innerHeight])
     }
-    window.addEventListener("resize", updateScreenSize)
+    window.addEventListener('resize', updateScreenSize)
     updateScreenSize()
-    return () => window.removeEventListener("resize", updateScreenSize)
+    return () => window.removeEventListener('resize', updateScreenSize)
   }, [])
 
   return screenSize
 }
 
 const getIsMobileBoolean = width => {
-  return width < 769 ? true : false
+  return width <= 768 ? true : false
 }
 
 export { useMediaQuery, getIsMobileBoolean }
