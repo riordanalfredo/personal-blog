@@ -5,6 +5,7 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import AdSense from 'react-adsense'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -52,6 +53,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         />
         <footer>
           <Bio />
+          <div>
+            <AdSense.Google
+              client={process.env.ADSENSE_ID}
+              slot="7806394673"
+              style={{ width: 500, height: 300 }}
+              format=""
+            />
+          </div>
         </footer>
       </article>
 
