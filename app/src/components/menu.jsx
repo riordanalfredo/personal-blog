@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "gatsby"
-import Subtitle from './subtitle'
 import "./global.css"
 
 const Menu = () => {

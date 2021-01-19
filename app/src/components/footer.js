@@ -1,5 +1,4 @@
 import React from 'react'
-import { scale } from '../utils/typography'
 
 const Footer = () => {
   return (

@@ -6,8 +6,7 @@
  */
 
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
-import { ImLinkedin as LinkedIn } from '@react-icons/all-files/im/ImLinkedin'
+import { useStaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
 import { rhythm } from '../utils/typography'

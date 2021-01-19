@@ -6,7 +6,6 @@ import SEO from '../components/seo'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 // Sections
-import creditsData from './about-me/credits-data'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
@@ -51,7 +50,7 @@ const AboutPage = ({ data, location }) => {
           society.
         </blockquote>
       </div>
-      <CreditSection data={creditsData} />
+      <CreditSection />
     </Layout>
   )
 }
