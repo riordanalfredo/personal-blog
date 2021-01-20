@@ -20,7 +20,6 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
     const categoryKeys = Object.keys(categories)
     // push all related post
     categoryKeys.forEach(c => {
-      console.log(categories[c].isSelected)
       if (categories[c].isSelected === true) {
         arr.push(posts[c])
       } else {
