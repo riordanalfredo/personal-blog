@@ -24,6 +24,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -61,12 +67,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `${process.env.GOOGLE_ANALYTICS_ID}`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -87,17 +87,24 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    //For firebase later
+    // {
+    //   resolve: 'gatsby-plugin-firebase',
+    //   options: {
+    //     credentials: {
+    //       apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+    //       authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
+    //       projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
+    //       storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
+    //       messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
+    //       appId: process.env.GATSBY_FIREBASE_APP_ID,
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     'gatsby-plugin-dark-mode',
     `gatsby-plugin-postcss`,
-    {
-      resolve: `@isamrish/gatsby-plugin-google-adsense`,
-      options: {
-        googleAdClientId: process.env.ADSENSE_ID,
-        head: false, // Optional
-      },
-    },
   ],
 }
