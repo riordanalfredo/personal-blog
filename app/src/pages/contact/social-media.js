@@ -4,45 +4,49 @@ import { ImWhatsapp as WA } from '@react-icons/all-files/im/ImWhatsapp'
 import { MdEmail as Email } from '@react-icons/all-files/md/MdEmail'
 import { FaLinkedinIn as LinkedIn } from '@react-icons/all-files/fa/FaLinkedinIn'
 import { ImGithub as Github } from '@react-icons/all-files/im/ImGithub'
+import { useMediaQuery, getIsMobileBoolean } from '../../utils/mobile'
 
 const SocialMediaContainer = () => {
   let uri = 'Hello from /me website'
   const res = encodeURI(uri)
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
 
   const data = [
     {
-      text: 'Email me',
+      text: 'Email',
       link: 'mailto:riordan.alfredo@gmail.com',
-      icon: <Email size={70} />,
+      icon: <Email size={isMobile ? 40 : 70} />,
     },
     {
-      text: 'Connect me in LinkedIn',
+      text: 'LinkedIn',
       link: 'https://www.linkedin.com/in/riordan-alfredo/',
-      icon: <LinkedIn size={70} />,
+      icon: <LinkedIn size={isMobile ? 40 : 70} />,
     },
     {
-      text: 'Chat in WhatsApp',
+      text: ' WhatsApp',
       link: `https://wa.me/61449091145/?text=${res}`,
-      icon: <WA size={70} />,
+      icon: <WA size={isMobile ? 40 : 70} />,
     },
     {
-      text: 'Check my repository',
+      text: 'Github',
       link: 'https://github.com/riordanalfredo?tab=repositories',
-      icon: <Github size={70} />,
+      icon: <Github size={isMobile ? 40 : 70} />,
     },
   ]
 
+  const styles = {
+    grid: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridGap: isMobile ? '1rem' : '5rem',
+      textAlign: 'center',
+      marginTop: '3vh',
+    },
+  }
   return (
     <div className={'contact-temp'}>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gridGap: 20,
-          textAlign: 'center',
-          marginTop: '3vh',
-        }}
-      >
+      <div style={styles.grid}>
         {data.map((d, index) => (
           <SocialMedia key={index} data={d} />
         ))}

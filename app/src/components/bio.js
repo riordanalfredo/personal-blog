@@ -28,7 +28,7 @@ const Bio = () => {
             summary
           }
           social {
-            instagram
+            linkedin
           }
         }
       }
@@ -56,9 +56,16 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+
       <p>
-        Written by <strong>{author.name}</strong>, {author.summary} -{' '}
-        <a href={`https://instagram.com/${social.instagram}`}>instagram</a>
+        Written by <strong>{author.name}</strong> - {author.summary}(
+        <a
+          href={`https://linkedin.com/in/${social.linkedin}`}
+          style={{ boxShadow: 'none' }}
+        >
+          LinkedIn
+        </a>
+        )
       </p>
     </div>
   )

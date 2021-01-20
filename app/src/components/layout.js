@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { scale } from '../utils/typography'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
@@ -6,56 +6,86 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import { Toggler } from './toggler'
 import Menu from './menu'
 import Footer from './footer'
+import Subtitle from './subtitle'
+import Burger from './burger'
+import MobileMenu from './mobile-menu'
 import './global.css'
 
 const Layout = ({ location, title, children }) => {
+  const Title = ({ text }) => (
+    <Link style={{ boxShadow: `none` }} to={`/`}>
+      {text}
+    </Link>
+  )
+  const [open, setOpen] = useState(false)
+  const myName = 'RIORDAN ALFREDO'
   const [width] = useMediaQuery()
   const isMobile = getIsMobileBoolean(width)
+  const styles = {
+    outer: {
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
+      transition: 'color 0.2s ease-out, background 0.2s ease-out',
+      minHeight: '100vh',
+    },
+
+    mobileHeader: {
+      display: 'flex',
+      justifyContent: 'space-evenly',
+      alignItems: 'center',
+      margin: '1.5rem 0.5rem 0 0.5rem',
+    },
+    desktopTitle: {
+      ...scale(1),
+      margin: 0,
+      fontFamily: `Montserrat, sans-serif`,
+    },
+    mobileTitle: {
+      fontSize: '1.3rem',
+      margin: 0,
+      fontFamily: `Montserrat, sans-serif`,
+    },
+  }
+
   const desktopHeader = (
     <>
-      <h1
-        style={{
-          ...scale(1),
-          marginBottom: 0,
-          marginTop: 0,
-          fontFamily: `Montserrat, sans-serif`,
-        }}
-        className="nudge"
-      >
-        <Link
-          style={{
-            color: 'var(--textTitle)',
-            boxShadow: `none`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
+      <h1 style={styles.desktopTitle}>
+        <Title text={isMobile ? 'BLOG' : title} />
       </h1>
-      {/* <Subtitle style={{ marginBottom: 0, marginTop: 0 }} /> */}
-
+      <Subtitle style={{ margin: 0 }} />
       <Menu />
     </>
   )
 
+  const mobileHeader = (
+    <>
+      <h1 style={styles.mobileTitle}>
+        <Title text={myName} />
+      </h1>
+    </>
+  )
+
   return (
-    <div
-      style={{
-        backgroundColor: 'var(--bg)',
-        color: 'var(--textNormal)',
-        transition: 'color 0.2s ease-out, background 0.2s ease-out',
-        minHeight: '100vh',
-      }}
-    >
+    <div style={styles.outer}>
       <div className="sidebar">
-        <div
-          className="md:h-screen p-4 flex flex-col justify-center items-center"
-          style={{ minHeight: 200 }}
-        >
-          <Toggler />
-          {isMobile ? 'menubar' : desktopHeader}
-        </div>
+        {isMobile ? (
+          <div style={styles.mobileHeader}>
+            {/**mobile header*/}
+            <Burger open={open} setOpen={setOpen} />
+            {mobileHeader}
+            <Toggler />
+          </div>
+        ) : (
+          <div
+            className="md:h-screen p-4 flex flex-col justify-center items-center"
+            style={{ minHeight: 200 }}
+          >
+            <Toggler />
+            {desktopHeader}
+          </div>
+        )}
       </div>
+      {isMobile ? <MobileMenu open={open}>{desktopHeader}</MobileMenu> : null}
 
       <div className="main-content relative">
         <main>{children}</main>

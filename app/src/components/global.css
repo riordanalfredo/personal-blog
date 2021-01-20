@@ -7,9 +7,10 @@
 body {
   --bg: #fff;
   --lightBg: #f5f5f5;
-  --textNormal: #1d1d1d;
+  --textNormal: rgb(29, 29, 29);
   --textTitle: #23395d;
-  --textLink: #4a76be;
+  --textTitle2: #726294;
+  --textLink: #3a91f9;
   --hover: #23395d;
   --shadow: rgba(63, 63, 63, 0.5);
   --hr: hsla(0, 20%, 1%, 0.2);
@@ -22,8 +23,9 @@ body.dark {
 
   --bg: #1e1e1e;
   --lightBg: #0f0f0f;
-  --textNormal: #e0e0e0;
-  --textTitle: rgb(255, 227, 170);
+  --textNormal: rgb(224, 224, 224);
+  --textTitle2: #c39d63;
+  --textTitle: rgb(255, 226, 168);
   --textLink: rgb(255, 227, 170);
   --hover: rgb(255, 242, 215);
   --shadow: #0f0f0f;
@@ -31,9 +33,9 @@ body.dark {
 }
 
 code {
-  color: var(--bg);
-  background-color: var(--textTitle);
-  padding: 2px 6px;
+  color: var(--textNormal);
+  background-color: var(--lightBg);
+  padding: 4px 6px;
   margin: 1px 0px;
   border-radius: 0.3em;
 }
@@ -50,7 +52,8 @@ a.gatsby-resp-image-link:hover {
 
 /* Slightly moving up the object */
 .nudge:hover {
-  transform: translateY(-0.1rem);
+  /* transform: translateY(-0.1rem); */
+  opacity: 0.5;
 }
 
 /* For the blog posts*/
@@ -100,8 +103,17 @@ a.gatsby-resp-image-link:hover {
 }
 
 h1 {
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--textTitle),
+    var(--textTitle2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: var(--textTitle);
-  transition: 0.3s;
+  font-size: xx-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h2,
@@ -149,36 +161,46 @@ button {
   outline: 0;
 }
 .sidebar {
-  height: 200px;
+  height: 80px;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   overflow-x: hidden;
   text-align: center;
   background-color: var(--lightBg);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .main-content {
   background-color: var(--bg);
   position: absolute;
-  top: 200px;
-  z-index: 10;
+  top: 80px;
+  z-index: 1;
+  width: 100%;
   padding: 0 20px 0;
   margin-left: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .sidebar {
     height: 100vh;
     width: 300px;
   }
   .main-content {
-    padding: 0 150px 0;
+    padding: 0 180px 0;
     height: 100vh;
     width: calc(100% - 300px);
     margin-left: 300px;
     top: 0;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  p {
+    font-size: 85%;
+    line-height: 250%;
   }
 }

@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 const PageNavigation = ({ context }) => {
   const { currentPage, numPages } = context
 
-  console.log(context)
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()

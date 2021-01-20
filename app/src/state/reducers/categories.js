@@ -6,17 +6,20 @@ function selectCategory(map, action) {
   const newMap = { ...map }
   const category = action.payload
   const arr = Object.keys(newMap)
-  const currentStatuses = arr.map(key => newMap[key].isSelected)
-  if (currentStatuses.includes(false)) {
-    // the rest
-    newMap[category].isSelected = !newMap[category].isSelected
-  } else {
-    // select it for the first time
-    arr.forEach(cat => {
-      if (cat !== category) newMap[cat].isSelected = false
-    })
-    newMap[category].isSelected = true
-  }
+  // === NOTE: Do not delete the code below, use this for multiple category selection
+  // copy the array that consists only of the selected key
+  // const currentStatuses = arr.map(key => newMap[key].isSelected)
+  // if (currentStatuses.includes(false)) {
+  //   // the rest
+  //   newMap[category].isSelected = !newMap[category].isSelected
+  // } else {
+  //===
+  // select it for the first time
+  arr.forEach(cat => {
+    if (cat !== category) newMap[cat].isSelected = false
+  })
+  newMap[category].isSelected = true
+  // }
   return newMap
 }
 

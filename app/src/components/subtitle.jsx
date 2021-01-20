@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Subtitle = () => {
+const Subtitle = ({style}) => {
     const textStyle = {
         // fontStyle:'italic',
         color: 'darkgrey',
-        fontFamily: 'Montserrat, sans-serif'
+        fontFamily: 'Montserrat, sans-serif',
+        marginBottom: 0,
+        ...style
     }
     return(
     <div>

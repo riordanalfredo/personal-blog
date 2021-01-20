@@ -11,8 +11,8 @@ Wordpress2016.overrideThemeStyles = () => {
     'a:hover': {
       color: 'var(--hover)',
       textDecoration: 'none',
-      textShadow:
-        '1px 1px 0 var(--bg), -1px 1px 0 var(--bg), 2px 0 0 var(--bg), -2px 0 0 var(--bg)',
+      // textShadow:
+      //   '1px 1px 0 var(--bg), -1px 1px 0 var(--bg), 2px 0 0 var(--bg), -2px 0 0 var(--bg)',
       boxShadow: 'inset 0 -1px 0 0 var(--bg), inset 0 -3px 0 0 var(--hover)',
     },
     // gatsby-remark-autolink-headers - don't underline when hidden

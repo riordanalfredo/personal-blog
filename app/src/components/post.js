@@ -7,15 +7,14 @@ const Post = ({ node, index, title }) => {
   const styles = {
     article: {
       transition: '0.3s',
-      width: '50vw',
-      minWidth: 400,
+      minWidth: 320,
     },
   }
   return (
     <Fragment key={index}>
       <Link
         style={{ boxShadow: `none`, color: 'var(--textTitle)' }}
-        to={`posts${node.fields.slug}`}
+        to={`${node.fields.slug}`}
       >
         <article
           key={node.fields.slug}

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "gatsby"
-import Subtitle from './subtitle'
 import "./global.css"
 
 const Menu = () => {
@@ -12,7 +11,6 @@ const Menu = () => {
 
   return (
     <div>
-      <Subtitle/>
       {menu.map((item,index) =>
       <div key={index}>
         <Link to={item.link} style={{ boxShadow: `none`}} >

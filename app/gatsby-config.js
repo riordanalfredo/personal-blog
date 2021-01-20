@@ -1,20 +1,34 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development'
+console.log(`Using environment config: '${activeEnv}'`)
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
   pathPrefix: '/app',
   siteMetadata: {
     title: `RIORDAN ALFREDO`,
     author: {
-      name: `@riordanalfredo`,
+      name: `Riordan Dervin Alfredo`,
       summary: `a 🦥 software engineer & educator`,
     },
     social: {
       instagram: `riordanalfredo`,
       twitter: `riordanalfredo`,
+      linkedin: `riordan-alfredo`,
     },
     description: `Full-stack software engineer (React-Django), software educator, and avid reader.`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
     defaultImage: 'images/bg.jpeg',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,12 +67,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-62251910-1`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -79,6 +87,20 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    //For firebase later
+    // {
+    //   resolve: 'gatsby-plugin-firebase',
+    //   options: {
+    //     credentials: {
+    //       apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+    //       authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
+    //       projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
+    //       storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
+    //       messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
+    //       appId: process.env.GATSBY_FIREBASE_APP_ID,
+    //     },
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,

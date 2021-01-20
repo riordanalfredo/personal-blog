@@ -20,10 +20,11 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
     const categoryKeys = Object.keys(categories)
     // push all related post
     categoryKeys.forEach(c => {
-      console.log(categories[c].isSelected)
-      categories[c].isSelected === true
-        ? arr.push(posts[c])
-        : (isNotSelectedCounter += 1)
+      if (categories[c].isSelected === true) {
+        arr.push(posts[c])
+      } else {
+        isNotSelectedCounter += 1
+      }
     })
     // flatten and then sort posts
     const result = [...new Set(arr.flat())].sort()
@@ -51,9 +52,9 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
         })
       ) : (
         <h3>
-          Hmmm.. nothing to see here.. I think you need to select a category{' '}
+          Nothing to see here, please select another category{' '}
           <span role="img" aria-label="investigate">
-            🧐
+            😊
           </span>
         </h3>
       )}

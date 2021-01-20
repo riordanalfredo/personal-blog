@@ -1,9 +1,10 @@
 // Gatsby supports TypeScript natively!
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useEffect, Provider } from 'react'
 import { PageProps, Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import PageNavigation from '../components/page-navigation'
+import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 import FiltersContainer from '../state/containers/filters'
 import PostsContainer from '../state/containers/posts'
@@ -37,6 +38,8 @@ type Data = {
 }
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
   const allPosts = data.allMarkdownRemark.edges || []
   const siteTitle = data.site.siteMetadata.title
 
@@ -51,7 +54,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <FiltersContainer />
+      {isMobile ? null : <FiltersContainer />}
       <div style={styles.outer}>
         <PostsContainer allPosts={allPosts} />
       </div>
