@@ -87,6 +87,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
     //For firebase later
     // {
     //   resolve: 'gatsby-plugin-firebase',
