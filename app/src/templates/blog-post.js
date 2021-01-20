@@ -76,7 +76,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {previous && (
               <div style={styles.prev}>
                 <small>Older Post</small>
-                <Link to={`/posts${previous.fields.slug}`} rel="prev">
+                <Link to={`${previous.fields.slug}`} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               </div>
@@ -86,7 +86,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {next && (
               <div style={styles.next}>
                 <small>Newer Post</small>
-                <Link to={`/posts${next.fields.slug}`} rel="next">
+                <Link to={`${next.fields.slug}`} rel="next">
                   {next.frontmatter.title} →
                 </Link>
               </div>
