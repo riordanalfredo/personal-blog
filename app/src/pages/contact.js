@@ -28,12 +28,7 @@ const ContactPage = ({ data, location }) => {
       <div style={styles.outer}>
         <h1 align="center">KEEP IN TOUCH</h1>
         <div style={styles.inner}>
-          <p
-            style={{
-              fontFamily: 'Montserrat, sans-serif',
-              textAlign: 'justify',
-            }}
-          >
+          <p style={{ textAlign: 'justify' }}>
             Hello, thank you for the willingness to reaching me out! There are
             only few steps away. Please write down <code>name</code>,{' '}
             <code>email</code>, and your <code>message</code> below.

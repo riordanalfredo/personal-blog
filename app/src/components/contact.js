@@ -14,14 +14,10 @@ const Contact = ({}) => {
     name: 'react-hook-form',
     action: '/thanks',
     honeypotName: 'bot-field',
-    onSuccess: (response, context) => {
-      console.log(response, context)
-      console.log('Successfully sent form data to Netlify Server')
-    },
+    onSuccess: (response, context) => {},
   })
   const onSubmit = data => {
     netlify.handleSubmit(null, data)
-    console.log(data)
     reset()
   }
 
@@ -30,6 +26,30 @@ const Contact = ({}) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    alert: {
+      success: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 50,
+        borderRadius: 5,
+        padding: '0 2rem',
+        margin: '0 auto',
+        background: 'linear-gradient(90deg, #007d55, #0fb387)',
+      },
+      fail: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 50,
+        borderRadius: 5,
+        padding: '0 2rem',
+        margin: '0 auto',
+        background: 'linear-gradient(90deg, #953f54,#8f5862)',
+      },
     },
   }
   const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i
@@ -98,6 +118,7 @@ const Contact = ({}) => {
           rows={4}
           cols={45}
           placeholder="Hello!"
+          ref={register}
         ></textarea>
       </div>
     </>
@@ -108,16 +129,23 @@ const Contact = ({}) => {
       <NetlifyFormProvider {...netlify}>
         <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
           {netlify.success && (
-            <p sx={{ variant: 'alerts.success', p: 3 }}>
-              Thanks for contacting me!
-            </p>
+            <div style={styles.alert.success}>
+              <p style={{ color: 'white', margin: 0 }}>
+                Sent! Thank you for contacting me.
+              </p>
+            </div>
           )}
           {netlify.error && (
-            <p sx={{ variant: 'alerts.muted', p: 3 }}>
-              Sorry, we could not reach servers. Because it only works on
-              Netlify, our GitHub demo does not provide a response.
-            </p>
+            <div style={styles.alert.fail}>
+              <p>Sorry, we could not reach servers. Please try again.</p>
+            </div>
           )}
+          <div style={styles.alert.fail}>
+            <p style={{ color: 'white', margin: 0 }}>
+              Sorry, we could not reach servers. Please try again.
+            </p>
+          </div>
+
           <Honeypot />
           <div style={styles.form}>
             {InputName}
