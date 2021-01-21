@@ -5,7 +5,6 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
-import AdSense from 'react-adsense'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -37,10 +36,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       display: `block`,
       marginBottom: rhythm(1),
       textAlign: 'center',
-    },
-    ads: {
-      textAlign: 'center',
-      margin: '2rem 0',
     },
   }
 
@@ -94,19 +89,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-      <div style={styles.ads}>
-        <small>
-          I attached a small advertisement below to support this blog. Thank you
-          for visiting 🙏
-        </small>
-        <AdSense.Google
-          client={process.env.GATSBY_ADSENSE_CLIENT_ID}
-          slot="6679828929"
-          style={{ display: 'block' }}
-          format="auto"
-          responsive="true"
-        />
-      </div>{' '}
+      {/* TODO: place ads here after I already have strong contents <Ads /> */}
     </Layout>
   )
 }
