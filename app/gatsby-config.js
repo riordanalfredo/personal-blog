@@ -11,7 +11,10 @@ module.exports = {
     title: `RIORDAN ALFREDO`,
     author: {
       name: `Riordan Dervin Alfredo`,
-      summary: `a 🦥 software engineer & educator`,
+      summary: `Riordan D. Alfredo (Rio) is a full-stack software engineer and software educator 🦥. He
+      is passionate about sharing ideas in leadership, programming, and learning. He loves to bring the 
+      best out of people to achieve their dreams & goals. Hobbies including astrology, psychology, playing 
+      D&D and games.`,
     },
     social: {
       instagram: `riordanalfredo`,

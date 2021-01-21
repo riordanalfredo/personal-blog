@@ -21,7 +21,7 @@ input[type='submit'] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
   font-family: Montserrat, sans-serif;
 }
 

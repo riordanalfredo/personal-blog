@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Tags from '../components/tags'
 import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
+import './post.css'
 
 const Post = ({ node, index, title }) => {
   const styles = {
@@ -23,10 +24,8 @@ const Post = ({ node, index, title }) => {
         >
           <header>
             <h3
-              style={{
-                color: `inherit`,
-                marginBottom: rhythm(1 / 4),
-              }}
+              className={'text-gradient'}
+              style={{ marginBottom: rhythm(1 / 4) }}
             >
               {title}
             </h3>

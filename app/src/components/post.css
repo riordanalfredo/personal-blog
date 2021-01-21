@@ -1,0 +1,7 @@
+.text-gradient {
+  color: var(--textTitle);
+}
+
+.text-gradient:hover {
+  color: var(--textLink);
+}

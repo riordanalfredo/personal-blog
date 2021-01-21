@@ -6,17 +6,17 @@
  */
 
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
-
+import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import { rhythm } from '../utils/typography'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-photo.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -36,20 +36,26 @@ const Bio = () => {
   `)
 
   const { author, social } = data.site.siteMetadata
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
+
   return (
     <div
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
+        justifyContent: 'center',
+        flexDirection: isMobile ? 'column' : 'row',
+        alignItems: 'center',
       }}
     >
       <Image
-        // fixed={data.avatar.childImageSharp.fixed}
+        fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
-          minWidth: 50,
+          minWidth: 100,
           borderRadius: `100%`,
         }}
         imgStyle={{
@@ -57,16 +63,29 @@ const Bio = () => {
         }}
       />
 
-      <p>
-        Written by <strong>{author.name}</strong> - {author.summary}(
-        <a
-          href={`https://linkedin.com/in/${social.linkedin}`}
-          style={{ boxShadow: 'none' }}
-        >
-          LinkedIn
-        </a>
-        )
-      </p>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: isMobile ? 'center' : 'flex-start',
+        }}
+      >
+        <p style={{ color: 'var(--textTitle)', margin: 0 }}>
+          Written by <strong>{author.name}</strong>
+        </p>
+        <small style={{ marginBottom: '0.5rem' }}>{author.summary}</small>
+        <small>
+          Connect with me on{' '}
+          <a
+            href={`https://linkedin.com/in/${social.linkedin}`}
+            style={{ boxShadow: 'none' }}
+          >
+            LinkedIn
+          </a>
+          {', '}
+          or you can find out more in <Link to="/about-me">About Me</Link>
+        </small>
+      </div>
     </div>
   )
 }

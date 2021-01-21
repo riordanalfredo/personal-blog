@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
+import './post.css'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]
@@ -51,7 +52,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
           return <Post node={node} index={index} title={title} />
         })
       ) : (
-        <h3>
+        <h3 className={'text-gradient'}>
           Nothing to see here, please select another category{' '}
           <span role="img" aria-label="investigate">
             😊
