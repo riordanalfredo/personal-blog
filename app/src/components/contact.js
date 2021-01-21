@@ -137,14 +137,11 @@ const Contact = ({}) => {
           )}
           {netlify.error && (
             <div style={styles.alert.fail}>
-              <p>Sorry, we could not reach servers. Please try again.</p>
+              <p style={{ color: 'white', margin: 0 }}>
+                Sorry, we could not reach servers. Please try again.
+              </p>
             </div>
           )}
-          <div style={styles.alert.fail}>
-            <p style={{ color: 'white', margin: 0 }}>
-              Sorry, we could not reach servers. Please try again.
-            </p>
-          </div>
 
           <Honeypot />
           <div style={styles.form}>
