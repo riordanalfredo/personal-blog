@@ -68,20 +68,16 @@ const Bio = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: isMobile ? 'center' : 'flex-start',
+          maxWidth: 800,
         }}
       >
-        <p style={{ color: 'var(--textTitle)', margin: 0 }}>
+        <p className="bio" style={{ margin: 0 }}>
           Written by <strong>{author.name}</strong>
         </p>
         <small style={{ marginBottom: '0.5rem' }}>{author.summary}</small>
         <small>
           Connect with me on{' '}
-          <a
-            href={`https://linkedin.com/in/${social.linkedin}`}
-            style={{ boxShadow: 'none' }}
-          >
-            LinkedIn
-          </a>
+          <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>
           {', '}
           or you can find out more in <Link to="/about-me">About Me</Link>
         </small>

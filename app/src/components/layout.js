@@ -49,7 +49,7 @@ const Layout = ({ location, title, children }) => {
 
   const desktopHeader = (
     <>
-      <h1 style={styles.desktopTitle}>
+      <h1 className="title" style={styles.desktopTitle}>
         <Title text={isMobile ? 'BLOG' : title} />
       </h1>
       <Subtitle style={{ margin: 0 }} />
@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
 
   const mobileHeader = (
     <>
-      <h1 style={styles.mobileTitle}>
+      <h1 className="title" style={styles.mobileTitle}>
         <Title text={myName} />
       </h1>
     </>
