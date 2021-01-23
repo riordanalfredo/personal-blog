@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { filterCategories } from '../utils/filter-categories'
 import './filter-card.css'
 import './global.css'
 
@@ -11,41 +12,61 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     selectFunction(id)
   }
 
-  const outerStyle = {
-    width: 150,
-    minWidth: 100,
-    height: 150,
+  const styles = {
+    outer: {
+      width: 112,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    outerCircle: {
+      width: 112,
+      height: 112,
+      borderRadius: `100%`,
+      background: 'linear-gradient(45deg, var(--textTitle2), var(--textTitle))',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  }
+  const innerCircle = {
+    width: 100,
+    height: 100,
     borderRadius: `100%`,
     cursor: 'pointer',
-    background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${style.imgUrl})`,
+    background: `url(${style.imgUrl})`,
+    backgroundColor: 'white',
+    color: 'red',
     backgroundPosition: 'center top',
     backgroundSize: 'cover',
+    transition: '0.3s',
   }
   const selectedStyle = {
-    ...outerStyle,
-    color: 'blue',
+    ...innerCircle,
     opacity: 1,
   }
   const nonSelectedStyle = {
-    ...outerStyle,
-    opacity: 0.3,
-    // border: '5px solid var(--textNormal)',
+    ...innerCircle,
+    opacity: 0.7,
   }
 
   return (
-    <button
-      id={id}
-      style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
-      className="filter-card"
-      onClick={selectCategory}
-    >
+    <div style={styles.outer}>
+      <div style={styles.outerCircle} className="coin">
+        <button
+          id={id}
+          style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
+          onClick={selectCategory}
+        />
+      </div>
       <p
-        style={{ fontFamily: 'Montserrat, sans-serif' }}
+        style={{ margin: '0.5rem 0', fontFamily: 'Montserrat, sans-serif' }}
         className={categories[id].isSelected ? 'visible' : ''}
       >
         {text}
       </p>
-    </button>
+    </div>
   )
 }
 export default FilterCard

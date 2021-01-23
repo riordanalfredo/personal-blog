@@ -8,10 +8,9 @@ const Intro = () => {
       padding: '2rem',
       borderBottomLeftRadius: '1rem',
       borderBottomRightRadius: '1rem',
+      margin: '0 auto',
     },
-    title: {
-      marginBottom: 0,
-    },
+    title: {},
     body: {
       textAlign: 'justify',
       textJustify: 'inter-word',
@@ -20,7 +19,12 @@ const Intro = () => {
   }
   return (
     <div style={styles.outer}>
-      <h3 style={styles.title}>Hello, ICT enthusiasts!</h3>
+      <h2 style={styles.title}>
+        Welcome!{' '}
+        <span role="img" aria-label="congratulations">
+          🎉
+        </span>
+      </h2>
       <p style={styles.body}>
         First of all, thanks for visiting this space{' '}
         <span role="img" aria-label="rocket">

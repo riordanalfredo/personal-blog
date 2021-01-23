@@ -5,6 +5,7 @@ import "./global.css"
 const Menu = () => {
 
   const menu = [
+    { text: 'Posts', link: '/'},
     { text: 'About Me', link: '/about-me' },
     { text: 'Contact', link: '/contact' },
   ]

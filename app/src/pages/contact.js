@@ -23,7 +23,7 @@ const ContactPage = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={'BLOG'}>
+    <Layout location={location} title={'RIORDAN ALFREDO'}>
       <SEO title="Contact Me" />
       <div style={styles.outer}>
         <h1 align="center">KEEP IN TOUCH</h1>

@@ -18,9 +18,7 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
     justifyContent: `space-between`,
     flexWrap: `wrap`,
     paddingTop: `1rem`,
-    minWidth: `750px`,
-    marginLeft: 50,
-    minHeight: '280px',
+    minWidth: `600px`,
     top: 0,
     alignItems: 'center',
     zIndex: `1`,
@@ -29,18 +27,21 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
   // Elements
 
   return (
-    <div style={outerStyle} className={'filters'}>
-      {Object.keys(categories).map((val, index) => {
-        return (
-          <FilterCard
-            key={index}
-            categories={categories}
-            id={val}
-            selectFunction={selectCategory}
-          />
-        )
-      })}
-      <ResetButton isActive={isActive} resetFilter={resetFilter} />
+    <div>
+      <h2 style={{ marginTop: '5.5rem', marginBottom: 0 }}>Filter Articles:</h2>
+      <div style={outerStyle} className={'filters'}>
+        {Object.keys(categories).map((val, index) => {
+          return (
+            <FilterCard
+              key={index}
+              categories={categories}
+              id={val}
+              selectFunction={selectCategory}
+            />
+          )
+        })}
+        <ResetButton isActive={isActive} resetFilter={resetFilter} />
+      </div>
     </div>
   )
 }

@@ -40,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   }
 
   return (
-    <Layout location={location} title="BLOG">
+    <Layout location={location} title="RIORDAN ALFREDO">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}

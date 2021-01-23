@@ -1,11 +1,11 @@
-import astronomyPic from '../assets/filter/astronomy.jpg'
-import businessPic from '../assets/filter/business.jpg'
-import educationPic from '../assets/filter/education.jpg'
-import technologyPic from '../assets/filter/technology.jpg'
+import astronomyPic from '../assets/filters/science.svg'
+import businessPic from '../assets/filters/business.svg'
+import educationPic from '../assets/filters/learning.svg'
+import technologyPic from '../assets/filters/software.svg'
 
 export const filterCategories = {
   business: {
-    text: 'Business, Leadership, Management',
+    text: 'Business',
     categories: ['art-of-war', 'leadership', 'management', 'business'],
     isSelected: true,
     style: {
@@ -13,15 +13,15 @@ export const filterCategories = {
     },
   },
   education: {
-    text: 'Education, Learning, and Teaching',
-    categories: ['study', 'habit', 'teaching'],
+    text: 'Learning',
+    categories: ['study', 'habit', 'teaching', 'philosophy'],
     isSelected: true,
     style: {
       imgUrl: educationPic,
     },
   },
   technology: {
-    text: 'Software and IT',
+    text: 'Programming',
     categories: [
       'code',
       'iot',
@@ -37,7 +37,7 @@ export const filterCategories = {
     },
   },
   science: {
-    text: 'Science, Astronomy and Astrology',
+    text: 'Astrology',
     categories: ['astrology', 'capricorn'],
     isSelected: true,
     style: {
