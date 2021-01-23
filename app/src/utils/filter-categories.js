@@ -4,14 +4,6 @@ import educationPic from '../assets/filter/education.jpg'
 import technologyPic from '../assets/filter/technology.jpg'
 
 export const filterCategories = {
-  astronomy: {
-    text: 'Astronomy and Astrology',
-    categories: ['astrology', 'capricorn'],
-    isSelected: true,
-    style: {
-      imgUrl: astronomyPic,
-    },
-  },
   business: {
     text: 'Business, Leadership, Management',
     categories: ['art-of-war', 'leadership', 'management', 'business'],
@@ -42,6 +34,14 @@ export const filterCategories = {
     isSelected: true,
     style: {
       imgUrl: technologyPic,
+    },
+  },
+  science: {
+    text: 'Science, Astronomy and Astrology',
+    categories: ['astrology', 'capricorn'],
+    isSelected: true,
+    style: {
+      imgUrl: astronomyPic,
     },
   },
 }

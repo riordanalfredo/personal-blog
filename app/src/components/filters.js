@@ -19,10 +19,10 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
     flexWrap: `wrap`,
     paddingTop: `1rem`,
     minWidth: `750px`,
-    marginLeft: 10,
+    marginLeft: 50,
     minHeight: '280px',
-    height: `35vh`,
     top: 0,
+    alignItems: 'center',
     zIndex: `1`,
   }
 

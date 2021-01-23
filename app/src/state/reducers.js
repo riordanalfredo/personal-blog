@@ -11,7 +11,7 @@ import posts from './reducers/posts'
 //   },
 //   posts:{
 //     // the array is list of post index
-//     astronomy: [0,1,2],
+//     science: [0,1,2],
 //     business: [],
 //     ...
 //   }

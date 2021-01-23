@@ -5,6 +5,7 @@ const ResetButton = ({ isActive, resetFilter }) => {
     alignSelf: `center`,
     textOrientation: 'upright',
     writingMode: `vertical-lr`,
+    fontFamily: 'Montserrat, sans-serif',
   }
   const inactiveStyle = {
     ...defaultStyle,

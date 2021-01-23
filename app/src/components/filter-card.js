@@ -12,10 +12,10 @@ const FilterCard = ({ categories, id, selectFunction }) => {
   }
 
   const outerStyle = {
-    width: '10vw',
-    minWidth: 180,
-    height: 250,
-    borderRadius: `10px`,
+    width: 150,
+    minWidth: 100,
+    height: 150,
+    borderRadius: `100%`,
     cursor: 'pointer',
     background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${style.imgUrl})`,
     backgroundPosition: 'center top',

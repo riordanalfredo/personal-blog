@@ -64,8 +64,8 @@ a.gatsby-resp-image-link:hover {
 .box {
   position: relative;
   display: inline-block;
-  width: 60vw;
   min-height: 5vh;
+  width: 60vw;
   padding: 0 20px 20px 20px;
   margin-bottom: 0.5rem;
   background-color: var(--bg);

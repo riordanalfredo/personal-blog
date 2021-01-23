@@ -46,6 +46,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
 
   return (
     <Fragment>
+      <h1 style={{ margin: 0 }}>ARTICLES</h1>
       {!!currentPosts.length ? (
         currentPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
