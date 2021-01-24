@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { filterCategories } from '../utils/filter-categories'
 import './filter-card.css'
 import './global.css'
 
@@ -38,8 +37,9 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     background: `url(${style.imgUrl})`,
     backgroundColor: 'white',
     color: 'red',
-    backgroundPosition: 'center top',
-    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '80%',
     transition: '0.3s',
   }
   const selectedStyle = {
