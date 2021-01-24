@@ -12,16 +12,8 @@ export const filterCategories = {
       imgUrl: businessPic,
     },
   },
-  education: {
-    text: 'Learning',
-    categories: ['study', 'habit', 'teaching', 'philosophy'],
-    isSelected: true,
-    style: {
-      imgUrl: educationPic,
-    },
-  },
   technology: {
-    text: 'Programming',
+    text: 'Software',
     categories: [
       'code',
       'iot',
@@ -36,9 +28,17 @@ export const filterCategories = {
       imgUrl: technologyPic,
     },
   },
+  education: {
+    text: 'Learning',
+    categories: ['study', 'habit', 'teaching', 'philosophy'],
+    isSelected: true,
+    style: {
+      imgUrl: educationPic,
+    },
+  },
   science: {
-    text: 'Astrology',
-    categories: ['astrology', 'capricorn'],
+    text: 'Other',
+    categories: ['astrology', 'astronomy', 'dnd'],
     isSelected: true,
     style: {
       imgUrl: astronomyPic,
