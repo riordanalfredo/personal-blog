@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Fade from 'react-reveal/Fade'
-import './intro.css'
 
 const Intro = () => {
   const styles = {
@@ -37,13 +36,16 @@ const Intro = () => {
         <span role="img" aria-label="rocket">
           🚀
         </span>
-        ! It is intended as my personal journal about my journey to be a
-        business leader in the information, computer, and technology (ICT)
-        industry. It contains my thoughts, ideas, stories, and facts that are
-        categorised into business, software, and learning topics. Please don't
-        hesitate to <Link to="/contact">contact me</Link> for any interesting
-        opportunities (talks, teaching, development contract, and etc.). I hope
-        you enjoy reading them as much as I do writing them{' '}
+        ! It is intended as my personal journal about{' '}
+        <b>
+          my journey to be a business leader in the information, computer, and
+          technology (ICT) industry.
+        </b>{' '}
+        It contains my thoughts, ideas, stories, and facts that are categorised
+        into business, software, and learning topics. Please don't hesitate to{' '}
+        <Link to="/contact">contact me</Link> for any interesting opportunities
+        (talks, teaching, development contract, and etc.). I hope you enjoy
+        reading them as much as I do writing them{' '}
         <span role="img" aria-label="smile">
           😄
         </span>

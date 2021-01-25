@@ -74,7 +74,7 @@ const Bio = () => {
         <p className="bio" style={{ margin: 0 }}>
           Written by <strong>{author.name}</strong>
         </p>
-        <p style={{ marginBottom: '0.5rem' }}>{author.summary}</p>
+        <small style={{ marginBottom: '0.5rem' }}>{author.summary}</small>
         <small>
           Connect with me on{' '}
           <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>

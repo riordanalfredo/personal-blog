@@ -137,6 +137,7 @@ blockquote {
 
 p {
   color: var(--textNormal);
+  font-size: large;
 }
 
 small {
