@@ -45,12 +45,10 @@ const SocialMediaContainer = () => {
     },
   }
   return (
-    <div className={'contact-temp'}>
-      <div style={styles.grid}>
-        {data.map((d, index) => (
-          <SocialMedia key={index} data={d} />
-        ))}
-      </div>
+    <div style={styles.grid}>
+      {data.map((d, index) => (
+        <SocialMedia key={index} data={d} />
+      ))}
     </div>
   )
 }

@@ -1,11 +1,16 @@
 import React from 'react'
+import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 const ResetButton = ({ isActive, resetFilter }) => {
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
+
   const defaultStyle = {
     alignSelf: `center`,
-    textOrientation: 'upright',
-    writingMode: `vertical-lr`,
+    textOrientation: isMobile ? '' : 'upright',
+    writingMode: isMobile ? '' : `vertical-lr`,
     fontFamily: 'Montserrat, sans-serif',
+    margin: '0',
   }
   const inactiveStyle = {
     ...defaultStyle,
@@ -20,7 +25,7 @@ const ResetButton = ({ isActive, resetFilter }) => {
   }
 
   return (
-    <small
+    <p
       style={isActive ? activeStyle : inactiveStyle}
       onClick={resetFilter}
       onKeyDown={resetFilter}
@@ -28,7 +33,7 @@ const ResetButton = ({ isActive, resetFilter }) => {
       role="button"
     >
       SELECT ALL
-    </small>
+    </p>
   )
 }
 

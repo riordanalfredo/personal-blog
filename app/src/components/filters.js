@@ -13,23 +13,30 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
   }, [categories])
 
   // Styles
-  const outerStyle = {
-    display: `flex`,
-    justifyContent: `space-between`,
-    flexWrap: `wrap`,
-    paddingTop: `1rem`,
-    minWidth: `600px`,
-    top: 0,
-    alignItems: 'center',
-    zIndex: `1`,
+  const styles = {
+    outer: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    icons: {
+      display: `flex`,
+      justifyContent: `space-between`,
+      padding: `1rem`,
+      minWidth: `300px`,
+      maxWidth: 650,
+      width: '100%',
+      alignItems: 'center',
+    },
+    title: { marginBottom: 0 },
   }
 
   // Elements
 
   return (
-    <div>
-      <h2 style={{ marginTop: '5.5rem', marginBottom: 0 }}>Filter Articles:</h2>
-      <div style={outerStyle} className={'filters'}>
+    <div style={styles.outer}>
+      {/* <h2 style={styles.title}>Filter Articles:</h2> */}
+      <div style={styles.icons} className={'filters'}>
         {Object.keys(categories).map((val, index) => {
           return (
             <FilterCard

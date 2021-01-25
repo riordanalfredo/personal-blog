@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Fade from 'react-reveal/Fade'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
@@ -38,16 +38,17 @@ const AboutPage = ({ data, location }) => {
     <Layout location={location} title={'RIORDAN ALFREDO'}>
       <SEO title="A software engineer &amp; educator" />
       <div style={styles.outer}>
-        <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
-        <p style={{ color: 'grey' }}>{description}</p>
+        <Fade cascade>
+          <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
+          <p style={{ color: 'grey' }}>{description}</p>
+        </Fade>
         <div style={styles.profile}>
           <PhotoProfile />
           <AboutText isMobile={isMobile} />
         </div>
         <blockquote style={styles.quote}>
           My crafts are synthesising software engineering and data science
-          knowledge, along with the entrepreneurial mindset to advance our
-          society.
+          knowledge, along with the entrepreneurial mindset to advance society.
         </blockquote>
       </div>
       <CreditSection />

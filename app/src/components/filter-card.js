@@ -20,8 +20,10 @@ const FilterCard = ({ categories, id, selectFunction }) => {
       alignItems: 'center',
     },
     outerCircle: {
-      width: 112,
-      height: 112,
+      width: '10vw',
+      height: '10vw',
+      maxWidth: 112,
+      maxHeight: 112,
       borderRadius: `100%`,
       background: 'linear-gradient(45deg, var(--textTitle2), var(--textTitle))',
       display: 'flex',
@@ -30,13 +32,14 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     },
   }
   const innerCircle = {
-    width: 100,
-    height: 100,
+    width: '9vw',
+    height: '9vw',
+    maxWidth: 100,
+    maxHeight: 100,
     borderRadius: `100%`,
     cursor: 'pointer',
     background: `url(${style.imgUrl})`,
     backgroundColor: 'white',
-    color: 'red',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: '80%',
@@ -61,7 +64,10 @@ const FilterCard = ({ categories, id, selectFunction }) => {
         />
       </div>
       <p
-        style={{ margin: '0.5rem 0', fontFamily: 'Montserrat, sans-serif' }}
+        style={{
+          margin: '0.1rem 0 0 0 ',
+          fontFamily: 'Montserrat, sans-serif',
+        }}
         className={categories[id].isSelected ? 'visible' : ''}
       >
         {text}

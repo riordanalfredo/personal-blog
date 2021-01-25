@@ -28,14 +28,13 @@ const AboutText = ({ isMobile }) => {
         with 2-years industry experience.
       </p>
       <p>
-        I receiveed a full-ride scholarship to study data science &amp; AI area
+        I received a full-ride scholarship to study data science &amp; AI area
         as a Doctor of Philosophy student at Monash University. My research was
-        about
-        <code>meta-learning &amp; recommender systems</code> topics. Now, I am a
-        teaching associate for software engineering units at the Faculty of IT,
-        Monash University. I love connecting with all of my students aside from
-        just delivering content. At the same time, I am working on various
-        software projects with{' '}
+        about <code>meta-learning &amp; recommender systems</code> topics. Now,
+        I am a teaching associate for software engineering units at the Faculty
+        of IT, Monash University. I love connecting with all of my students
+        aside from just delivering content. At the same time, I am working on
+        various software projects with{' '}
         <code>
           ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
           and Django frameworks
