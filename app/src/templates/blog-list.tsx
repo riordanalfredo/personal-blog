@@ -46,7 +46,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   const styles = {
     outer: {
-      maxWidth: 650,
+      maxWidth: 700,
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
@@ -61,7 +61,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      width: '60vw',
+      width: '65vw',
     } as React.CSSProperties,
   }
 

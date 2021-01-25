@@ -24,7 +24,7 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
       justifyContent: `space-between`,
       padding: `1rem`,
       minWidth: `300px`,
-      maxWidth: 650,
+      maxWidth: 700,
       width: '100%',
       alignItems: 'center',
     },

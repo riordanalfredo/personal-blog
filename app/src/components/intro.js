@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 const Intro = () => {
   const styles = {
     outer: {
-      maxWidth: 650,
+      maxWidth: 700,
       backgroundColor: 'var(--lightBg)',
       padding: '2rem',
       borderBottomLeftRadius: '1rem',
@@ -22,7 +22,7 @@ const Intro = () => {
       marginBottom: 0,
     },
     welcome: {
-      width: '60vw',
+      width: '65vw',
     },
   }
 

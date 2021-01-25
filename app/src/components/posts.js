@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
 import './post.css'
-import { AnimateOnChange } from 'react-animation'
+import Fade from 'react-reveal/Fade'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]
@@ -48,21 +48,19 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   return (
     <Fragment>
       <h1 style={{ margin: '2rem 0 0 0' }}>ARTICLES</h1>
-      <AnimateOnChange>
-        {!!currentPosts.length ? (
-          currentPosts.map(({ node }, index) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return <Post node={node} index={index} title={title} />
-          })
-        ) : (
-          <h3 className={'text-gradient'}>
-            Nothing to see here, please select another category{' '}
-            <span role="img" aria-label="investigate">
-              😊
-            </span>
-          </h3>
-        )}
-      </AnimateOnChange>
+      {!!currentPosts.length ? (
+        currentPosts.map(({ node }, index) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return <Post node={node} index={index} title={title} />
+        })
+      ) : (
+        <h3 className={'text-gradient'}>
+          Nothing to see here, please select another category{' '}
+          <span role="img" aria-label="investigate">
+            😊
+          </span>
+        </h3>
+      )}
     </Fragment>
   )
 }
