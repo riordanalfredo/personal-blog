@@ -20,16 +20,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       justifyContent: `space-between`,
       listStyle: `none`,
       padding: 0,
+      margin: 0,
     },
     prev: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
+      maxWidth: 350,
     },
     next: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-end',
+      textAlign: 'right',
+      maxWidth: 350,
     },
     info: {
       ...scale(-1 / 5),
@@ -71,7 +75,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {previous && (
               <div style={styles.prev}>
                 <small>Older Post</small>
-                <Link to={`${previous.fields.slug}`} rel="prev">
+                <Link
+                  to={`${previous.fields.slug}`}
+                  style={{ boxShadow: 'none' }}
+                  rel="prev"
+                >
                   ← {previous.frontmatter.title}
                 </Link>
               </div>
@@ -81,7 +89,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {next && (
               <div style={styles.next}>
                 <small>Newer Post</small>
-                <Link to={`${next.fields.slug}`} rel="next">
+                <Link
+                  to={`${next.fields.slug}`}
+                  style={{ boxShadow: 'none' }}
+                  rel="next"
+                >
                   {next.frontmatter.title} →
                 </Link>
               </div>
