@@ -13,34 +13,42 @@ const Filters = ({ categories, selectCategory, resetFilter }) => {
   }, [categories])
 
   // Styles
-  const outerStyle = {
-    display: `flex`,
-    justifyContent: `space-between`,
-    flexWrap: `wrap`,
-    paddingTop: `1rem`,
-    minWidth: `750px`,
-    marginLeft: 10,
-    minHeight: '280px',
-    height: `35vh`,
-    top: 0,
-    zIndex: `1`,
+  const styles = {
+    outer: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    icons: {
+      display: `flex`,
+      justifyContent: `space-between`,
+      padding: `1rem`,
+      minWidth: `300px`,
+      maxWidth: 700,
+      width: '100%',
+      alignItems: 'center',
+    },
+    title: { marginBottom: 0 },
   }
 
   // Elements
 
   return (
-    <div style={outerStyle} className={'filters'}>
-      {Object.keys(categories).map((val, index) => {
-        return (
-          <FilterCard
-            key={index}
-            categories={categories}
-            id={val}
-            selectFunction={selectCategory}
-          />
-        )
-      })}
-      <ResetButton isActive={isActive} resetFilter={resetFilter} />
+    <div style={styles.outer}>
+      {/* <h2 style={styles.title}>Filter Articles:</h2> */}
+      <div style={styles.icons} className={'filters'}>
+        {Object.keys(categories).map((val, index) => {
+          return (
+            <FilterCard
+              key={index}
+              categories={categories}
+              id={val}
+              selectFunction={selectCategory}
+            />
+          )
+        })}
+        <ResetButton isActive={isActive} resetFilter={resetFilter} />
+      </div>
     </div>
   )
 }

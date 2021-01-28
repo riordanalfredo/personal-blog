@@ -8,11 +8,11 @@ body {
   --bg: #fff;
   --lightBg: #f5f5f5;
   --textNormal: rgb(29, 29, 29);
-  --textTitle: #23395d;
-  --textTitle2: #726294;
+  --textTitle: #495c83;
+  --textTitle2: #4b6cb7;
   --textLink: #3a91f9;
-  --hover: #23395d;
-  --shadow: rgba(63, 63, 63, 0.5);
+  --hover: #4b6cb7;
+  --shadow: #b6a999;
   --hr: hsla(0, 20%, 1%, 0.2);
 
   background-color: var(--bg);
@@ -26,10 +26,14 @@ body.dark {
   --textNormal: rgb(224, 224, 224);
   --textTitle2: #c39d63;
   --textTitle: rgb(255, 226, 168);
-  --textLink: rgb(255, 227, 170);
+  --textLink: #c39d63;
   --hover: rgb(255, 242, 215);
-  --shadow: #0f0f0f;
+  --shadow: #414756;
   --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+.bio {
+  color: var(--textTitle);
 }
 
 code {
@@ -60,8 +64,10 @@ a.gatsby-resp-image-link:hover {
 .box {
   position: relative;
   display: inline-block;
-  width: 60vw;
   min-height: 5vh;
+  width: 65vw;
+  min-width: 300px;
+  max-width: 700px;
   padding: 0 20px 20px 20px;
   margin-bottom: 0.5rem;
   background-color: var(--bg);
@@ -103,6 +109,12 @@ a.gatsby-resp-image-link:hover {
 }
 
 h1 {
+  color: var(--textTitle);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
   background: -webkit-linear-gradient(
     90deg,
     var(--textTitle),
@@ -110,10 +122,7 @@ h1 {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--textTitle);
-  font-size: xx-large;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 3.5rem;
 }
 
 h2,
@@ -123,10 +132,15 @@ h5,
 h6,
 blockquote {
   transition: 0.2s;
-  color: var(--textNormal);
+  color: var(--textTitle);
 }
 
 p {
+  color: var(--textNormal);
+  font-size: large;
+}
+
+small {
   color: var(--textNormal);
 }
 
@@ -169,6 +183,7 @@ button {
   left: 0;
   overflow-x: hidden;
   text-align: center;
+  border-bottom: 0.2rem solid var(--shadow);
   background-color: var(--lightBg);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -184,10 +199,13 @@ button {
   margin-left: 0;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 850px) {
   .sidebar {
     height: 100vh;
     width: 300px;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: 0 solid var(--shadow);
   }
   .main-content {
     padding: 0 180px 0;
@@ -198,7 +216,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 850px) {
   p {
     font-size: 85%;
     line-height: 250%;

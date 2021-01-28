@@ -1,7 +1,7 @@
 ---
 title: Publish Subscribe with Socket.IO in Node JS
-date: "2021-01-06T07:26:03.284Z"
-description: "A quick tips how to use publish and subscribe design pattern in Node JS with Socket.IO"
+date: '2021-01-06T07:26:03.284Z'
+description: 'A quick tips how to use publish and subscribe design pattern in Node JS with Socket.IO'
 categories: [code]
 comments: true
 ---
@@ -36,6 +36,10 @@ In this post, I would like to share my experience/approach for my hack in applyi
 ### Send notifications (server-side)
 
 ### Receive notification (client-side)
+
+```javascript
+const testCode = 'something'
+```
 
 ## 3) Self-reflections
 

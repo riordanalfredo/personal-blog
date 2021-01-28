@@ -10,13 +10,11 @@ const Post = ({ node, index, title }) => {
       transition: '0.3s',
       minWidth: 320,
     },
+    post: { boxShadow: `none`, color: 'var(--textTitle)' },
   }
   return (
-    <Fragment key={index}>
-      <Link
-        style={{ boxShadow: `none`, color: 'var(--textTitle)' }}
-        to={`${node.fields.slug}`}
-      >
+    <div key={index}>
+      <Link style={styles.post} to={`${node.fields.slug}`}>
         <article
           key={node.fields.slug}
           style={styles.article}
@@ -41,7 +39,7 @@ const Post = ({ node, index, title }) => {
           </section>
         </article>
       </Link>
-    </Fragment>
+    </div>
   )
 }
 

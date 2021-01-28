@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Fade from 'react-reveal/Fade'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -19,14 +20,17 @@ const ContactPage = ({ data, location }) => {
       alignItems: 'center',
       flexDirection: 'column',
       justifyContent: 'center',
+      maxWidth: 700,
     },
   }
 
   return (
-    <Layout location={location} title={'BLOG'}>
+    <Layout location={location} title={'RIORDAN ALFREDO'}>
       <SEO title="Contact Me" />
       <div style={styles.outer}>
-        <h1 align="center">KEEP IN TOUCH</h1>
+        <Fade cascade>
+          <h1 align="center">KEEP IN TOUCH</h1>
+        </Fade>
         <div style={styles.inner}>
           <p style={{ textAlign: 'justify' }}>
             Hello, thank you for the willingness to reaching me out! There are

@@ -33,7 +33,7 @@ const Layout = ({ location, title, children }) => {
       display: 'flex',
       justifyContent: 'space-evenly',
       alignItems: 'center',
-      margin: '1.5rem 0.5rem 0 0.5rem',
+      margin: '1rem 0.5rem 0 0.5rem',
     },
     desktopTitle: {
       ...scale(1),
@@ -49,8 +49,8 @@ const Layout = ({ location, title, children }) => {
 
   const desktopHeader = (
     <>
-      <h1 style={styles.desktopTitle}>
-        <Title text={isMobile ? 'BLOG' : title} />
+      <h1 className="title" style={styles.desktopTitle}>
+        <Title text={title} />
       </h1>
       <Subtitle style={{ margin: 0 }} />
       <Menu />
@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
 
   const mobileHeader = (
     <>
-      <h1 style={styles.mobileTitle}>
+      <h1 className="title" style={styles.mobileTitle}>
         <Title text={myName} />
       </h1>
     </>

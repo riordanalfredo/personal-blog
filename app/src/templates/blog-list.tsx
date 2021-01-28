@@ -3,6 +3,7 @@ import React, { Fragment, useEffect, Provider } from 'react'
 import { PageProps, Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Intro from '../components/intro'
 import PageNavigation from '../components/page-navigation'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
@@ -45,19 +46,38 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   const styles = {
     outer: {
+      maxWidth: 700,
+      margin: '0 auto',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+    } as React.CSSProperties,
+    articles: {
       display: 'flex',
       alignItems: 'center',
       flexDirection: 'column',
+    } as React.CSSProperties,
+    intro: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      width: '65vw',
     } as React.CSSProperties,
   }
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      {isMobile ? null : <FiltersContainer />}
       <div style={styles.outer}>
-        <PostsContainer allPosts={allPosts} />
+        <div style={isMobile ? {} : styles.intro}>
+          <Intro />
+          {isMobile ? null : <FiltersContainer />}
+        </div>
+        <div style={styles.articles}>
+          <PostsContainer allPosts={allPosts} />
+        </div>
       </div>
+
       {/* <PageNavigation context={pageContext} /> */}
     </Layout>
   )

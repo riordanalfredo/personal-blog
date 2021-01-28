@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Fade from 'react-reveal/Fade'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -50,11 +50,13 @@ const AboutPage = ({ data, location }) => {
   )
   const description = data.site.siteMetadata.description
   return (
-    <Layout location={location} title={'BLOG'}>
+    <Layout location={location} title={'RIORDAN ALFREDO'}>
       <SEO title="A software engineer &amp; educator" />
       <div style={styles.outer}>
-        <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
-        <p style={{ color: 'grey' }}>{description}</p>
+        <Fade cascade>
+          <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
+          <p style={{ color: 'grey' }}>{description}</p>
+        </Fade>
         <div style={styles.profile}>
           <PhotoProfile />
           <AboutText isMobile={isMobile} />

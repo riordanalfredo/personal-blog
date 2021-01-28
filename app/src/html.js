@@ -11,11 +11,11 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script
+        {/* <script
           data-ad-client={process.env.GATSBY_ADSENSE_CLIENT_ID}
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
+        ></script> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

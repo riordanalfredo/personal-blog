@@ -19,11 +19,32 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     }
   }, [])
 
-  const outerStyle = {
-    width: '10vw',
-    minWidth: 180,
-    height: 250,
-    borderRadius: `10px`,
+  const styles = {
+    outer: {
+      width: 112,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    outerCircle: {
+      width: '10vw',
+      height: '10vw',
+      maxWidth: 112,
+      maxHeight: 112,
+      borderRadius: `100%`,
+      background: 'linear-gradient(45deg, var(--textTitle2), var(--textTitle))',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  }
+  const innerCircle = {
+    width: '9vw',
+    height: '9vw',
+    maxWidth: 100,
+    maxHeight: 100,
+    borderRadius: `100%`,
     cursor: 'pointer',
     background: `url(${isDark ? style.imgUrlDark : style.imgUrl})`,
     backgroundColor: 'white',
@@ -33,30 +54,33 @@ const FilterCard = ({ categories, id, selectFunction }) => {
     transition: '0.3s',
   }
   const selectedStyle = {
-    ...outerStyle,
-    color: 'blue',
+    ...innerCircle,
     opacity: 1,
   }
   const nonSelectedStyle = {
-    ...outerStyle,
-    opacity: 0.3,
-    // border: '5px solid var(--textNormal)',
+    ...innerCircle,
+    opacity: 0.7,
   }
 
   return (
-    <button
-      id={id}
-      style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
-      className="filter-card"
-      onClick={selectCategory}
-    >
+    <div style={styles.outer}>
+      <div style={styles.outerCircle} className="coin">
+        <button
+          id={id}
+          style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
+          onClick={selectCategory}
+        />
+      </div>
       <p
-        style={{ fontFamily: 'Montserrat, sans-serif' }}
+        style={{
+          margin: '0.1rem 0 0 0 ',
+          fontFamily: 'Montserrat, sans-serif',
+        }}
         className={categories[id].isSelected ? 'visible' : ''}
       >
         {text}
       </p>
-    </button>
+    </div>
   )
 }
 export default FilterCard

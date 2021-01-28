@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
 import './post.css'
+import Fade from 'react-reveal/Fade'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]
@@ -46,6 +47,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
 
   return (
     <Fragment>
+      <h1 style={{ margin: '2rem 0 0 0' }}>ARTICLES</h1>
       {!!currentPosts.length ? (
         currentPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
