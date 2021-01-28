@@ -59,7 +59,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             ))}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          style={{ maxWidth: 1080, margin: '0 auto' }}
+        />
         <hr style={{ marginBottom: rhythm(1) }} />
         <footer>
           <Bio />

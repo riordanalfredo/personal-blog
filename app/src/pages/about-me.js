@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 // Sections
@@ -19,6 +20,7 @@ const AboutPage = ({ data, location }) => {
       justifyContent: 'center',
       flexDirection: 'column',
       alignItems: 'center',
+      wordWrap: 'break-word',
     },
     profile: {
       display: 'flex',
@@ -29,10 +31,23 @@ const AboutPage = ({ data, location }) => {
     quote: {
       marginBottom: 0,
       minWidth: 350,
-      width: '55vw',
+      maxWidth: 780,
+      width: '60vw',
       alignSelf: 'center',
     },
+    secondText: { textAlign: 'justify', textJustify: 'inner-word', width: 780 },
   }
+
+  const quote = (
+    <>
+      <blockquote style={styles.quote}>
+        <Fade delay={300}>
+          My crafts are synthesising software engineering and data science
+          knowledge, along with the entrepreneurial mindset to advance society.
+        </Fade>
+      </blockquote>
+    </>
+  )
   const description = data.site.siteMetadata.description
   return (
     <Layout location={location} title={'BLOG'}>
@@ -44,11 +59,21 @@ const AboutPage = ({ data, location }) => {
           <PhotoProfile />
           <AboutText isMobile={isMobile} />
         </div>
-        <blockquote style={styles.quote}>
-          My crafts are synthesising software engineering and data science
-          knowledge, along with the entrepreneurial mindset to advance our
-          society.
-        </blockquote>
+        <p style={styles.secondText}>
+          I received a full-ride scholarship to study data science &amp; AI area
+          as a Doctor of Philosophy student at Monash University. My research
+          was about <code>meta-learning &amp; recommender systems</code> topics.
+          Now, I am a teaching associate for software engineering units at the
+          Faculty of IT, Monash University. I love connecting with all of my
+          students aside from just delivering content. At the same time, I am
+          working on various software projects with{' '}
+          <code>
+            ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
+            and Django frameworks.
+          </code>
+          <br />
+        </p>
+        {quote}
       </div>
       <CreditSection />
     </Layout>
