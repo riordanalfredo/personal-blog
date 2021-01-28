@@ -46,7 +46,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   const styles = {
     outer: {
-      maxWidth: 700,
+      maxWidth: 780,
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',

@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
 import './post.css'
-import Fade from 'react-reveal/Fade'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]

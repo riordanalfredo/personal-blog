@@ -68,7 +68,7 @@ const Bio = () => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: isMobile ? 'center' : 'flex-start',
-          maxWidth: 800,
+          maxWidth: 780,
         }}
       >
         <p className="bio" style={{ margin: 0 }}>

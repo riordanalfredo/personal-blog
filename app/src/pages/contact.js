@@ -20,7 +20,7 @@ const ContactPage = ({ data, location }) => {
       alignItems: 'center',
       flexDirection: 'column',
       justifyContent: 'center',
-      maxWidth: 700,
+      maxWidth: 780,
     },
   }
 
