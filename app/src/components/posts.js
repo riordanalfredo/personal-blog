@@ -50,7 +50,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
       {!!currentPosts.length ? (
         currentPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
-          return <Post node={node} index={index} title={title} />
+          return <Post key={index} node={node} title={title} />
         })
       ) : (
         <h3 className={'text-gradient'}>

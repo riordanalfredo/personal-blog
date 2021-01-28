@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import categories from './reducers/categories'
 import posts from './reducers/posts'
+import theme from './reducers/theme'
 
 //=== states architecture ===
 // {
@@ -15,9 +16,13 @@ import posts from './reducers/posts'
 //     business: [],
 //     ...
 //   }
+//   theme:{
+//     isDark: false
+//   }
 // }
 
 export default combineReducers({
   categories,
   posts,
+  theme,
 })
