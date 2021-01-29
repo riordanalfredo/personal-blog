@@ -45,13 +45,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
 
   const styles = {
-    outer: {
-      maxWidth: 780,
-      margin: '0 auto',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-    } as React.CSSProperties,
     articles: {
       display: 'flex',
       alignItems: 'center',
@@ -68,7 +61,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <div style={styles.outer}>
+      <div>
         <div style={isMobile ? {} : styles.intro}>
           <Intro />
           {isMobile ? null : <FiltersContainer />}

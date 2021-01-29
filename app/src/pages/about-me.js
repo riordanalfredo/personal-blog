@@ -24,7 +24,8 @@ const AboutPage = ({ data, location }) => {
     },
     profile: {
       display: 'flex',
-      flexDirection: isMobile ? 'column' : 'row',
+      flexWrap: 'wrap',
+      flexDirection: 'column',
       justifyContent: 'space-between',
       alignItems: 'center',
     },
@@ -35,7 +36,10 @@ const AboutPage = ({ data, location }) => {
       width: '60vw',
       alignSelf: 'center',
     },
-    secondText: { textAlign: 'justify', textJustify: 'inner-word', width: 780 },
+    secondText: {
+      textAlign: 'justify',
+      textJustify: 'inner-word',
+    },
   }
 
   const quote = (
@@ -53,10 +57,8 @@ const AboutPage = ({ data, location }) => {
     <Layout location={location} title={'RIORDAN ALFREDO'}>
       <SEO title="A software engineer &amp; educator" />
       <div style={styles.outer}>
-        <Fade cascade>
-          <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
-          <p style={{ color: 'grey' }}>{description}</p>
-        </Fade>
+        <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
+        <p style={{ color: 'grey' }}>{description}</p>
         <div style={styles.profile}>
           <PhotoProfile />
           <AboutText isMobile={isMobile} />
