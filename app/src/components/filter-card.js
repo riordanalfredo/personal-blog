@@ -61,26 +61,27 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
     background: `url(${style.imgUrl})`,
   }
 
-  const selectedStyle = {
-    opacity: 1,
+  const buttonStyle = {
     ...iconSize,
     ...(isDark ? darkIcon : lightIcon),
   }
+  const selectedStyle = {
+    ...styles.outerCircle,
+    opacity: 1,
+  }
   const nonSelectedStyle = {
-    opacity: 0.5,
-    ...iconSize,
-    ...(isDark ? darkIcon : lightIcon),
+    ...styles.outerCircle,
+    opacity: 0.3,
   }
 
   return (
     <div style={styles.outer}>
-      <div style={styles.outerCircle} className="coin">
+      <div
+        style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
+        className="coin"
+      >
         <div style={styles.innerCircle}>
-          <button
-            id={id}
-            style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
-            onClick={selectCategory}
-          />
+          <button id={id} style={buttonStyle} onClick={selectCategory} />
         </div>
       </div>
       <p
