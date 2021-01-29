@@ -44,7 +44,7 @@ export const data = [
   },
 ]
 
-const CreditSection = ({}) => {
+const CreditSection = () => {
   const outerStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
