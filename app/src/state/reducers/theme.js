@@ -13,7 +13,7 @@ function getLocalStorageTheme() {
   if (theme !== null) {
     return theme === 'dark' ? true : false
   } else {
-    return false
+    return true // dark theme is always by default
   }
 }
 
