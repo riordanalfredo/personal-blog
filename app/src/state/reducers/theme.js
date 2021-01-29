@@ -8,10 +8,9 @@ function setIsDark(map, action) {
   return newMap
 }
 function getLocalStorageTheme() {
-  const theme = localStorage.getItem('theme')
-  console.log(theme)
+  const theme =
+    typeof window !== 'undefined' && window.localStorage.getItem('theme')
   if (theme !== null) {
-    console.log(theme === 'dark' ? true : false)
     return theme === 'dark' ? true : false
   } else {
     return false
