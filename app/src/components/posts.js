@@ -15,6 +15,18 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
 
   // If there are any changes in categories, it will select posts accordingly
   // TODO: Need to maintain these indices in redux to avoid exhaustive deps.
+
+  const f = (result, isNotSelectedCounter) => {
+    // if result is empty, print all
+    setActivePostIndices(
+      result.length > 0
+        ? result
+        : isNotSelectedCounter === 4
+        ? []
+        : allPostsIndices
+    )
+  }
+
   useEffect(() => {
     let arr = []
     let isNotSelectedCounter = 0
@@ -29,15 +41,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
     })
     // flatten and then sort posts
     const result = [...new Set(arr.flat())].sort()
-
-    // if result is empty, print all
-    setActivePostIndices(
-      result.length > 0
-        ? result
-        : isNotSelectedCounter === 4
-        ? []
-        : allPostsIndices
-    )
+    f(result, isNotSelectedCounter)
   }, [categories])
 
   const currentPosts = activePostsIndices

@@ -14,6 +14,7 @@ const Tags = ({ data }) => {
     display: `flex`,
     flexDirection: `row`,
     justifyContent: `flex-start`,
+    flexWrap: 'wrap',
   }
 
   return (

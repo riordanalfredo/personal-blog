@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import FilterCard from './filter-card'
 import ResetButton from './reset-button'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import theme from '../state/actions/theme'
 
 const Filters = ({ categories, selectCategory, resetFilter, theme }) => {
   const [isActive, setIsActive] = useState(false)

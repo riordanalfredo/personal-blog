@@ -45,6 +45,14 @@ const Layout = ({ location, title, children }) => {
       margin: 0,
       fontFamily: `Montserrat, sans-serif`,
     },
+    main: {
+      maxWidth: 780,
+      margin: '0 auto',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
   }
 
   const desktopHeader = (
@@ -88,7 +96,7 @@ const Layout = ({ location, title, children }) => {
       {isMobile ? <MobileMenu open={open}>{desktopHeader}</MobileMenu> : null}
 
       <div className="main-content relative">
-        <main>{children}</main>
+        <main style={styles.main}>{children}</main>
         <Footer />
       </div>
     </div>

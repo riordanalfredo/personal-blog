@@ -81,7 +81,12 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
         className="coin"
       >
         <div style={styles.innerCircle}>
-          <button id={id} style={buttonStyle} onClick={selectCategory} />
+          <button
+            id={id}
+            style={buttonStyle}
+            aria-label="Select Category"
+            onClick={selectCategory}
+          />
         </div>
       </div>
       <p

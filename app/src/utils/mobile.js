@@ -16,7 +16,7 @@ const useMediaQuery = () => {
 }
 
 const getIsMobileBoolean = width => {
-  return width <= 849 ? true : false
+  return width <= 1079 ? true : false
 }
 
 export { useMediaQuery, getIsMobileBoolean }
