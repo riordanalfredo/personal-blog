@@ -7,10 +7,20 @@ function setIsDark(map, action) {
   newMap['isDark'] = themeBool
   return newMap
 }
+function getLocalStorageTheme() {
+  const theme = localStorage.getItem('theme')
+  console.log(theme)
+  if (theme !== null) {
+    console.log(theme === 'dark' ? true : false)
+    return theme === 'dark' ? true : false
+  } else {
+    return false
+  }
+}
 
 export default handleActions(
   {
     [actions.setIsDark]: setIsDark,
   },
-  { isDark: false } // init state
+  { isDark: getLocalStorageTheme() } // init state
 )

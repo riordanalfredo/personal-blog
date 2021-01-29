@@ -13,14 +13,14 @@ export const Toggler = ({ setThemeBool }) => {
           return null
         }
         // TODO: causes warning error in render, suggested to use useEffect, but it is a callback function.
-        setThemeBool(isDarkMode)
+        // setThemeBool(isDarkMode)
 
         return (
           <button
             aria-label="theme-switch"
             className="leading-none p-1"
             onClick={() => {
-              setThemeBool(isDarkMode)
+              setThemeBool(!isDarkMode)
               return toggleTheme(isDarkMode ? 'light' : 'dark')
             }}
           >
