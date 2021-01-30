@@ -8,7 +8,7 @@ import {
 import { useForm } from 'react-hook-form'
 import './contact.css'
 
-const Contact = ({}) => {
+const Contact = () => {
   const { register, handleSubmit, errors, reset } = useForm()
   const netlify = useNetlifyForm({
     name: 'react-hook-form',

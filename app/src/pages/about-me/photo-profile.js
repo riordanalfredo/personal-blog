@@ -3,17 +3,16 @@ import photo from '../../assets/profile.jpg'
 
 const PhotoProfile = () => {
   const style = {
-    width: 200,
+    width: 300,
     height: 270,
     borderRadius: '1rem',
     backgroundImage: `url(${photo})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    marginBottom: '2rem',
   }
 
   return (
-    <div>
+    <div style={{ margin: '0 auto 2rem auto' }}>
       <div style={style}></div>
     </div>
   )

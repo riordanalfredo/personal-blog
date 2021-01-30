@@ -16,11 +16,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     navigation: {
       display: `flex`,
-      flexWrap: `wrap`,
+      flexWrap: 'inline-wrap',
       justifyContent: `space-between`,
       listStyle: `none`,
       padding: 0,
       margin: 0,
+      width: '100%',
     },
     prev: {
       display: 'flex',
@@ -41,6 +42,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       marginBottom: rhythm(1),
       textAlign: 'center',
     },
+    article: { width: '65vw', minWidth: 310, maxWidth: 780 },
   }
 
   return (
@@ -50,29 +52,26 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
         // image = {post.frontmatter.image}
       />
-      <article>
+      <article style={styles.article}>
         <header>
           <h1 style={styles.h1}>{post.frontmatter.title}</h1>
           <p style={styles.info}>
             {post.frontmatter.date} | Tags:&nbsp;
             {post.frontmatter.categories.map((e, index) => (
-              <span>
+              <span key={index}>
                 {index === 0 ? '' : ', '}
                 <code>{e}</code>
               </span>
             ))}
           </p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          style={{ maxWidth: 780, margin: '0 auto' }}
-        />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
         <footer>
           <Bio />
         </footer>
       </article>
-      <nav>
+      <nav style={{ alignSelf: 'stretch' }}>
         <ul style={styles.navigation}>
           <li>
             {previous && (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Toggler } from './toggler'
 
 const TogglerContainer = ({ setIsDark }) => {

@@ -4,13 +4,10 @@ const AboutText = ({ isMobile }) => {
   const styles = {
     desktop: {
       minWidth: 300,
-      width: '550px',
-      marginLeft: '2rem',
       textAlign: 'justify',
       textJustify: 'inner-word',
     },
     mobile: {
-      width: '100%',
       textAlign: 'justify',
       textJustify: 'inner-word',
     },
