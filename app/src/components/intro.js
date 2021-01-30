@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 const Intro = () => {
   const styles = {
     outer: {
-      maxWidth: 700,
+      maxWidth: 780,
       backgroundColor: 'var(--lightBg)',
       padding: '2rem',
       borderBottomLeftRadius: '1rem',
@@ -36,10 +36,12 @@ const Intro = () => {
         <span role="img" aria-label="rocket">
           🚀
         </span>
-        ! It is intended as my personal journal about{' '}
+        ! This is my personal journal about{' '}
         <b>
-          my journey to be a business leader in the information, computer, and
-          technology (ICT) industry.
+          <i>
+            my journey to be a business leader in the information, computer, and
+            technology (ICT) industry.
+          </i>
         </b>{' '}
         It contains my thoughts, ideas, stories, and facts that are categorised
         into business, software, and learning topics. Please don't hesitate to{' '}

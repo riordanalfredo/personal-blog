@@ -1,7 +1,11 @@
-import astronomyPic from '../assets/filters/science.svg'
+import sciencePic from '../assets/filters/science.svg'
 import businessPic from '../assets/filters/business.svg'
 import educationPic from '../assets/filters/learning.svg'
-import technologyPic from '../assets/filters/software.svg'
+import softwarePic from '../assets/filters/software.svg'
+import scienceDarkPic from '../assets/filters/science-dark.svg'
+import businessDarkPic from '../assets/filters/business-dark.svg'
+import educationDarkPic from '../assets/filters/learning-dark.svg'
+import softwareDarkPic from '../assets/filters/software-dark.svg'
 
 export const filterCategories = {
   business: {
@@ -10,6 +14,7 @@ export const filterCategories = {
     isSelected: true,
     style: {
       imgUrl: businessPic,
+      imgUrlDark: businessDarkPic,
     },
   },
   technology: {
@@ -25,7 +30,8 @@ export const filterCategories = {
     ],
     isSelected: true,
     style: {
-      imgUrl: technologyPic,
+      imgUrl: softwarePic,
+      imgUrlDark: softwareDarkPic,
     },
   },
   education: {
@@ -34,6 +40,7 @@ export const filterCategories = {
     isSelected: true,
     style: {
       imgUrl: educationPic,
+      imgUrlDark: educationDarkPic,
     },
   },
   science: {
@@ -41,7 +48,8 @@ export const filterCategories = {
     categories: ['astrology', 'astronomy', 'dnd'],
     isSelected: true,
     style: {
-      imgUrl: astronomyPic,
+      imgUrl: sciencePic,
+      imgUrlDark: scienceDarkPic,
     },
   },
 }

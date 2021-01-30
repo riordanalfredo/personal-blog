@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
 import './post.css'
-import Fade from 'react-reveal/Fade'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   const allPostsIndices = allPosts.map((_, i) => i) // [0,1,2,..,N]
@@ -51,7 +50,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
       {!!currentPosts.length ? (
         currentPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug
-          return <Post node={node} index={index} title={title} />
+          return <Post key={index} node={node} title={title} />
         })
       ) : (
         <h3 className={'text-gradient'}>

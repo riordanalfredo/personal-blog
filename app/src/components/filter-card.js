@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './filter-card.css'
 import './global.css'
 
-const FilterCard = ({ categories, id, selectFunction }) => {
+const FilterCard = ({ categories, id, selectFunction, isDark }) => {
   const { text, style } = categories[id]
   const [isSelected, setIsSelected] = useState(categories[id].isSelected)
 
@@ -30,38 +30,59 @@ const FilterCard = ({ categories, id, selectFunction }) => {
       alignItems: 'center',
       justifyContent: 'center',
     },
+    innerCircle: {
+      width: '9vw',
+      height: '9vw',
+      maxWidth: 100,
+      maxHeight: 100,
+      borderRadius: `100%`,
+      cursor: 'pointer',
+      backgroundColor: 'var(--bg)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
   }
-  const innerCircle = {
-    width: '9vw',
-    height: '9vw',
-    maxWidth: 100,
-    maxHeight: 100,
+
+  const iconSize = {
+    width: '7vw',
+    height: '7vw',
+    maxWidth: 80,
+    maxHeight: 80,
     borderRadius: `100%`,
-    cursor: 'pointer',
-    background: `url(${style.imgUrl})`,
-    backgroundColor: 'white',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '80%',
     transition: '0.3s',
+    cursor: 'pointer',
+  }
+  const darkIcon = {
+    background: `url(${style.imgUrlDark})`,
+    backgroundColor: '#1e1e1e',
+  }
+  const lightIcon = {
+    background: `url(${style.imgUrl})`,
+  }
+
+  const buttonStyle = {
+    ...iconSize,
+    ...(isDark ? darkIcon : lightIcon),
   }
   const selectedStyle = {
-    ...innerCircle,
+    ...styles.outerCircle,
     opacity: 1,
   }
   const nonSelectedStyle = {
-    ...innerCircle,
-    opacity: 0.7,
+    ...styles.outerCircle,
+    opacity: 0.3,
   }
 
   return (
     <div style={styles.outer}>
-      <div style={styles.outerCircle} className="coin">
-        <button
-          id={id}
-          style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
-          onClick={selectCategory}
-        />
+      <div
+        style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
+        className="coin"
+      >
+        <div style={styles.innerCircle}>
+          <button id={id} style={buttonStyle} onClick={selectCategory} />
+        </div>
       </div>
       <p
         style={{

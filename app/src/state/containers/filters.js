@@ -13,8 +13,8 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-function mapStateToProps({ categories, posts }) {
-  return { categories, posts }
+function mapStateToProps({ categories, theme }) {
+  return { categories, theme }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filters)

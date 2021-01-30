@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Tags from '../components/tags'
 import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import './post.css'
 
-const Post = ({ node, index, title }) => {
+const Post = ({ node, title }) => {
   const styles = {
     article: {
       transition: '0.3s',
@@ -13,7 +13,7 @@ const Post = ({ node, index, title }) => {
     post: { boxShadow: `none`, color: 'var(--textTitle)' },
   }
   return (
-    <div key={index}>
+    <div>
       <Link style={styles.post} to={`${node.fields.slug}`}>
         <article
           key={node.fields.slug}

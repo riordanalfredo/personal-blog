@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { scale } from '../utils/typography'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
-import { Toggler } from './toggler'
+import Toggler from '../state/containers/theme'
 import Menu from './menu'
 import Footer from './footer'
 import Subtitle from './subtitle'
