@@ -9,6 +9,7 @@ const Post = ({ node, title }) => {
     article: {
       transition: '0.3s',
       minWidth: 320,
+      width: '90vw',
     },
     post: { boxShadow: `none`, color: 'var(--textTitle)' },
   }

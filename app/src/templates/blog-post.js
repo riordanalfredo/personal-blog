@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       marginBottom: rhythm(1),
       textAlign: 'center',
     },
-    article: { width: '65vw', minWidth: 310, maxWidth: 780 },
+    article: { width: '90vw', minWidth: 310, maxWidth: 880 },
   }
 
   return (
