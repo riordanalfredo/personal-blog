@@ -46,7 +46,7 @@ const Layout = ({ location, title, children }) => {
       fontFamily: `Montserrat, sans-serif`,
     },
     main: {
-      maxWidth: 780,
+      maxWidth: 880,
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',

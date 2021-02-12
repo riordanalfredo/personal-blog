@@ -32,7 +32,7 @@ const AboutPage = ({ data, location }) => {
     quote: {
       marginBottom: 0,
       minWidth: 350,
-      maxWidth: 780,
+      maxWidth: 880,
       width: '60vw',
       alignSelf: 'center',
     },

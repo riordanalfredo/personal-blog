@@ -12,7 +12,7 @@ body {
   --textTitle2: #4b6cb7;
   --textLink: #3a91f9;
   --hover: #4b6cb7;
-  --shadow: #b6a999;
+  --shadow: #414756;
   --hr: hsla(0, 20%, 1%, 0.2);
 
   background-color: var(--bg);
@@ -28,7 +28,7 @@ body.dark {
   --textTitle: rgb(255, 226, 168);
   --textLink: #c39d63;
   --hover: rgb(255, 242, 215);
-  --shadow: #414756;
+  --shadow: #b6a999;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -67,7 +67,7 @@ a.gatsby-resp-image-link:hover {
   min-height: 5vh;
   width: 65vw;
   min-width: 300px;
-  max-width: 780px;
+  max-width: 880px;
   padding: 0 20px 20px 20px;
   margin-bottom: 0.5rem;
   background-color: var(--bg);
@@ -85,9 +85,9 @@ a.gatsby-resp-image-link:hover {
   width: 100%;
   height: 100%;
   z-index: -1;
-  -webkit-box-shadow: 0px 5px 5px 0px var(--shadow);
-  -moz-box-shadow: 0px 5px 5px 0px var(--shadow);
-  box-shadow: 0px 5px 5px 0px var(--shadow);
+  -webkit-box-shadow: 0px 5px 2px 0px var(--shadow);
+  -moz-box-shadow: 0px 5px 2px 0px var(--shadow);
+  box-shadow: 0px 5px 2px 0px var(--shadow);
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -208,10 +208,10 @@ button {
     border-bottom: 0 solid var(--shadow);
   }
   .main-content {
-    padding: 0 220px 0;
+    padding: 0 1rem 0;
     height: 100vh;
-    width: calc(100% - 350px);
-    margin-left: 350px;
+    width: calc(100% - 250px);
+    margin-left: 250px;
     top: 0;
   }
 }
