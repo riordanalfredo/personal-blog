@@ -12,7 +12,7 @@ body {
   --textTitle2: #4b6cb7;
   --textLink: #3a91f9;
   --hover: #4b6cb7;
-  --shadow: #687186;
+  --shadow: #9599a3;
   --hr: hsla(0, 20%, 1%, 0.2);
 
   background-color: var(--bg);
@@ -28,8 +28,12 @@ body.dark {
   --textTitle: rgb(255, 226, 168);
   --textLink: #c39d63;
   --hover: rgb(255, 242, 215);
-  --shadow: #c39d63;
+  --shadow: #0f0f0f;
   --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+body.dark p {
+  line-height: 2.3rem;
 }
 
 .bio {
@@ -69,7 +73,7 @@ a.gatsby-resp-image-link:hover {
   min-width: 300px;
   max-width: 880px;
   padding: 0 20px 20px 20px;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 0.5rem 0;
   background-color: var(--bg);
   border-radius: 1rem;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -93,13 +97,12 @@ a.gatsby-resp-image-link:hover {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.box:hover {
-  -webkit-transform: translateY('200px');
-  transform: translateY('200px');
-}
-
 .box:hover::after {
   opacity: 1;
+}
+
+.box h3 {
+  margin-top: 2rem;
 }
 /** === end of box === */
 /** Filters */
