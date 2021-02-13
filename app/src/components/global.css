@@ -28,7 +28,7 @@ body.dark {
   --textTitle: rgb(255, 226, 168);
   --textLink: #c39d63;
   --hover: rgb(255, 242, 215);
-  --shadow: #0f0f0f;
+  --shadow: #141414;
   --hr: hsla(0, 0%, 100%, 0.2);
 }
 
