@@ -71,11 +71,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Riordan`,
-        short_name: `rio`,
+        name: `Riordan Alfredo`,
+        short_name: `Riordan's technopreneur blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#c39d63`,
         display: `minimal-ui`,
         icon: `content/assets/logo.svg`,
       },
