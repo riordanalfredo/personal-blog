@@ -190,6 +190,7 @@ button {
   background-color: var(--lightBg);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  transition: 0.3s;
 }
 
 .main-content {

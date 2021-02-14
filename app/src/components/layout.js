@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { scale } from '../utils/typography'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
@@ -55,6 +55,22 @@ const Layout = ({ location, title, children }) => {
     },
   }
 
+  useEffect(() => {
+    console.log(isMobile)
+    if (isMobile) {
+      let prevScrollpos = window.pageYOffset
+      window.onscroll = function () {
+        let currentScrollPos = window.pageYOffset
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('navbar').style.top = '0'
+        } else {
+          document.getElementById('navbar').style.top = '-80px'
+        }
+        prevScrollpos = currentScrollPos
+      }
+    }
+  })
+
   const desktopHeader = (
     <>
       <h1 className="title" style={styles.desktopTitle}>
@@ -75,7 +91,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div style={styles.outer}>
-      <div className="sidebar">
+      <div id="navbar" className="sidebar">
         {isMobile ? (
           <div style={styles.mobileHeader}>
             {/**mobile header*/}
