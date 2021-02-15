@@ -64,7 +64,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <div>
         <div style={isMobile ? {} : styles.intro}>
           <Intro />
-          {isMobile ? null : <FiltersContainer />}
+          <FiltersContainer />
         </div>
         <div style={styles.articles}>
           <PostsContainer allPosts={allPosts} />

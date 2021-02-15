@@ -15,10 +15,17 @@ function selectCategory(map, action) {
   // } else {
   //===
   // select it for the first time
+  const arrCheck = Object.keys(newMap).map(key => newMap[key].isSelected)
   arr.forEach(cat => {
-    if (cat !== category) newMap[cat].isSelected = false
+    if (cat !== category)
+      newMap[cat].isSelected =
+        arrCheck.includes(false) && newMap[category].isSelected === true
+          ? true
+          : false
   })
+
   newMap[category].isSelected = true
+
   // }
   return newMap
 }

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import FilterCard from './filter-card'
 import ResetButton from './reset-button'
+import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 const Filters = ({ categories, selectCategory, resetFilter, theme }) => {
   const [isActive, setIsActive] = useState(false)
+  const [width] = useMediaQuery()
+  const isMobile = getIsMobileBoolean(width)
 
   useEffect(() => {
     // To check if all of the cards have been selected or not
@@ -24,31 +27,33 @@ const Filters = ({ categories, selectCategory, resetFilter, theme }) => {
       justifyContent: `space-between`,
       padding: `1rem`,
       minWidth: `300px`,
-      maxWidth: 880,
+      maxWidth: 680,
       width: '100%',
       alignItems: 'center',
     },
-    title: { marginBottom: 0 },
   }
 
   // Elements
 
   return (
-    <div style={styles.outer}>
-      {/* <h2 style={styles.title}>Filter Articles:</h2> */}
-      <div style={styles.icons} className={'filters'}>
-        {Object.keys(categories).map((val, index) => {
-          return (
-            <FilterCard
-              key={index}
-              isDark={theme.isDark}
-              categories={categories}
-              id={val}
-              selectFunction={selectCategory}
-            />
-          )
-        })}
-        <ResetButton isActive={isActive} resetFilter={resetFilter} />
+    <div>
+      <div style={styles.outer}>
+        <div style={styles.icons} className={'filters'}>
+          {Object.keys(categories).map((val, index) => {
+            return (
+              <FilterCard
+                key={index}
+                isDark={theme.isDark}
+                categories={categories}
+                id={val}
+                selectFunction={selectCategory}
+              />
+            )
+          })}
+          {isMobile ? null : (
+            <ResetButton isActive={isActive} resetFilter={resetFilter} />
+          )}
+        </div>
       </div>
     </div>
   )

@@ -13,15 +13,15 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
 
   const styles = {
     outer: {
-      width: 112,
+      maxWidth: 112,
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
     },
     outerCircle: {
-      width: '10vw',
-      height: '10vw',
+      width: '18vw',
+      height: '18vw',
       maxWidth: 112,
       maxHeight: 112,
       borderRadius: `100%`,
@@ -31,10 +31,10 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
       justifyContent: 'center',
     },
     innerCircle: {
-      width: '9vw',
-      height: '9vw',
-      maxWidth: 100,
-      maxHeight: 100,
+      width: '16vw',
+      height: '16vw',
+      maxWidth: 105,
+      maxHeight: 105,
       borderRadius: `100%`,
       cursor: 'pointer',
       backgroundColor: 'var(--bg)',
@@ -45,8 +45,8 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
   }
 
   const iconSize = {
-    width: '7vw',
-    height: '7vw',
+    width: '12vw',
+    height: '12vw',
     maxWidth: 80,
     maxHeight: 80,
     borderRadius: `100%`,

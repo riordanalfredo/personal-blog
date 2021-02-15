@@ -1,14 +1,10 @@
 import React from 'react'
-import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 
 const ResetButton = ({ isActive, resetFilter }) => {
-  const [width] = useMediaQuery()
-  const isMobile = getIsMobileBoolean(width)
-
   const defaultStyle = {
     alignSelf: `center`,
-    textOrientation: isMobile ? '' : 'upright',
-    writingMode: isMobile ? '' : `vertical-lr`,
+    textOrientation: 'upright',
+    writingMode: 'vertical-lr',
     fontFamily: 'Montserrat, sans-serif',
     margin: '0',
   }
