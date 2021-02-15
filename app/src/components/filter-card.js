@@ -33,8 +33,8 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
     innerCircle: {
       width: '16vw',
       height: '16vw',
-      maxWidth: 105,
-      maxHeight: 105,
+      maxWidth: 100,
+      maxHeight: 100,
       borderRadius: `100%`,
       cursor: 'pointer',
       backgroundColor: 'var(--bg)',
