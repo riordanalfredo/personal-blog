@@ -32,22 +32,22 @@ const Intro = () => {
         <h1 style={styles.title}>WELCOME</h1>
       </Fade>
       <p style={styles.body}>
-        Hello and welcome to my space{' '}
+        Hello and welcome to the Technopreneurship journal{' '}
         <span role="img" aria-label="rocket">
           🚀
         </span>
-        ! This is my personal journal about{' '}
+        ! This journal is my
         <b>
           <i>
-            my journey to be a business leader in the information, computer, and
-            technology (ICT) industry.
+            &nbsp;personal journey to be a business leader in the information,
+            computer, and technology (ICT) industry.&nbsp;
           </i>
-        </b>{' '}
-        It contains my thoughts, ideas, stories, and facts that are categorised
-        into business, software, and learning topics. Please don't hesitate to{' '}
-        <Link to="/contact">contact me</Link> for any interesting opportunities
-        (talks, teaching, development contract, and etc.). I hope you enjoy
-        reading them as much as I do writing them{' '}
+        </b>
+        It covers thoughts, ideas, stories, and facts categorised into business,
+        software, and learning topics. Please don't hesitate to{' '}
+        <Link to="/contact">contact me</Link> for any questions or exciting
+        opportunities (talks, teaching, development contract, etc.). I hope you
+        enjoy reading them as much as I do writing them{' '}
         <span role="img" aria-label="smile">
           😄
         </span>

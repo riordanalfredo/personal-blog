@@ -36,7 +36,7 @@ export const filterCategories = {
   },
   education: {
     text: 'Learning',
-    categories: ['study', 'habit', 'teaching', 'philosophy'],
+    categories: ['study', 'habit', 'teaching', 'philosophy', 'learning'],
     isSelected: true,
     style: {
       imgUrl: educationPic,
@@ -45,7 +45,14 @@ export const filterCategories = {
   },
   science: {
     text: 'Other',
-    categories: ['astrology', 'astronomy', 'dnd'],
+    categories: [
+      'astrology',
+      'astronomy',
+      'dnd',
+      'random',
+      'psychology',
+      'pseudoscience',
+    ],
     isSelected: true,
     style: {
       imgUrl: sciencePic,
