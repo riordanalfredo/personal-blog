@@ -45,7 +45,14 @@ export const filterCategories = {
   },
   science: {
     text: 'Other',
-    categories: ['astrology', 'astronomy', 'dnd', 'random'],
+    categories: [
+      'astrology',
+      'astronomy',
+      'dnd',
+      'random',
+      'psychology',
+      'pseudoscience',
+    ],
     isSelected: true,
     style: {
       imgUrl: sciencePic,
