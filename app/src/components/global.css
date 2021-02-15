@@ -36,6 +36,17 @@ body.dark p {
   line-height: 2.3rem;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--textLink);
+  background: var(--bg);
+}
+
+::selection {
+  color: var(--textLink);
+  background: var(--bg);
+}
+
 .bio {
   color: var(--textTitle);
 }
