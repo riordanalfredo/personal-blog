@@ -4,7 +4,7 @@ const Tags = ({ data }) => {
   const innerStyle = {
     borderRadius: '1rem',
     border: '1px solid grey',
-    margin: '0 1px 0 1px',
+    margin: '1px',
     textAlign: 'center',
     minWidth: '4rem',
     padding: '0 0.5rem',

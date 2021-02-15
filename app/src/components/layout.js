@@ -55,19 +55,17 @@ const Layout = ({ location, title, children }) => {
     },
   }
 
+  // To hide navigation bar on scroll in mobile view
   useEffect(() => {
-    console.log(isMobile)
-    if (isMobile) {
-      let prevScrollpos = window.pageYOffset
-      window.onscroll = function () {
-        let currentScrollPos = window.pageYOffset
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById('navbar').style.top = '0'
-        } else {
-          document.getElementById('navbar').style.top = '-80px'
-        }
-        prevScrollpos = currentScrollPos
+    let prevScrollpos = window.pageYOffset
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById('navbar').style.top = '0'
+      } else {
+        document.getElementById('navbar').style.top = '-80px'
       }
+      prevScrollpos = currentScrollPos
     }
   })
 
@@ -83,23 +81,26 @@ const Layout = ({ location, title, children }) => {
 
   const mobileHeader = (
     <>
-      <h1 className="title" style={styles.mobileTitle}>
-        <Title text={myName} />
-      </h1>
+      <div id="navbar" className="sidebar">
+        <div style={styles.mobileHeader}>
+          {/**mobile header*/}
+          <Burger open={open} setOpen={setOpen} />
+          <h1 className="title" style={styles.mobileTitle}>
+            <Title text={myName} />
+          </h1>{' '}
+          <Toggler />
+        </div>
+      </div>
     </>
   )
 
   return (
     <div style={styles.outer}>
-      <div id="navbar" className="sidebar">
-        {isMobile ? (
-          <div style={styles.mobileHeader}>
-            {/**mobile header*/}
-            <Burger open={open} setOpen={setOpen} />
-            {mobileHeader}
-            <Toggler />
-          </div>
-        ) : (
+      {isMobile ? (
+        mobileHeader
+      ) : (
+        <div className="sidebar">
+          <div id="navbar" style={{ display: 'hidden' }} />
           <div
             className="md:h-screen p-4 flex flex-col justify-center items-center"
             style={{ minHeight: 200 }}
@@ -107,8 +108,8 @@ const Layout = ({ location, title, children }) => {
             <Toggler />
             {desktopHeader}
           </div>
-        )}
-      </div>
+        </div>
+      )}
       {isMobile ? <MobileMenu open={open}>{desktopHeader}</MobileMenu> : null}
 
       <div className="main-content relative">
