@@ -8,22 +8,24 @@ comments: true
 
 ## Definition
 
-Emotional intelligence or can commonly shorten as EQ (Emotional Quotient) is part of human intelligence where a person can understand and manage his/her own emotion and people around (Mind Tools Content Team n.d.).
+Emotional intelligence or can commonly known as EQ (Emotional Quotient) is part of human intelligence where a person can understand and manage his/her own emotion and people around (Mind Tools Content Team n.d.).
 
 > Formally, it is “the capability of individuals to recognise their own emotions and those of others, discern between different feelings and label them appropriately, use emotional information to guide thinking and behaviour, and adjust emotions to adapt to environments” (Colman 2008).
 
-It can help to communicate effectively, empathise with others, overcome challenges, and defuse conflict.
+It can help to communicate effectively, empathise with others, overcome challenges, and defuse conflict. Emotional intelligence is commonly defined by four attributes: Self-management, Self-awareness, Social-awareness, and Relationship management.
 
-Emotional intelligence is commonly defined by four attributes: Self-management, Self-awareness, Social-awareness, and Relationship management.
+1. Self-management:
+   It means an individual manages personal emotion in healthy ways by controlling behaviours and impulsive feelings. It also involves adaptation to dynamic and changing situations.
+2. Self-awareness:
+   Self-awareness means that recognising personal emotions and how they affect behaviours and thoughts. Having good self-awareness means that the individual has self-confidence and knows personal strengths and weaknesses.
 
-- Self-management means an individual manages personal emotion in healthy ways by controlling behaviours and impulsive feelings. It also involves adaptation to dynamic and changing situations.
-- Self-awareness means that recognising personal emotions and how they affect behaviours and thoughts. Having good self-awareness means that the individual has self-confidence and knows personal strengths and weaknesses.
-- Social-awareness means having empathy that is shown by the ability to understand the emotions, needs, and concerns of other people.
-- Relationship management means an individual understands how to develop and maintain excellent relationships, inspire and influence people, has clear communication and teamwork skills.
+3. Social-awareness:
+   It means having empathy that is shown by the ability to understand the emotions, needs, and concerns of other people.
 
-In the partnership context, human interactions are inevitable. The emotion plays important role in the human interactions that eventually affect the relationship between individuals and organisations.
+4. Relationship management:
+   Relationship management means an individual understands how to develop and maintain excellent relationships, inspire and influence people, has clear communication and teamwork skills.
 
-In order to maintain long-lasting relationships, the importance of emotional intelligence is needed, especially extreme awareness of the changes. This will help both individual and partners to adapt to any situation. The relationship that is formed by human interactions will never be static. Small shifts in the dynamics of relationship signal a need for action.
+In the partnership context, human interactions are inevitable. The emotion plays important role in the human interactions that eventually affect the relationship between individuals and organisations. In order to maintain long-lasting relationships, the importance of emotional intelligence is needed, especially extreme awareness of the changes. This will help both individual and partners to adapt to any situation. The relationship that is formed by human interactions will never be static. Small shifts in the dynamics of relationship signal a need for action.
 
 The 4 attributes that are mentioned above helps to build collaborative partnerships (for the organisation’s leader or individual partner):
 
