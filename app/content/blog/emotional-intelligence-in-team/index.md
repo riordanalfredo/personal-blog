@@ -1,16 +1,18 @@
 ---
 title: 'Emotional Intelligence in an Effective Team'
-date: '2021-01-30T06:00:00Z'
+date: '2021-02-07T06:00:00Z'
 description: 'What is the importance of emotional intelligence in the team? How does it affect your team effectiveness?'
 categories: [leadership, psychology, teamwork, emotion]
 comments: true
 ---
 
-## Definition
+## What is Emotional Intelligence?
 
-Emotional intelligence or can commonly known as EQ (Emotional Quotient) is part of human intelligence where a person can understand and manage his/her own emotion and people around (Mind Tools Content Team n.d.).
+![eq](https://cdn.pixabay.com/photo/2017/11/26/15/16/smiley-2979107_1280.jpg)
 
-> Formally, it is “the capability of individuals to recognise their own emotions and those of others, discern between different feelings and label them appropriately, use emotional information to guide thinking and behaviour, and adjust emotions to adapt to environments” (Colman 2008).
+Emotional intelligence or can commonly known as EQ (Emotional Quotient) is part of human intelligence where a person can understand and manage his/her own emotion and people around. Formally, it is
+
+> “The capability of individuals to recognise their own emotions and those of others, discern between different feelings and label them appropriately, use emotional information to guide thinking and behaviour, and adjust emotions to adapt to environments” (Colman 2008).
 
 It can help to communicate effectively, empathise with others, overcome challenges, and defuse conflict. Emotional intelligence is commonly defined by four attributes: Self-management, Self-awareness, Social-awareness, and Relationship management.
 
@@ -34,7 +36,7 @@ The 4 attributes that are mentioned above helps to build collaborative partnersh
 - Social-awareness helps recognise the power dynamics in a group/organisation.
 - Relationship management helps in how to work well between partners and managing conflict when it occurs.
 
-## EQ in an effective team
+## EQ in an Effective Team
 
 Human relationships are complex and sometimes it can be stressful. EQ, in general, will help us to control the emotion between ourself and others. Understanding personal and others needs are necessary to perform effectively. It always starts with the individual itself.
 
@@ -46,13 +48,15 @@ In reality, it a lot common to see a connection between an individual with peopl
 
 An individual with above-average EQ will be calm in a crisis and can make decisions sensitively despite the situation is chaotic. Therefore, to form an effective team, it should consist of above-average EQ team members that are completed with a high EQ leader.
 
-### Example
+### Oversimplified Example
 
 Here is an example of how EQ plays a significant role in team effectiveness. One of your team member who is well-known to be the star of the team shows unusual behaviours. He arrives late at the office, little to no contribution to the meeting, and having lunch alone.
 
 As a person with high EQ, you noticed that there is something wrong with him despite he does not look grumpy or sad in his face. A few minutes before the office closes, you approach him and ask for his well-being. You mentioned what you have observed so far and you invited him to have dinner together to have a private talk about things that are bothering him at the moment. Luckily, he accepts your offer and talks about his personal problems.
 
 With your above average EQ, you are not judging his situation and instead, you actively listening on his situation and let him talk freely that night. On the next day, you notice that he is back to his old self again. He arrives on time, contributes actively to the meeting, and he is happy.
+
+Remember, EQ is much more complex than this story. But, this story is good enough to get the basic meaning of emotional intelligence. I will discuss more about it in the future article 😊. Stay tuned!
 
 ### References:
 

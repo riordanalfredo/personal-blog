@@ -1,6 +1,6 @@
 ---
-title: 'Hello!'
-date: '2021-01-01T06:00:00Z'
+title: 'Welcome, Technopreneurs! 📈 💻'
+date: '2021-02-01T06:00:00Z'
 description: 'A warm welcome message and 5 reasons why do I start this journal :)'
 categories: [business, learning, software, random, technopreneur]
 comments: true
@@ -8,53 +8,60 @@ comments: true
 
 # Dear readers,
 
-Hello, and welcome to my space! First of all, I want to say thank you for visiting this humble journal/blog :). This space is like a diary to express my thoughts, ideas, and other random stuffs about my journey to be one of the technology lead in ICT. First of all, let me introduce myself :)
+Hello, and welcome! First of all, I want to say thank you for visiting this humble journal/blog 😄. This article is the first article in this blog as the introduction about this blog. It includes the purpose of this blog, target readers, how do I present it, etc. This journal is intended as a diary to express my thoughts, ideas, and other random stuffs about my journey to be one of the technology leaders. Without further ado, let's talk about it.
 
-My name is **Riordan**, people usually call me Rio (yep, like that bird, or a city in Brazil, Ha!). As I am writing this article, I live in Melbourne, Australia. I am a teaching associate of software engineering units. I am also working on a software project, while studying Management in parallel.
+# What is Technopreneurship?
 
-I came from a small city in Indonesia, Malang (if you understand Bahasa Indonesia / Malay, it means `poor`, `unfortunate`, or `hapless`). Despite its unique name, it is a great city! Warm-hearted people, nice scenery, and foremost, the food! The food is very delicious, tasty, and cheap! Wow, I miss them so much...
-
-Uhm, I think the introduction might have gone too far. Anyway, you can read more about me in [here](https://rioalfredo.com/about-me). So, let's talk more about this blog.
-
-# Technopreneur
-
-This blog covers the combination of `business`, `ICT-software`, and `learning` domain. I believe those topics are mandatory and well understood to be a successful `technopreneur`. So, what is the meaning of this word?
+This blog covers the combination of `business`, `ICT-software`, and `learning` area. I believe those topics are the best categorisation to describe `technopreneurship`. So, what is the meaning of this word?
 
 ![technopreneur-image](technopreneur.png)
 
-As shown in the [picture](https://www.lexico.com/definition/technopreneur) above, the main purpose of this blog is to compile and publicly share the `technopreneruship` knowledge, so that we can learn how to be one of them. To be honest, I am still learning and I will keep learning about it, even from you, my reader!
+As shown in the [picture](https://www.lexico.com/definition/technopreneur) above, it is obvious that technopreneur is formed from the combination of technology and business, but why do I include learning topic? In my opinion, effective learning is necessary to keep up with the speed of tehcnological advancement is tremendous. Above all, we are dealing excessive information that need to be filtered out everyday. Learning is the support topic to help you advance and apply it immediately with the other topics.
 
-Furthermore, I also love to discuss about `pseudoscience` topics, especially about psychology. It includes western and chinese astrology, 16 personalities test, enneagram, DiSC, and other psychology tests. I do not use them for fortune telling. Instead, I apply this knowledge to gain understanding about interlocutors for an effective communication.
+Furthermore, I also love to discuss about other topics, such as `game`, `psychology`, and `pseudoscience`. It includes western and chinese astrology, 16 personalities test, enneagram, DiSC, etc. About astrology, I do not use them for fortune telling. Instead, I apply them to gain understanding about interlocutors for an effective communication. I also use them just for fun and easy-to-digest conversation.
 
-# 5 reasons to start this blog
+The main purpose of this journal is to compile and publicly share `technopreneruship` knowledge. By excelling these three topics (business, IT, and learning), I believe the one can be a successful `technopreneur`. To be honest, I am still learning and I will keep learning about it, even from you, my readers! So, please don't hesitate to comment in my post 😉.
 
-Now, here are my top 5 reasons (without order) why do I start this blog.
+# 5 reasons to start this journal
 
-## 1. Owning a digital asset
+Now, here are my top 5 reasons (without order) why do I start this journal.
 
-I was convinced that blogging is a great digital asset. Most people use other platforms like YouTube, Instagram, etc. They are great places to start because easy to set up, mature, and author can gain exposure easily (through recommendation system). However, these platforms are not entirely owned by these content creators as their contents are stored by providers. Basically, they belong to those organisations. So, in my opinion, the ownership is unclear to me.
+## 1. Assist smooth career transition in IT-Business
 
-I developed this blog as my own business asset and for ownership purposes. I will use those platforms (YouTube, Instagram, Medium, Dev.to, etc.), but my intention is solely for marketing purposes. For a simple example, promoting this website. I believe that by doing so, I can have leads and hopefully I can get opportunities to monetise as the side income.
+![computer](https://cdn.pixabay.com/photo/2014/05/03/00/45/computer-336628_1280.jpg)
 
-## 2. Grow my personal brand
+I realise that many people want to transition from technical to business career, and the other way around. For example, it happens to people who study MBA( Master of Business Administration) after finishing an IT degree or people who already got a business degree (or doing a lot of business hustle) and want to study Master of IT or Data Science. Maybe, some people are just curious about the other side. `If any of these is you, congratulations! you are at the right place!`. The purpose of journal is aligned with one of my personal goals, which is assisting smooth transition and be successful in the career that they choose. I hope that this journal can help people to learn about programming and software engineering knowledge better. I will also open an opportunity to discuss about leadership and management in business. By having an open discussion, we can learn together hopefully, achieving our goals 😄!
 
-By writing blog, it will validate my expertise. I can share my past and current projects, software engineering knowledge, business ideas, etc. I also confident that I can do networking building rapport and engagement like this article. Further advantage is I can stand out from the crowd and show my capabilities to the world.
+## 2. Own a digital business asset
 
-## 3. Improve my communication skills (writing)
+![asset](https://cdn.pixabay.com/photo/2018/01/13/18/55/leather-3080553_1280.jpg)
 
-This writing helps me to organise my chaotic thoughts and improve my communication skills. Sometimes, my speech is unclear, too complex, and easyily skipping the context because I cannot say it. By writing them down, I can calm them down, and see whether what I try to express is clear enough and effective. Also, it also improves English language skills (yep, English is my third language).
+I am a strong believer that blogging is a great digital asset. Most people use other platforms like YouTube, Instagram, etc., as their digital business asset. These platforms are great places to start because they are easy to set up, mature, and author can gain exposure easily (e.g. through recommendation system). However, these platforms are not entirely owned by those content creators as their contents are governed by providers. Basically, they belong to those organisations. So, in my opinion, the ownership is unclear.
 
-## 4. Learn together with like-minded people
+I developed this journal as my own business asset and for ownership purposes. I will use those platforms (YouTube, Instagram, Medium, Dev.to, etc.), but my intention is solely for marketing purposes such as promoting this website. By doing so, it helps getting leads and open opportunities to monetise as the side income.
 
-- Transition from business to IT and the other way around
-- Help people to learn about programming and software engineering knowledge better.
-- Open discussion about leadership and management in business
+## 3. Grow personal brand
+
+![personal-brand](https://cdn.pixabay.com/photo/2015/03/26/09/41/tie-690084_1280.jpg)
+
+The first benefit is it will validate my expertise as `technopreneur`, through my career as software engineer, software educator, and business owner. As a software engineer, I will share some small bits of interesting code/ideas from the past and current projects. It shows my abilities in software development and how do I solve technical problems. I will also open discussion about strategic management, leadership, and interesting business ideas in the business section. As an academic educator, I can share my understanding and perspective about software engineering knowledge, effective learning, and teaching. These information can demonstrate to my readers, future partners, and network that I am knowledgable and skilled in these area. Besides, I am confident with the developed personal brand, I can stand out from the crowd. With strong personal brand, it opens up further opportunity for networking, building rapport, and engagement!
+
+## 4. Improve communication skills (writing)
+
+![books](https://cdn.pixabay.com/photo/2015/03/26/09/44/books-690219_1280.jpg)
+
+This writing helps me to organise my chaotic thoughts and improve my communication skills. Sometimes, my speech is unclear, too complex, and I can say something that is conflicting with what I have in my mind. By writing them down, I can see clearly what I'm trying to express is clear enough and easy to understand. Further obvious advantage is improving my English language skills (oh, English is my tertiary language), especially writing skill.
 
 ## 5. Practice discipline
 
-- Sun Tzu said about iron discipline.
-- Setting up schedule to write and publish
+![calendar](https://cdn.pixabay.com/photo/2016/11/29/06/16/apple-1867752_1280.jpg)
 
-> I hope that this blog can facilitate the discussion and useful for you!
+> "Soldiers must be first treated in the first instance with humanity, but kept under control by means of iron discipline" — Sun Tzu, The Art of War
 
-Thank you for reading, and see you next time :)
+In my interpretation, iron discipline assure consistency. Many quotes, podcast, and motivational books cover about consistency as the key to be successful. So, I believe that having an iron discipline, it will help me to be consistent in writing and publishing. How do I achieve this kind of discipline? I need strong motivation and flexible schedule. For motivation, I always refer to `why do I do this?`. Asking my self with this **WHY** question, helps me to gain motivation to work and get things done. As I want to achieve flexible schedule, I set up a deadline for writing and publishing articles weekly by planning it a week ahead. I never plan beyond than a week because rigid schedule doesn't work most of the time.
+
+## Phew, it's pretty long for an introduction 😅.
+
+I hope that this journal/blog can be useful for you! Thank you for reading and see you next time 🦥!
+
+> Most of images are retrieved from [pixabay](https://pixabay.com/)
