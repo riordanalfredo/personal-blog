@@ -1,6 +1,6 @@
 import React from 'react'
-import Contact from '../../components/contact'
+import Form from '../../components/form'
 
-const FormContainer = () => <Contact />
+const FormContainer = () => <Form />
 
 export default FormContainer

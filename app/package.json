@@ -46,6 +46,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.14.1",
     "react-is": "^17.0.1",
+    "react-moment": "^1.1.1",
     "react-netlify-forms": "^1.2.0",
     "react-redux": "^7.2.2",
     "react-reveal": "^1.2.2",

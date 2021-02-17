@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Comments from '../components/comments/comments'
 import { rhythm, scale } from '../utils/typography'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -69,6 +70,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <hr style={{ marginBottom: rhythm(1) }} />
         <footer>
           <Bio />
+          <Comments />
         </footer>
       </article>
       <nav style={{ alignSelf: 'stretch' }}>

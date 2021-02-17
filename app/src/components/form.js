@@ -6,9 +6,11 @@ import {
   Honeypot,
 } from 'react-netlify-forms'
 import { useForm } from 'react-hook-form'
-import './contact.css'
+import './form.css'
 
-const Contact = () => {
+const Form = () => {
+  const successMessage = 'Sent! Thank you for contacting me.'
+  const errorMessage = 'Sorry, we could not reach servers. Please try again.'
   const { register, handleSubmit, errors, reset } = useForm()
   const netlify = useNetlifyForm({
     name: 'react-hook-form',
@@ -130,16 +132,12 @@ const Contact = () => {
         <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
           {netlify.success && (
             <div style={styles.alert.success}>
-              <p style={{ color: 'white', margin: 0 }}>
-                Sent! Thank you for contacting me.
-              </p>
+              <p style={{ color: 'white', margin: 0 }}>{successMessage}</p>
             </div>
           )}
           {netlify.error && (
             <div style={styles.alert.fail}>
-              <p style={{ color: 'white', margin: 0 }}>
-                Sorry, we could not reach servers. Please try again.
-              </p>
+              <p style={{ color: 'white', margin: 0 }}>{errorMessage}</p>
             </div>
           )}
 
@@ -160,4 +158,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Form
