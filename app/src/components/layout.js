@@ -60,7 +60,7 @@ const Layout = ({ location, title, children }) => {
     let prevScrollpos = window.pageYOffset
     window.onscroll = function () {
       let currentScrollPos = window.pageYOffset
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos || currentScrollPos < 80) {
         document.getElementById('navbar').style.top = '0'
       } else {
         document.getElementById('navbar').style.top = '-80px'
