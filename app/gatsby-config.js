@@ -20,7 +20,7 @@ module.exports = {
     },
     description: `Full-stack software engineer (React-Django), software educator, and avid reader.`,
     siteUrl: `https://riordanalfredo.github.io/personal-blog`,
-    defaultImage: 'images/bg.jpeg',
+    defaultImage: 'content/assets/icon.png',
   },
   plugins: [
     {
