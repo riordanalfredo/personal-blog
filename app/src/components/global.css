@@ -134,6 +134,7 @@ h1 {
     var(--textTitle),
     var(--textTitle2)
   );
+  text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 3.5rem;

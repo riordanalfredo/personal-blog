@@ -25,7 +25,7 @@ const ContactPage = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={'RIORDAN ALFREDO'}>
+    <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="Contact Me" />
       <div style={styles.outer}>
         <Fade cascade>

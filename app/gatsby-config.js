@@ -8,7 +8,7 @@ require('dotenv').config({
 module.exports = {
   pathPrefix: '/app',
   siteMetadata: {
-    title: `RIORDAN ALFREDO`,
+    title: `Riordan Alfredo`,
     author: {
       name: `Riordan Dervin Alfredo`,
       summary: `Riordan D. Alfredo (Rio) is a full-stack software engineer and software educator. He is passionate about sharing ideas in business, software, and learning. He loves to bring the best out of people to achieve their dreams & goals. Hobbies including astrology, psychology, and playing games (D&D, WoW, and Dota).`,
@@ -18,9 +18,9 @@ module.exports = {
       twitter: `riordanalfredo`,
       linkedin: `riordan-alfredo`,
     },
-    description: `Full-stack software engineer (React-Django), software educator, and avid reader.`,
-    siteUrl: `https://riordanalfredo.github.io/personal-blog`,
-    defaultImage: 'content/assets/icon.png',
+    description: `A Humble Technopreneur Journal & Software Engineering Portfolio`,
+    siteUrl: `https://rioalfredo.com`,
+    defaultImage: '/images/web-meta.png',
   },
   plugins: [
     {
@@ -72,7 +72,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Riordan Alfredo`,
-        short_name: `Riordan's technopreneur blog`,
+        short_name: `Riordan's technopreneur journal`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#c39d63`,

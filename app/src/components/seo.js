@@ -18,6 +18,7 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            siteUrl
             defaultImage
             social {
               twitter
@@ -30,6 +31,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultImage = site.siteMetadata.defaultImage
+  const siteUrl = site.siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -57,7 +59,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: defaultImage,
+          content: `${siteUrl}${defaultImage}`,
         },
         {
           name: `twitter:card`,
@@ -74,6 +76,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: `${siteUrl}${defaultImage}`,
         },
       ].concat(meta)}
     />
@@ -110,7 +116,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  image: PropTypes.string,
 }
 
 export default SEO

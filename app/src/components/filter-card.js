@@ -63,7 +63,7 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
 
   const buttonStyle = {
     ...iconSize,
-    ...(isDark ? darkIcon : lightIcon),
+    ...(!isDark ? lightIcon : darkIcon),
   }
   const selectedStyle = {
     ...styles.outerCircle,
