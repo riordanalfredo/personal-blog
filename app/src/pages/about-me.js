@@ -54,7 +54,7 @@ const AboutPage = ({ data, location }) => {
   )
   const description = data.site.siteMetadata.description
   return (
-    <Layout location={location} title={'RIORDAN ALFREDO'}>
+    <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="A software engineer &amp; educator" />
       <div style={styles.outer}>
         <h1 align="center">RIORDAN DERVIN ALFREDO</h1>

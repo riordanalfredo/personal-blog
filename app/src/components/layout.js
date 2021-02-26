@@ -18,7 +18,7 @@ const Layout = ({ location, title, children }) => {
     </Link>
   )
   const [open, setOpen] = useState(false)
-  const myName = 'RIORDAN ALFREDO'
+  const myName = 'Riordan Alfredo'
   const [width] = useMediaQuery()
   const isMobile = getIsMobileBoolean(width)
   const styles = {
