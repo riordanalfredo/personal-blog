@@ -1,57 +1,17 @@
 import React from 'react'
-import {
-  useNetlifyForm,
-  NetlifyFormProvider,
-  NetlifyFormComponent,
-  Honeypot,
-} from 'react-netlify-forms'
+
 import { useForm } from 'react-hook-form'
 import './form.css'
+import { Fragment } from 'react'
 
 const Form = () => {
-  const successMessage = 'Sent! Thank you for contacting me.'
-  const errorMessage = 'Sorry, we could not reach servers. Please try again.'
-  const { register, handleSubmit, errors, reset } = useForm()
-  const netlify = useNetlifyForm({
-    name: 'react-hook-form',
-    action: '/thanks',
-    honeypotName: 'bot-field',
-    onSuccess: (response, context) => {},
-  })
-  const onSubmit = data => {
-    netlify.handleSubmit(null, data)
-    reset()
-  }
+  const { register, errors } = useForm()
 
   const styles = {
     outer: {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-    },
-    alert: {
-      success: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 50,
-        borderRadius: 5,
-        padding: '0 2rem',
-        margin: '0 auto',
-        background: 'linear-gradient(90deg, #007d55, #0fb387)',
-      },
-      fail: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 50,
-        borderRadius: 5,
-        padding: '0 2rem',
-        margin: '0 auto',
-        background: 'linear-gradient(90deg, #953f54,#8f5862)',
-      },
     },
   }
   const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i
@@ -127,34 +87,18 @@ const Form = () => {
   )
 
   return (
-    <div style={styles.outer}>
-      <NetlifyFormProvider {...netlify}>
-        <NetlifyFormComponent onSubmit={handleSubmit(onSubmit)}>
-          {netlify.success && (
-            <div style={styles.alert.success}>
-              <p style={{ color: 'white', margin: 0 }}>{successMessage}</p>
-            </div>
-          )}
-          {netlify.error && (
-            <div style={styles.alert.fail}>
-              <p style={{ color: 'white', margin: 0 }}>{errorMessage}</p>
-            </div>
-          )}
-
-          <Honeypot />
-          <div style={styles.form}>
-            {InputName}
-            {InputEmail}
-            {InputTextarea}
-          </div>
-          <input
-            style={{ width: '100%', color: 'var(--bg)' }}
-            type="submit"
-            value="SEND"
-          />
-        </NetlifyFormComponent>
-      </NetlifyFormProvider>
-    </div>
+    <Fragment>
+      <div style={styles.form}>
+        {InputName}
+        {InputEmail}
+        {InputTextarea}
+      </div>
+      <input
+        style={{ width: '100%', color: 'var(--bg)' }}
+        type="submit"
+        value="SEND"
+      />
+    </Fragment>
   )
 }
 

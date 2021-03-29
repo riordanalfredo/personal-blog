@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Form from './contact/form'
+import Form from './contact/message-me'
 import SocialMedia from './contact/social-media'
 
 const ContactPage = ({ data, location }) => {

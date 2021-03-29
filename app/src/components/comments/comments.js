@@ -1,8 +1,12 @@
 import React from 'react'
 import CommentBox from './comment-box'
 import { rhythm } from '../../utils/typography'
-import Form from '../form' // need to use redux
+import MessageMe from '../message-me' // need to use redux
 
+/**
+ * Container class
+ * @returns
+ */
 const Comments = () => {
   const comments = [
     {
@@ -22,13 +26,13 @@ const Comments = () => {
   return (
     <div style={{ marginBottom: rhythm(2.5) }}>
       <h1 align="center">COMMENTS</h1>
+      <div>
+        <h3 align="center">So, what do you think?</h3>
+        <MessageMe />
+      </div>
       {comments.length !== 0
         ? comments.map((comment, id) => <CommentBox key={id} data={comment} />)
         : 'Retrieving...'}
-      <div>
-        <h3 align="center">So, what do you think?</h3>
-        <Form />
-      </div>
     </div>
   )
 }
