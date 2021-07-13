@@ -7,13 +7,6 @@ export const data = [
     link: 'https://www.gatsbyjs.com/starters/renyuanz/leonids',
   },
   {
-    text: 'Celine A. Elias',
-    comment:
-      'She assists me in reviewing the overall user interface of this blog',
-    link:
-      ' https://www.linkedin.com/in/celine-alandia-elias/?originalSubdomain=au',
-  },
-  {
     text: 'A Guide to Flexbox',
     comment: 'quick reference to ',
     link: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',
