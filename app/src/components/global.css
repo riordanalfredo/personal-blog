@@ -43,8 +43,8 @@ body.dark p {
 }
 
 ::selection {
-  color: var(--textLink);
-  background: var(--bg);
+  color: var(--bg);
+  background: var(--textTitle);
 }
 
 .bio {
