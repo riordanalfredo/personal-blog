@@ -14,7 +14,7 @@ const BooksListPage = ({ data, location }) => {
       <h1>RESOURCES</h1>
       <p>
         Here, I will share recommended resources in this educational technology
-        field. It under development, and it is coming soon!
+        field. It is still under development, but it is coming soon!
       </p>
     </Layout>
   )

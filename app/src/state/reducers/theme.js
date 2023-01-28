@@ -11,7 +11,7 @@ function getLocalStorageTheme() {
   const theme =
     typeof window !== 'undefined' && window.localStorage.getItem('theme')
   if (theme !== null) {
-    return theme === 'dark' ? true : false
+    return theme === 'light' ? false : true
   } else {
     return true // dark theme is always by default
   }
