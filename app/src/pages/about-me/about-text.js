@@ -16,13 +16,14 @@ const AboutText = ({ isMobile }) => {
     <div style={isMobile ? styles.mobile : styles.desktop}>
       <p>
         Software engineering has always fascinated me. It covers all levels of
-        complexity that satisfies my hunger for knowledge. The true challenge
-        comes not only from the technology side but also from understanding
-        business needs. he true challenge comes not only from the technology
-        sides but also from understanding business needs. I am proficient in the
-        design and development process, especially in the software architecture
-        (<code>design patterns, quality assurance, and human dynamics</code>)
-        with a couple years of industry experience.
+        complexity and allows me to develop empowering tools for stakeholders.
+        The true challenge is not only from the technology side but also from
+        understanding business goals and needs. I believe the sustainable
+        connections between these two concepts could be achieved through
+        involvement of learning and education. My interests & proficiencies are
+        in the design and development process, especially in the software system
+        (<code>design patterns, quality assurance, and human dynamics</code>) of
+        educational technologies.
       </p>
     </div>
   )

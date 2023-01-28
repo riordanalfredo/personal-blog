@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './filter-card.css'
 import './global.css'
+import { Tooltip } from 'react-tooltip'
 
 const FilterCard = ({ categories, id, selectFunction, isDark }) => {
   const { text, style } = categories[id]
@@ -75,7 +76,11 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
   }
 
   return (
-    <div style={styles.outer}>
+    <div
+      id={id}
+      style={styles.outer}
+      data-tooltip-content={`Click to filter articles by ${id}`}
+    >
       <div
         style={categories[id].isSelected ? selectedStyle : nonSelectedStyle}
         className="coin"
@@ -98,6 +103,7 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
       >
         {text}
       </p>
+      <Tooltip anchorId={id} variant={'light'} />
     </div>
   )
 }

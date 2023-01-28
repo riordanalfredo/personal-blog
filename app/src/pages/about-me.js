@@ -35,6 +35,7 @@ const AboutPage = ({ data, location }) => {
       maxWidth: 880,
       width: '60vw',
       alignSelf: 'center',
+      textAlign: 'center',
     },
     secondText: {
       textAlign: 'justify',
@@ -46,12 +47,14 @@ const AboutPage = ({ data, location }) => {
     <>
       <blockquote style={styles.quote}>
         <Fade delay={300}>
-          My crafts are synthesising software engineering and data science
-          knowledge, along with the entrepreneurial mindset to advance society.
+          My crafts are synthesising software engineering, human-centred design,
+          and artificial intelligence knowledge to advance learning and
+          education.
         </Fade>
       </blockquote>
     </>
   )
+
   const description = data.site.siteMetadata.description
   return (
     <Layout location={location} title={'Riordan Alfredo'}>
@@ -61,23 +64,41 @@ const AboutPage = ({ data, location }) => {
         <p style={{ color: 'grey' }}>{description}</p>
         <div style={styles.profile}>
           <PhotoProfile />
+          {quote}
           <AboutText isMobile={isMobile} />
         </div>
         <p style={styles.secondText}>
-          I received a full-ride scholarship to study data science &amp; AI area
-          as a Doctor of Philosophy student at Monash University. My research
-          was about <code>meta-learning &amp; recommender systems</code> topics.
-          Now, I am a teaching associate for software engineering units at the
-          Faculty of IT, Monash University. I love connecting with all of my
-          students aside from just delivering content. At the same time, I am
-          working on various software projects with{' '}
+          I received a full-ride scholarship to study "Human-Centred Learning
+          Analytics" area as a Doctor of Philosophy student at Monash
+          University. My research is about{' '}
+          <code>
+            human-centered design, multimodal learning analytics, and learning
+            design
+          </code>{' '}
+          topics. Now, I am a teaching associate for core software engineering
+          units at the Faculty of IT, Monash University. Moreover, I am working
+          on various software projects with{' '}
           <code>
             ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
             and Django frameworks.
           </code>
           <br />
         </p>
-        {quote}
+      </div>
+      <div style={{ alignSelf: 'flex-start' }}>
+        <h3>Education</h3>
+        <p>PhD in Learning Analytics | Monash University | 2022 - present</p>
+        <p>
+          Graduate Diploma of Management (Learning) | Altec College, Melbourne |
+          2021 - 2022{' '}
+        </p>
+        <p>
+          Bachelor of Software Engineering (Honours), H1 | Monash University |
+          2016 - 2019{' '}
+        </p>
+        <p>
+          Diploma of Engineering (Engineering) | Monash College | 2015 - 2016{' '}
+        </p>
       </div>
       <CreditSection />
     </Layout>

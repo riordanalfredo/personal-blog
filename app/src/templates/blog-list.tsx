@@ -6,8 +6,8 @@ import SEO from '../components/seo'
 import Intro from '../components/intro'
 import PageNavigation from '../components/page-navigation'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
+import 'react-tooltip/dist/react-tooltip.css'
 
-import FiltersContainer from '../state/containers/filters'
 import PostsContainer from '../state/containers/posts'
 
 // type PageContext = {
@@ -54,7 +54,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
-      width: '65vw',
+      maxWidth: '880px',
+      width: '100%',
     } as React.CSSProperties,
   }
 
@@ -64,7 +65,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <div>
         <div style={isMobile ? {} : styles.intro}>
           <Intro />
-          <FiltersContainer />
         </div>
         <div style={styles.articles}>
           <PostsContainer allPosts={allPosts} />

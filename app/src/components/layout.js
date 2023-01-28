@@ -52,6 +52,8 @@ const Layout = ({ location, title, children }) => {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
+      backgroundColor: 'var(--bg)',
+      color: 'var(--textNormal)',
     },
   }
 
@@ -87,7 +89,7 @@ const Layout = ({ location, title, children }) => {
           <Burger open={open} setOpen={setOpen} />
           <h1 className="title" style={styles.mobileTitle}>
             <Title text={myName} />
-          </h1>{' '}
+          </h1>
           <Toggler />
         </div>
       </div>

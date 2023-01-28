@@ -49,6 +49,7 @@
     "react-netlify-forms": "^1.2.0",
     "react-redux": "^7.2.2",
     "react-reveal": "^1.2.2",
+    "react-tooltip": "^5.7.1",
     "react-typography": "^0.16.19",
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",

@@ -209,6 +209,7 @@ button {
   background-color: var(--bg);
   position: absolute;
   top: 80px;
+  height: auto;
   z-index: 1;
   width: 100%;
   padding: 0 2rem 0;

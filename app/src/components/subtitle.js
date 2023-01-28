@@ -10,7 +10,7 @@ const Subtitle = ({ style }) => {
   }
   return (
     <div>
-      <p style={textStyle}>The Journal of a Technopreneur</p>
+      <p style={textStyle}>Educational Technology Enthusiast</p>
     </div>
   )
 }

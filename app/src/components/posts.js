@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Post from './post'
+import FiltersContainer from '../state/containers/filters'
 import './post.css'
 
 const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
@@ -51,6 +52,9 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
   return (
     <Fragment>
       <h1 style={{ margin: '2rem 0 0 0' }}>ARTICLES</h1>
+
+      <FiltersContainer />
+
       {!!currentPosts.length ? (
         currentPosts.map(({ node }, index) => {
           const title = node.frontmatter.title || node.fields.slug

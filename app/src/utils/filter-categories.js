@@ -8,17 +8,17 @@ import educationDarkPic from '../assets/filters/learning-dark.svg'
 import softwareDarkPic from '../assets/filters/software-dark.svg'
 
 export const filterCategories = {
-  business: {
-    text: 'Business',
-    categories: ['art-of-war', 'leadership', 'management', 'business'],
+  education: {
+    text: 'Education',
+    categories: ['study', 'habit', 'teaching', 'philosophy', 'learning'],
     isSelected: true,
     style: {
-      imgUrl: businessPic,
-      imgUrlDark: businessDarkPic,
+      imgUrl: educationPic,
+      imgUrlDark: educationDarkPic,
     },
   },
   technology: {
-    text: 'Software',
+    text: 'Technology',
     categories: [
       'code',
       'iot',
@@ -34,16 +34,16 @@ export const filterCategories = {
       imgUrlDark: softwareDarkPic,
     },
   },
-  education: {
-    text: 'Learning',
-    categories: ['study', 'habit', 'teaching', 'philosophy', 'learning'],
+  business: {
+    text: 'Business',
+    categories: ['art-of-war', 'leadership', 'management', 'business'],
     isSelected: true,
     style: {
-      imgUrl: educationPic,
-      imgUrlDark: educationDarkPic,
+      imgUrl: businessPic,
+      imgUrlDark: businessDarkPic,
     },
   },
-  science: {
+  other: {
     text: 'Other',
     categories: [
       'astrology',

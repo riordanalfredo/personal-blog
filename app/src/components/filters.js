@@ -24,23 +24,21 @@ const Filters = ({ categories, selectCategory, resetFilter, theme }) => {
   // Elements
 
   return (
-    <div>
-      <div style={styles.outer}>
-        <div style={styles.icons} className={'filters'}>
-          {Object.keys(categories).map((val, index) => {
-            return (
-              <FilterCard
-                key={index}
-                isDark={theme.isDark}
-                categories={categories}
-                id={val}
-                selectFunction={selectCategory}
-              />
-            )
-          })}
-        </div>
-      </div>
+    // <div style={styles.outer}>
+    <div style={styles.icons} className={'filters'}>
+      {Object.keys(categories).map((val, index) => {
+        return (
+          <FilterCard
+            key={index}
+            isDark={theme.isDark}
+            categories={categories}
+            id={val}
+            selectFunction={selectCategory}
+          />
+        )
+      })}
     </div>
+    // </div>
   )
 }
 

@@ -21,9 +21,6 @@ const Intro = () => {
       textJustify: 'inter-word',
       marginBottom: 0,
     },
-    welcome: {
-      width: '65vw',
-    },
   }
 
   return (
@@ -32,26 +29,15 @@ const Intro = () => {
         <h1 style={styles.title}>WELCOME</h1>
       </Fade>
       <p style={styles.body}>
-        Hello and welcome to the Technopreneurship journal{' '}
+        Hello and welcome to educational technology enthusiast blog{' '}
         <span role="img" aria-label="rocket">
           🚀
         </span>
-        ! This journal is my
-        <b>
-          <i>
-            &nbsp;personal journey to be a business leader in the information,
-            computer, and technology (ICT) industry.&nbsp;
-          </i>
-        </b>
-        It covers thoughts, ideas, stories, and facts categorised into business,
-        software, and learning topics. Please don't hesitate to{' '}
+        ! I share my research, thoughts, and stories that are categorised into
+        educational/learning, technology/software, and business topics. Please{' '}
         <Link to="/contact">contact me</Link> for any questions or exciting
-        opportunities (talks, teaching, development contract, etc.). I hope you
-        enjoy reading them as much as I do writing them{' '}
-        <span role="img" aria-label="smile">
-          😄
-        </span>
-        !
+        opportunities (guest talks, teaching, development contract, etc.). I
+        hope you enjoy reading them as much as I do writing them!
       </p>
     </div>
   )
