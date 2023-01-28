@@ -60,8 +60,11 @@ const AboutPage = ({ data, location }) => {
     <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="A software engineer &amp; educator" />
       <div style={styles.outer}>
-        <h1 align="center">RIORDAN DERVIN ALFREDO</h1>
-        <p style={{ color: 'grey' }}>{description}</p>
+        <Fade cascade>
+          <h1 align="justify">RIORDAN DERVIN ALFREDO</h1>{' '}
+        </Fade>
+        <p style={{ color: 'grey', marginTop: '-2rem' }}>{description}</p>
+
         <div style={styles.profile}>
           <PhotoProfile />
           {quote}

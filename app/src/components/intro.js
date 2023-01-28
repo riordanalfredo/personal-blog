@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Fade from 'react-reveal/Fade'
 
 const Intro = () => {
   const styles = {
@@ -17,7 +16,7 @@ const Intro = () => {
       marginTop: 0,
     },
     body: {
-      textAlign: 'justify',
+      textAlign: 'left',
       textJustify: 'inter-word',
       marginBottom: 0,
     },
@@ -25,16 +24,15 @@ const Intro = () => {
 
   return (
     <div style={styles.outer}>
-      <Fade cascade>
-        <h1 style={styles.title}>WELCOME</h1>
-      </Fade>
+      {/* <Fade cascade><h1 style={styles.title}>WELCOME</h1></Fade> */}
+
       <p style={styles.body}>
-        Hello and welcome to educational technology enthusiast blog{' '}
+        Welcome to educational technology enthusiast blog{' '}
         <span role="img" aria-label="rocket">
           🚀
         </span>
         ! I share my research, thoughts, and stories that are categorised into
-        educational/learning, technology/software, and business topics. Please{' '}
+        education, technology, and business topics. Please{' '}
         <Link to="/contact">contact me</Link> for any questions or exciting
         opportunities (guest talks, teaching, development contract, etc.). I
         hope you enjoy reading them as much as I do writing them!

@@ -11,7 +11,7 @@ module.exports = {
     title: `Riordan Alfredo`,
     author: {
       name: `Riordan Dervin Alfredo`,
-      summary: `Riordan Alfredo is a software engineering educator,  developer, and educational technology enthusiast. He is passionate about sharing ideas in research, programming, business, and learning design. He loves to bring the best out of people to achieve goals & dreams. He has hobbies that are not limited to astrology, golf, and video games (D&D, WoW, and Dota2).`,
+      summary: `Riordan Alfredo is a software engineering educator,  developer, and educational technology researcher. He is passionate about sharing ideas in research, programming, business, and learning design. He loves to bring the best out of people to achieve goals & dreams. He has hobbies that are not limited to astrology, golf, and video games (D&D, WoW, and Dota2).`,
     },
     social: {
       instagram: `riordanalfredo`,

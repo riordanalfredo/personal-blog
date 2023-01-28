@@ -3,7 +3,7 @@ import './filter-card.css'
 import './global.css'
 import { Tooltip } from 'react-tooltip'
 
-const FilterCard = ({ categories, id, selectFunction, isDark }) => {
+const FilterCard = ({ categories, id, selectFunction, theme }) => {
   const { text, style } = categories[id]
   const [isSelected, setIsSelected] = useState(categories[id].isSelected)
 
@@ -62,10 +62,6 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
     background: `url(${style.imgUrl})`,
   }
 
-  const buttonStyle = {
-    ...iconSize,
-    ...(!isDark ? lightIcon : darkIcon),
-  }
   const selectedStyle = {
     ...styles.outerCircle,
     opacity: 1,
@@ -88,7 +84,10 @@ const FilterCard = ({ categories, id, selectFunction, isDark }) => {
         <div style={styles.innerCircle}>
           <button
             id={id}
-            style={buttonStyle}
+            style={{
+              ...iconSize,
+              ...(theme.isDark ? darkIcon : lightIcon),
+            }}
             aria-label="Select Category"
             onClick={selectCategory}
           />

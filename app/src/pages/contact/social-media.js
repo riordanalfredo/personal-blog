@@ -4,6 +4,8 @@ import { ImWhatsapp as WA } from '@react-icons/all-files/im/ImWhatsapp'
 import { MdEmail as Email } from '@react-icons/all-files/md/MdEmail'
 import { FaLinkedinIn as LinkedIn } from '@react-icons/all-files/fa/FaLinkedinIn'
 import { ImGithub as Github } from '@react-icons/all-files/im/ImGithub'
+import { SiResearchgate as ResearchGate } from '@react-icons/all-files/si/SiResearchgate'
+
 import { useMediaQuery, getIsMobileBoolean } from '../../utils/mobile'
 
 const SocialMediaContainer = () => {
@@ -33,12 +35,17 @@ const SocialMediaContainer = () => {
       link: 'https://github.com/riordanalfredo?tab=repositories',
       icon: <Github size={isMobile ? 40 : 70} />,
     },
+    {
+      text: 'ResearchGate',
+      link: 'https://www.researchgate.net/profile/Riordan_Alfredo',
+      icon: <ResearchGate size={isMobile ? 40 : 70} />,
+    },
   ]
 
   const styles = {
     grid: {
       display: 'grid',
-      gridTemplateColumns: 'repeat(4, 1fr)',
+      gridTemplateColumns: 'repeat(5, 1fr)',
       gridGap: isMobile ? '1rem' : '5rem',
       textAlign: 'center',
       marginTop: '3vh',

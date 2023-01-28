@@ -1,10 +1,9 @@
 // Gatsby supports TypeScript natively!
-import React, { Fragment, useEffect, Provider } from 'react'
-import { PageProps, Link, graphql } from 'gatsby'
+import React from 'react'
+import { PageProps, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Intro from '../components/intro'
-import PageNavigation from '../components/page-navigation'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import 'react-tooltip/dist/react-tooltip.css'
 
@@ -61,7 +60,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="All articles" />
       <div>
         <div style={isMobile ? {} : styles.intro}>
           <Intro />

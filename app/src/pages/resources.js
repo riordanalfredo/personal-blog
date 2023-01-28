@@ -10,11 +10,11 @@ const BooksListPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Recommended resources" />
+      <SEO title="Recommended Resources" />
       <h1>RESOURCES</h1>
       <p>
-        Here, I will share open-source resources that helps you learning
-        something new. It is coming soon!
+        Here, I will share recommended resources in this educational technology
+        field. It under development, and it is coming soon!
       </p>
     </Layout>
   )
