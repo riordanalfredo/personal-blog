@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, navigate } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+
+import BackButton from '../components/backButton'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -41,6 +43,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       marginBottom: rhythm(1),
       textAlign: 'center',
     },
+
     article: { width: '90vw', minWidth: 310, maxWidth: 880 },
   }
 

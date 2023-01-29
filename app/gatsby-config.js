@@ -18,8 +18,7 @@ module.exports = {
       twitter: `riordanalfredo`,
       linkedin: `riordan-alfredo`,
     },
-    description: `“The soul becomes dyed with the colour of its thoughts.”
-    ― Marcus Aurelius, Meditations`,
+    description: `PhD student & Teaching Associate @ Monash University | BSE(Hons), GradDipMgt(Learning)`,
     siteUrl: `https://rioalfredo.com`,
     defaultImage: '/images/web-meta.png',
   },
@@ -73,7 +72,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Riordan Alfredo`,
-        short_name: `Riordan Alfredo Blog`,
+        short_name: `Educational Technology Enthusiast Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#c39d63`,

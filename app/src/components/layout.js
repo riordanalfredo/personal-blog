@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { scale } from '../utils/typography'
-import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
+import {
+  useMediaQuery,
+  getIsMobileBoolean,
+  mobileScrolling,
+} from '../utils/mobile'
 
 import Toggler from '../state/containers/theme'
 import Menu from './menu'
@@ -9,7 +13,9 @@ import Footer from './footer'
 import Subtitle from './subtitle'
 import Burger from './burger'
 import MobileMenu from './mobile-menu'
+
 import './global.css'
+import BackButton from './backButton'
 
 const Layout = ({ location, title, children }) => {
   const Title = ({ text }) => (
@@ -50,7 +56,6 @@ const Layout = ({ location, title, children }) => {
       margin: '0 auto',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: 'var(--bg)',
       color: 'var(--textNormal)',
@@ -59,16 +64,7 @@ const Layout = ({ location, title, children }) => {
 
   // To hide navigation bar on scroll in mobile view
   useEffect(() => {
-    let prevScrollpos = window.pageYOffset
-    window.onscroll = function () {
-      let currentScrollPos = window.pageYOffset
-      if (prevScrollpos > currentScrollPos || currentScrollPos < 80) {
-        document.getElementById('navbar').style.top = '0'
-      } else {
-        document.getElementById('navbar').style.top = '-80px'
-      }
-      prevScrollpos = currentScrollPos
-    }
+    mobileScrolling('navbar', isMobile)
   })
 
   const desktopHeader = (
@@ -115,7 +111,11 @@ const Layout = ({ location, title, children }) => {
       {isMobile ? <MobileMenu open={open}>{desktopHeader}</MobileMenu> : null}
 
       <div className="main-content relative">
-        <main style={styles.main}>{children}</main>
+        <main style={styles.main}>
+          {location.pathname !== '/' && isMobile ? <BackButton /> : null}
+
+          {children}
+        </main>
         <Footer />
       </div>
     </div>

@@ -28,16 +28,13 @@ const ContactPage = ({ data, location }) => {
     <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="Contact Me" />
       <div style={styles.outer}>
-        <Fade cascade>
-          <h1 align="center">KEEP IN TOUCH</h1>
-        </Fade>
+        <h1 align="center">KEEP IN TOUCH</h1>
         <div style={styles.inner}>
           <p style={{ textAlign: 'justify' }}>
-            Hello, thank you for reaching out! There are only few steps away.
-            Please write down <code>name</code>, <code>email</code>, and your{' '}
-            <code>message</code> below. Alternatively, you may contact me
-            through provided social media platforms underneath. I will reply to
-            your queries ASAP!
+            Hi! There is only few steps away. Please write down{' '}
+            <code>name</code>, <code>email</code>, and your <code>message</code>{' '}
+            below. Alternatively, you may contact me through provided social
+            media platforms underneath. I will reply to your queries ASAP!
           </p>
           <Form />
           <SocialMedia />

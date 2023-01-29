@@ -8,9 +8,14 @@ const AboutText = ({ isMobile }) => {
       textJustify: 'inner-word',
     },
     mobile: {
-      textAlign: 'justify',
+      textAlign: 'left',
       textJustify: 'inner-word',
+      padding: '1rem',
     },
+    // secondText: {
+    //   textAlign: 'justify',
+    //   textJustify: 'inner-word',
+    // },
   }
   return (
     <div style={isMobile ? styles.mobile : styles.desktop}>
@@ -24,6 +29,23 @@ const AboutText = ({ isMobile }) => {
         in the design and development process, especially in the software system
         (<code>design patterns, quality assurance, and human dynamics</code>) of
         educational technologies.
+      </p>
+      <p>
+        I received a full-ride scholarship (tuition fee and stipend) to study
+        "Human-Centred Learning Analytics" as a Doctor of Philosophy student at
+        Monash University. My research is about{' '}
+        <code>
+          human-centered design, multimodal learning analytics, and learning
+          design
+        </code>{' '}
+        topics. Now, I am a teaching associate for core software engineering
+        units at the Faculty of IT, Monash University. Moreover, I am working on
+        various software projects with{' '}
+        <code>
+          ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
+          and Django frameworks.
+        </code>
+        <br />
       </p>
     </div>
   )

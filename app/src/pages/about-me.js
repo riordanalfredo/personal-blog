@@ -10,6 +10,7 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
+import BackButton from '../components/backButton'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
@@ -33,13 +34,9 @@ const AboutPage = ({ data, location }) => {
       marginBottom: 0,
       minWidth: 350,
       maxWidth: 880,
-      width: '60vw',
+      marginLeft: 0,
       alignSelf: 'center',
       textAlign: 'center',
-    },
-    secondText: {
-      textAlign: 'justify',
-      textJustify: 'inner-word',
     },
   }
 
@@ -59,35 +56,16 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="A software engineer &amp; educator" />
-      <div style={styles.outer}>
-        <Fade cascade>
-          <h1 align="justify">RIORDAN DERVIN ALFREDO</h1>{' '}
-        </Fade>
-        <p style={{ color: 'grey', marginTop: '-2rem' }}>{description}</p>
 
-        <div style={styles.profile}>
-          <PhotoProfile />
-          {quote}
-          <AboutText isMobile={isMobile} />
-        </div>
-        <p style={styles.secondText}>
-          I received a full-ride scholarship to study "Human-Centred Learning
-          Analytics" area as a Doctor of Philosophy student at Monash
-          University. My research is about{' '}
-          <code>
-            human-centered design, multimodal learning analytics, and learning
-            design
-          </code>{' '}
-          topics. Now, I am a teaching associate for core software engineering
-          units at the Faculty of IT, Monash University. Moreover, I am working
-          on various software projects with{' '}
-          <code>
-            ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
-            and Django frameworks.
-          </code>
-          <br />
-        </p>
+      <div style={styles.outer}>
+        <h1>RIORDAN DERVIN ALFREDO</h1>
+        <p style={{ color: 'grey', marginTop: '-2rem' }}>{description}</p>
       </div>
+      <div style={styles.profile}>
+        <PhotoProfile />
+        {quote}
+      </div>
+      <AboutText isMobile={isMobile} />
       <div style={{ alignSelf: 'flex-start' }}>
         <h3>Education</h3>
         <p>PhD in Learning Analytics | Monash University | 2022 - present</p>
