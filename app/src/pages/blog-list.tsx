@@ -27,6 +27,7 @@ type Data = {
           title: string
           date: string
           description: string
+          isNew: boolean
           categories: [string]
         }
         fields: {
@@ -94,6 +95,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            isNew
             description
             categories
           }

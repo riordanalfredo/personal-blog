@@ -43,7 +43,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(1),
         justifyContent: 'center',
         flexDirection: isMobile ? 'column' : 'row',
         alignItems: 'center',
@@ -76,10 +76,10 @@ const Bio = () => {
         </p>
         <small style={{ marginBottom: '0.5rem' }}>{author.summary}</small>
         <small>
-          Connect with me on{' '}
+          Follow me on{' '}
           <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>
           {', '}
-          or you can find out more in <Link to="/about-me">About Me</Link>
+          or <Link to="/contact">contact me</Link> straightaway!
         </small>
       </div>
     </div>

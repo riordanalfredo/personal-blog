@@ -4,6 +4,7 @@ date: '2021-02-07T06:00:00Z'
 description: 'What is the importance of emotional intelligence in the team? How does it affect your team effectiveness?'
 categories: [leadership, psychology, teamwork, emotion]
 comments: true
+isNew: false
 ---
 
 ## What is Emotional Intelligence?

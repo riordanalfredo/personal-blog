@@ -4,10 +4,12 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import { DiscussionEmbed } from 'disqus-react'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
+
   const styles = {
     h1: {
       marginBottom: 0,
@@ -41,9 +43,52 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       marginBottom: rhythm(1),
       textAlign: 'center',
     },
-
+    newText: {
+      color: 'var(--highlight)',
+    },
     article: { width: '90vw', minWidth: 310, maxWidth: 880 },
   }
+
+  const { slug, title } = post.frontmatter
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: slug, title },
+  }
+
+  const navigationComponent = (
+    <nav style={{ alignSelf: 'stretch' }}>
+      <ul style={styles.navigation}>
+        <li>
+          {previous && (
+            <div style={styles.prev}>
+              <small>Older Post</small>
+              <Link
+                to={`${previous.fields.slug}`}
+                style={{ boxShadow: 'none' }}
+                rel="prev"
+              >
+                ← {previous.frontmatter.title}
+              </Link>
+            </div>
+          )}
+        </li>
+        <li>
+          {next && (
+            <div style={styles.next}>
+              <small>Newer Post</small>
+              <Link
+                to={`${next.fields.slug}`}
+                style={{ boxShadow: 'none' }}
+                rel="next"
+              >
+                {next.frontmatter.title} →
+              </Link>
+            </div>
+          )}
+        </li>
+      </ul>
+    </nav>
+  )
 
   return (
     <Layout location={location} title="Riordan Alfredo">
@@ -56,7 +101,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
           <h1 style={styles.h1}>{post.frontmatter.title}</h1>
           <p style={styles.info}>
-            {post.frontmatter.date} | Tags:&nbsp;
+            {post.frontmatter.date}
+            {post.frontmatter.isNew && <sup style={styles.newText}>NEW</sup>}|
+            Tags:{' '}
             {post.frontmatter.categories.map((e, index) => (
               <span key={index}>
                 {index === 0 ? '' : ', '}
@@ -66,43 +113,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{ marginBottom: rhythm(1) }} />
         <footer>
+          <hr style={{ marginBottom: rhythm(1) }} />
+
           <Bio />
+          <hr style={{ marginBottom: rhythm(1) }} />
+
+          {navigationComponent}
         </footer>
       </article>
-      <nav style={{ alignSelf: 'stretch' }}>
-        <ul style={styles.navigation}>
-          <li>
-            {previous && (
-              <div style={styles.prev}>
-                <small>Older Post</small>
-                <Link
-                  to={`${previous.fields.slug}`}
-                  style={{ boxShadow: 'none' }}
-                  rel="prev"
-                >
-                  ← {previous.frontmatter.title}
-                </Link>
-              </div>
-            )}
-          </li>
-          <li>
-            {next && (
-              <div style={styles.next}>
-                <small>Newer Post</small>
-                <Link
-                  to={`${next.fields.slug}`}
-                  style={{ boxShadow: 'none' }}
-                  rel="next"
-                >
-                  {next.frontmatter.title} →
-                </Link>
-              </div>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <DiscussionEmbed {...disqusConfig} />
+
       {/* TODO: place ads here after I already have strong contents <Ads /> */}
     </Layout>
   )
@@ -126,6 +147,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         categories
+        isNew
       }
     }
   }

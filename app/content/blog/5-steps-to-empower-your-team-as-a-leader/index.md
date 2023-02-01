@@ -1,14 +1,15 @@
 ---
-title: 'Equipping: 5 Steps to Develop People You Lead to Do Their Jobs Well'
+title: 'Equipping: 5 Steps to empower your team as a leader'
 date: '2021-02-10T06:00:00Z'
 description: 'Equipping — One process to develop people you lead do their jobs well'
 categories: [business, leadership]
 comments: true
+isNew: false
 ---
 
 ## Introduction
 
-You, as the leader, always wants to get things done in the team. It is not just to tell people what do they need to do. It will not develop their true potential in the team. Without utilising their potential, meaning you put your mind into a team’s work, you cannot benefit from working as a team. According to John C. Maxwell, in the book **'How Successful People Lead'**, He found the best methods to help others do their jobs well. It is called the five-step equipping process. I referenced it from _Chapter: Best Behaviours on Level 4 ‘How to Develop People’_. Here is my summary (I am using piano images as examples):
+As the leader, we always want to get things done in the team. It is not just to tell people what do they need to do (e.g., bossing around, micromanaging, etc.). Even worse, taking the team's tasks on your own will damage their growth as an individual, creativity, and motivation to contribute. Without giving them opportunity to uncover their potential, benefits for working in a team are diminished. According to John C. Maxwell, in the book [**'How Successful People Lead'**](https://www.amazon.com/How-Successful-People-Lead-Influence-ebook/dp/B009Z2XVZK), he described the best methods to help others do their jobs well: Equipping. It is called the five-step equipping process. Here, I illustrate the summary of these steps using 'teaching someone to learn & play a piano':
 
 ### Step 1-I do it (competence)
 
@@ -38,6 +39,6 @@ It is the most challenging part where you build leadership skills for people you
 
 ## Conclusion
 
-In conclusion, these steps are continuous, meaning you can use any previous steps below five, even after reaching Step 5. These steps are not only improving the team’s productivity, but also relationships within your team. **What do you think about these steps?**
+In conclusion, these steps are not linear, meaning you can use any steps, even after reaching Step 5. These steps are believed not only improving the team’s productivity, but also relationships in your team.
 
-This short article is referenced from ‘How Successful People Lead’ by John C. Maxwell. It is a fantastic book that broadens up my view of leadership. Grow your leadership skills beyond!
+This short article is a summary from [‘How Successful People Lead’](https://www.amazon.com/How-Successful-People-Lead-Influence-ebook/dp/B009Z2XVZK) by John C. Maxwell, specifically _Chapter: Best Behaviours on Level 4 ‘How to Develop People’_. I found these equipping steps are relevant to my duties as a mentor of software engineering projects. I will share my story about mentorship in another article. By the way, **what do you think about these equipping steps?**

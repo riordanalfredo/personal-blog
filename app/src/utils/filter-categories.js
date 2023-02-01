@@ -10,7 +10,14 @@ import softwareDarkPic from '../assets/filters/software-dark.svg'
 export const filterCategories = {
   education: {
     text: 'Education',
-    categories: ['study', 'habit', 'teaching', 'philosophy', 'learning'],
+    categories: [
+      'study',
+      'habit',
+      'teaching',
+      'philosophy',
+      'learning',
+      'learning analytics',
+    ],
     isSelected: true,
     style: {
       imgUrl: educationPic,
@@ -27,6 +34,7 @@ export const filterCategories = {
       'back-end',
       'python',
       'node-js',
+      'learning analytics',
     ],
     isSelected: true,
     style: {

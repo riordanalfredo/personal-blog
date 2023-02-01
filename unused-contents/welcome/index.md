@@ -4,6 +4,7 @@ date: '2021-02-01T06:00:00Z'
 description: 'A warm welcome message and 5 reasons why do I start this journal :)'
 categories: [business, learning, software, random, technopreneur]
 comments: true
+isNew: false
 ---
 
 # Dear readers,

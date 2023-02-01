@@ -14,6 +14,7 @@ body {
   --hover: #4b6cb7;
   --shadow: #9599a3;
   --hr: hsla(0, 20%, 1%, 0.2);
+  --highlight: #ff6969;
 
   background-color: var(--bg);
 }
@@ -30,6 +31,7 @@ body.dark {
   --hover: rgb(255, 242, 215);
   --shadow: #141414;
   --hr: hsla(0, 0%, 100%, 0.2);
+  --highlight: #ff6969;
 }
 
 body.dark p {

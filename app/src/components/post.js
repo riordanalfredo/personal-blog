@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import './post.css'
 
-const Post = ({ node, title }) => {
+const Post = ({ node, title, isNew }) => {
   const styles = {
     article: {
       transition: '0.3s',
@@ -12,6 +12,7 @@ const Post = ({ node, title }) => {
       width: '90vw',
     },
     post: { boxShadow: `none`, color: 'var(--textTitle)' },
+    newText: { color: 'var(--highlight)' },
   }
   return (
     <div>
@@ -28,7 +29,10 @@ const Post = ({ node, title }) => {
             >
               {title}
             </h3>
-            <small>{node.frontmatter.date}</small>
+            <small>
+              {node.frontmatter.date}{' '}
+              {isNew && <small style={styles.newText}> NEW ARTICLE 🔥</small>}
+            </small>
           </header>
           <section>
             <p

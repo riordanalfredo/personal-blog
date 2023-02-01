@@ -11,7 +11,7 @@ module.exports = {
     title: `Riordan Alfredo`,
     author: {
       name: `Riordan Dervin Alfredo`,
-      summary: `Riordan Alfredo is a software engineering educator,  developer, and educational technology researcher. He is passionate about sharing ideas in research, programming, business, and learning design. He loves to bring the best out of people to achieve goals & dreams. He has hobbies that are not limited to astrology, golf, and video games (D&D, WoW, and Dota2).`,
+      summary: `Riordan Alfredo is a software engineering educator,  developer, and educational technology researcher. He is passionate about sharing ideas from his research, such as human-centred design, multimodal learning analytics, and learning design. Moreover, he has hobbies that are not limited to playing golf and video games (D&D, WoW, and Dota2).`,
     },
     social: {
       instagram: `riordanalfredo`,
@@ -50,7 +50,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 880,
             },
           },
           {
@@ -74,7 +74,7 @@ module.exports = {
         name: `Riordan Alfredo`,
         short_name: `Educational Technology Enthusiast Blog`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#1e1e1e`,
         theme_color: `#c39d63`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
