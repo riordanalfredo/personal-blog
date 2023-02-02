@@ -115,7 +115,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <footer>
           <hr style={{ marginBottom: rhythm(1) }} />
-
           <Bio />
           <hr style={{ marginBottom: rhythm(1) }} />
 

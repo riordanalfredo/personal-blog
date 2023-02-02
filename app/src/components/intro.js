@@ -34,8 +34,8 @@ const Intro = () => {
         ! I share my research, thoughts, and stories that are categorised into
         education, technology, and business topics. Please{' '}
         <Link to="/contact">contact me</Link> for any questions or exciting
-        opportunities (guest talks, teaching, development contract, etc.). I
-        hope you enjoy reading them as much as I do writing them!
+        opportunities (guest talks, programming, teaching, partnership, etc.). I
+        hope you enjoy reading these articles as much as I do writing them!
       </p>
     </div>
   )

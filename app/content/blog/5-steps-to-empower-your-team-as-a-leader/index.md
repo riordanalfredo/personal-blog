@@ -2,7 +2,7 @@
 title: 'Equipping: 5 Steps to empower your team as a leader'
 date: '2021-02-10T06:00:00Z'
 description: 'Equipping — One process to develop people you lead do their jobs well'
-categories: [business, leadership]
+categories: [business, leadership, mentoring]
 comments: true
 isNew: false
 ---
@@ -39,6 +39,4 @@ It is the most challenging part where you build leadership skills for people you
 
 ## Conclusion
 
-In conclusion, these steps are not linear, meaning you can use any steps, even after reaching Step 5. These steps are believed not only improving the team’s productivity, but also relationships in your team.
-
-This short article is a summary from [‘How Successful People Lead’](https://www.amazon.com/How-Successful-People-Lead-Influence-ebook/dp/B009Z2XVZK) by John C. Maxwell, specifically _Chapter: Best Behaviours on Level 4 ‘How to Develop People’_. I found these equipping steps are relevant to my duties as a mentor of software engineering projects. I will share my story about mentorship in another article. By the way, **what do you think about these equipping steps?**
+These steps are not linear, meaning you can use any steps, even after reaching Step 5. These steps are believed not only improving the team’s productivity, but also relationships in your team. This short article is a summary from [‘How Successful People Lead’](https://www.amazon.com/How-Successful-People-Lead-Influence-ebook/dp/B009Z2XVZK) by John C. Maxwell, specifically _Chapter: Best Behaviours on Level 4 ‘How to Develop People’_. I found these equipping steps are relevant to my duties as a mentor of software engineering projects. I will share my story about mentorship in another article. By the way, **what do you think about these equipping steps?**

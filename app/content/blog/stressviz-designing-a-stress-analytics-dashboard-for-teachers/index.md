@@ -3,7 +3,7 @@ title: '"That Student Should be a Lion Tamer!" StressViz: Designing a Stress Ana
 Dashboard for Teachers 🦁'
 date: '2022-02-01T06:00:00Z'
 description: "Visualising stress data to support reflection on students stress' with Machine Learning."
-categories: [affective computing, stress detection, visualisation, healthcare education, LA-dashboard, learning analytics]
+categories: [research paper, affective computing, stress detection, visualisation, healthcare education, LA-dashboard, learning analytics]
 comments: true
 isNew: true
 ---
@@ -40,6 +40,8 @@ Very few studies have addressed the challenge of visualising data to support ref
     </embed>
 </object>
 
+Full-text view is also available
+<a href="/pdfs/lak23-stressviz.pdf"> here </a>.
 To reference it, please copy text below:
 
 > Riordan Dervin Alfredo, Lanbing Nie, Paul Kennedy, Tamara Power, Carolyn Hayes, Hui Chen, Carolyn McGregor, Zachari Swiecki,Dragan Gašević, and Roberto Martinez-Maldonado. 2023. "That Student Should be a Lion Tamer!" StressViz: Designing a Stress Analytics Dashboard for Teachers. In LAK23: 13th International Learning Analytics and Knowledge Conference (LAK 2023), March 13–17,2023, Arlington, TX, USA. ACM, New York, NY, USA, 16 pages. https://doi.org/10.1145/3576050.3576058

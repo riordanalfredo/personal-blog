@@ -10,7 +10,6 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
-import BackButton from '../components/backButton'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
