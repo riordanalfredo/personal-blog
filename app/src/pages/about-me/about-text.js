@@ -22,31 +22,26 @@ const AboutText = ({ isMobile }) => {
       <p>
         Software engineering has always fascinated me. It covers all levels of
         complexity that allows me to channel my creativity in developing tools
-        to empower people that are safe and reliable. The true challenge is not
-        only from the technology side but also from understanding the purpose
-        and business needs. I believe the sustainable connections between these
-        two concepts could be achieved through involvement of learning and
-        education. My interests & proficiencies are in the design and
-        development process, especially in the software system ( architecture,
-        design patterns, quality assurance), and human dynamics of educational
-        technologies.
+        to empower people that are safe, reliable, and trustworthy. The true
+        challenge is not only from the technology side but also from
+        understanding the purpose and stakeholder needs. I believe the
+        sustainable connections between these two concepts could be achieved
+        through involvement of learning and education. My interests &
+        proficiencies are in the design and development process, especially in
+        the software system ( architecture, design patterns, quality assurance),
+        and human dynamics of educational technologies.
       </p>
       <p>
-        I received a full-ride scholarship (tuition fee and stipend) to study
-        "Human-Centred Learning Analytics" as a Doctor of Philosophy student at
-        Monash University. My research is about{' '}
+        I am currently investigating "Human-Centred Design in Learning Analytics
+        Systems" as a Doctor of Philosophy student at Monash University. My
+        research topics and interests are in{' '}
         <code>
-          human-centered design, multimodal learning analytics, and learning
-          design
+          human-centered AI, multimodal learning analytics, learning analytics
+          dashboard and design.
         </code>{' '}
-        topics. Now, I am a teaching associate for core software engineering
-        units at the Faculty of IT, Monash University. Moreover, I am working on
-        various software projects with various libraries and frameworks, such as{' '}
-        <code>
-          ReactJS, Redux, MobX, Quantlib, NodeJS, Gatsby, MongoDB, PostgreSQL,
-          SvelteKit, SpringMVC, Django
-        </code>
-        .
+        . Apart from my doctoral study, I am teaching several core software
+        engineering units at the Faculty of IT, Monash University and I attained
+        <i> "Sessional Teaching Associate Award"</i> in 2021.
         <br />
       </p>
     </div>

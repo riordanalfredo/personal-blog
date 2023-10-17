@@ -10,6 +10,7 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
+import SocialMediaContainer from './contact/social-media'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
@@ -65,6 +66,7 @@ const AboutPage = ({ data, location }) => {
         {quote}
       </div>
       <AboutText isMobile={isMobile} />
+      <SocialMediaContainer />
       <div style={{ alignSelf: 'flex-start' }}>
         <h3>Education</h3>
         <p>PhD in Learning Analytics | Monash University | 2022 - present</p>

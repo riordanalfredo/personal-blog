@@ -42,9 +42,16 @@ export const filterCategories = {
       imgUrlDark: softwareDarkPic,
     },
   },
-  business: {
-    text: 'Business',
-    categories: ['art-of-war', 'leadership', 'management', 'business'],
+  society: {
+    text: 'Society',
+    categories: [
+      'art-of-war',
+      'leadership',
+      'management',
+      'business',
+      'people',
+      'socio-technical',
+    ],
     isSelected: true,
     style: {
       imgUrl: businessPic,

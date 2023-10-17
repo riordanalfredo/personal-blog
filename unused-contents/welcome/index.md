@@ -1,7 +1,7 @@
 ---
-title: 'Welcome, Technopreneurs! 📈 💻'
-date: '2021-02-01T06:00:00Z'
-description: 'A warm welcome message and 5 reasons why do I start this journal :)'
+title: "Welcome, Technopreneurs! 📈 💻"
+date: "2021-02-01T06:00:00Z"
+description: "A warm welcome message and 5 reasons why do I start this journal :)"
 categories: [business, learning, software, random, technopreneur]
 comments: true
 isNew: false
@@ -15,7 +15,7 @@ Hello, and welcome! First of all, I want to say thank you for visiting this humb
 
 This blog covers the combination of `business`, `ICT-software`, and `learning` area. I believe those topics are the best categorisation to describe `technopreneurship`. So, what is the meaning of this word?
 
-![technopreneur-image](technopreneur.png)
+![technopreneur-image](https://www.lexico.com/definition/technopreneur)
 
 As shown in the [picture](https://www.lexico.com/definition/technopreneur) above, it is obvious that technopreneur is formed from the combination of technology and business, but why do I include learning topic? In my opinion, effective learning is necessary to keep up with the speed of tehcnological advancement is tremendous. Above all, we are dealing excessive information that need to be filtered out every day. Learning is the support topic to help you advance and apply it immediately with the other topics.
 
@@ -31,7 +31,7 @@ Now, here are my top 5 reasons (without order) why do I start this journal.
 
 ![computer](https://cdn.pixabay.com/photo/2014/05/03/00/45/computer-336628_1280.jpg)
 
-I realise that many people want to transition from technical to business career, and the other way around. For example, it happens to people who study MBA (Master of Business Administration) after finishing an IT degree or people who already got a business degree (or doing a lot of business hustle) and want to study Master of IT or Data Science. Maybe, some people are just curious about the other side. `If any of these is you, congratulations! You are at the right place!`. The purpose of journal is aligned with one of my personal goals, which is assisting smooth transition and be successful in the career that they choose. I hope that this journal can help people to learn about programming and software engineering knowledge better. I will also open an opportunity to discuss about leadership and management in business. By having an open discussion, we can learn together hopefully, achieving our goals 😄!
+I realised that many people want to transition from technical to business career, and the other way around. For example, it happens to people who study MBA (Master of Business Administration) after finishing an IT degree or people who already got a business degree (or doing a lot of business hustle) and want to study Master of IT or Data Science. Maybe, some people are just curious about the other side. `If any of these is you, congratulations! You are at the right place!`. The purpose of journal is aligned with one of my personal goals, which is assisting smooth transition and be successful in the career that they choose. I hope that this journal can help people to learn about programming and software engineering knowledge better. I will also open an opportunity to discuss about leadership and management in business. By having an open discussion, we can learn together hopefully, achieving desired goals!
 
 ## 2. Own a digital business asset
 

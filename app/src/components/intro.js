@@ -27,12 +27,12 @@ const Intro = () => {
       {/* <Fade cascade><h1 style={styles.title}>WELCOME</h1></Fade> */}
 
       <p style={styles.body}>
-        Welcome to educational technology enthusiast blog{' '}
+        Welcome to my personal blog{' '}
         <span role="img" aria-label="rocket">
           🚀
         </span>
         ! I share my research, thoughts, and stories that are categorised into
-        education, technology, and business topics. Please{' '}
+        'education', 'technology', and 'society' topics. Please{' '}
         <Link to="/contact">contact me</Link> for any questions or exciting
         opportunities (guest talks, programming, teaching, partnership, etc.). I
         hope you enjoy reading these articles as much as I do writing them!

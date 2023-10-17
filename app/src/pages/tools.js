@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const BooksListPage = ({ data, location }) => {
+const ToolsPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const styles = {
     outer: {
@@ -17,20 +17,20 @@ const BooksListPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Recommended Resources" />
+      <SEO title="Recommended Tools" />
       <div style={styles.outer}>
-        <h1>RESOURCES</h1>
+        <h1>TOOLS</h1>
         <p>
-          Here, I will share recommended resources in this educational
-          technology field. It is still under development, but it is coming
-          soon!
+          I will share practical tools that can help you understand learning
+          process and teaching practices. Currently, it is still under
+          development. Stay tuned!
         </p>
       </div>
     </Layout>
   )
 }
 
-export default BooksListPage
+export default ToolsPage
 
 export const pageQuery = graphql`
   query {

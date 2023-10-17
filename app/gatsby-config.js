@@ -11,7 +11,7 @@ module.exports = {
     title: `Riordan Alfredo`,
     author: {
       name: `Riordan Dervin Alfredo`,
-      summary: `Riordan Alfredo is a software engineering educator,  developer, and educational technology researcher. He is passionate about sharing ideas from his research, such as human-centred design, multimodal learning analytics, and learning design. Moreover, he has hobbies that are not limited to playing golf and video games (D&D, WoW, and Dota2).`,
+      summary: `Riordan Alfredo is a software engineering educator,  developer, and learning analytics researcher. He is passionate about sharing ideas from his research, such as human-centred design, multimodal learning analytics, and learning design. Moreover, he has hobbies that are not limited to playing golf and video games (D&D, WoW, and Dota2).`,
     },
     social: {
       instagram: `riordanalfredo`,
@@ -78,7 +78,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Riordan Alfredo`,
-        short_name: `Educational Technology Enthusiast Blog`,
+        short_name: `Personal Blog`,
         start_url: `/`,
         background_color: `#1e1e1e`,
         theme_color: `#c39d63`,
