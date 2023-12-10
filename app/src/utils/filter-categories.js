@@ -50,6 +50,7 @@ export const filterCategories = {
       'management',
       'business',
       'people',
+      'co-creation',
       'socio-technical',
     ],
     isSelected: true,

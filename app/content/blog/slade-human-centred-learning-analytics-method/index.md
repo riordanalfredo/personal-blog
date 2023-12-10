@@ -8,7 +8,8 @@ categories:
     human-centered artificial intelligence,
     co-creation,
     learning analytics,
-    LA-dashboard,
+    LA systems,
+    LA tools,
   ]
 comments: true
 isNew: true
@@ -31,9 +32,9 @@ We applied SLADE in designing LA systems to support collaborative learning in a 
 
 The paper has been accepted for full paper at LAK '24 in Kyoto, Japan, aligning with the conference theme of "Learning Analytics in the Age of Artificial Intelligence." It presents a practical method for researchers and designers to create features in LA systems that are safe, reliable, and trustworthy while considering students' agency and their voices in light of increasing AI automation.
 
-The paper also highlights future directions, recommending the application of SLADE in other contexts and involving other critical educational and technical stakeholders, such as educators, LA designers, and AI developers. It suggests considering other factors, such as pedagogical value and feasibility of the system in practice, to support the learning process. The researchers plan to expand SLADE by including teachers and learning designers, gaining practical perspectives in teaching and learning.
+The paper also highlights future directions, recommending the application of SLADE in other contexts and involving other critical educational and technical stakeholders, such as educators, LA designers, and AI developers. It suggests considering other factors, such as pedagogical value and feasibility of the system in practice, to support the learning process. We plan to expand SLADE by including teachers and learning designers in near future, gaining practical perspectives in teaching and learning.
 
-If you are a researcher or designer passionate about human-centred learning analytics, we invite you to explore and expand upon the SLADE method to further advance the development of LA systems that prioritise these values (safety, reliability, and trustworthiness) and stakeholder involvement.
+If you are a researcher or designer passionate about human-centred learning analytics, I invite you to explore and expand upon the SLADE method to further advance the development of LA systems that consider these values (safety, reliability, and trustworthiness) and stakeholder involvement.
 
 <object data="/pdfs/lak24-slade.pdf" type="application/pdf" width="100%" height="800px">
     <embed src="/pdfs/lak24-slade.pdf">

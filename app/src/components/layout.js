@@ -13,6 +13,7 @@ import Footer from './footer'
 import Subtitle from './subtitle'
 import Burger from './burger'
 import MobileMenu from './mobile-menu'
+import appIcon from '../assets/icon.png'
 
 import './global.css'
 import BackButton from './backButton'
@@ -67,8 +68,14 @@ const Layout = ({ location, title, children }) => {
     mobileScrolling('navbar', isMobile)
   })
 
+  const IconImage = (
+    <>
+      <img style={{ marginBottom: 0 }} src={appIcon} width={'45rem'} />
+    </>
+  )
   const desktopHeader = (
     <>
+      {IconImage}
       <h1 className="title" style={styles.desktopTitle}>
         <Title text={title} />
       </h1>
@@ -86,6 +93,7 @@ const Layout = ({ location, title, children }) => {
           <h1 className="title" style={styles.mobileTitle}>
             <Title text={myName} />
           </h1>
+          {IconImage}
           {/* <Toggler /> */}
         </div>
       </div>
