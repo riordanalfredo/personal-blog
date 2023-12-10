@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import categories from './reducers/categories'
 import posts from './reducers/posts'
-import theme from './reducers/theme'
+// import appTheme from './reducers/appTheme'
 
 //=== states architecture ===
 // {
@@ -24,5 +24,5 @@ import theme from './reducers/theme'
 export default combineReducers({
   categories,
   posts,
-  theme,
+  // appTheme,
 })

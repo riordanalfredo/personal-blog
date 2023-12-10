@@ -42,14 +42,15 @@ export const filterCategories = {
       imgUrlDark: softwareDarkPic,
     },
   },
-  society: {
-    text: 'Society',
+  community: {
+    text: 'Community',
     categories: [
       'art-of-war',
       'leadership',
       'management',
       'business',
       'people',
+      'co-creation',
       'socio-technical',
     ],
     isSelected: true,

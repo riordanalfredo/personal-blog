@@ -5,7 +5,7 @@ date: '2022-02-01T06:00:00Z'
 description: "Visualising stress data to support reflection on students stress' with Machine Learning."
 categories: [research paper, affective computing, stress detection, visualisation, healthcare education, LA-dashboard, learning analytics]
 comments: true
-isNew: true
+isNew: false
 ---
 
 ![stressviz-abstract-picture](stressviz-pic.png)

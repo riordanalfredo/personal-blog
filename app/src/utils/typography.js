@@ -27,7 +27,7 @@ Wordpress2016.overrideThemeStyles = () => {
       background: 'var(--hr)',
     },
     blockquote: {
-      backgroundColor: 'var(--shadow)',
+      backgroundColor: 'var(--lightBg)',
       padding: '1rem',
       width: '103%',
     },

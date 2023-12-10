@@ -1,7 +1,7 @@
 import React from 'react'
 import FilterCard from './filter-card'
 
-const Filters = ({ categories, selectCategory, theme }) => {
+const Filters = ({ categories, selectCategory, appTheme }) => {
   // Styles
   const styles = {
     outer: {
@@ -31,7 +31,7 @@ const Filters = ({ categories, selectCategory, theme }) => {
           <FilterCard
             key={index}
             categories={categories}
-            theme={theme}
+            // appTheme={appTheme}
             id={val}
             selectFunction={selectCategory}
           />

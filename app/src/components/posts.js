@@ -55,7 +55,7 @@ const Posts = ({ allPosts, posts, categories, setPostsCategories }) => {
       <Fade cascade>
         <h1 style={{ margin: '2rem 0 1rem 0' }}>ARTICLES</h1>
       </Fade>
-      <small>Filtered by:</small>
+      <small>Filter articles by:</small>
       <FiltersContainer />
 
       {!!currentPosts.length ? (
