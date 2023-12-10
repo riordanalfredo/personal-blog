@@ -42,8 +42,8 @@ export const filterCategories = {
       imgUrlDark: softwareDarkPic,
     },
   },
-  society: {
-    text: 'Society',
+  community: {
+    text: 'Community',
     categories: [
       'art-of-war',
       'leadership',

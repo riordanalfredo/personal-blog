@@ -4,8 +4,8 @@ import './global.css'
 
 const Menu = () => {
   const menu = [
-    { text: 'Articles', link: '/' },
-    { text: 'Tools', link: '/tools' },
+    { text: 'Blog', link: '/' },
+    { text: 'Research', link: '/research' },
     { text: 'About Me', link: '/about-me' },
     { text: 'Contact', link: '/contact' },
   ]

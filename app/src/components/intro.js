@@ -32,7 +32,7 @@ const Intro = () => {
           🚀
         </span>
         ! I share my research, thoughts, and stories that are categorised into
-        'education', 'technology', and 'society' topics. Please{' '}
+        'education', 'technology', and 'community' topics. Please{' '}
         <Link to="/contact">contact me</Link> for any questions or exciting
         opportunities (guest talks, programming, teaching, partnership, etc.). I
         hope you enjoy reading these articles as much as I do writing them!

@@ -2,8 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { researchArticles } from '../assets/research'
 
-const ToolsPage = ({ data, location }) => {
+const ResearchPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const styles = {
     outer: {
@@ -17,8 +18,21 @@ const ToolsPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Recommended Tools" />
+      <SEO title="Research Outputs" />
       <div style={styles.outer}>
+        <h1>RESEARCH</h1>
+        <p>My published articles:</p>
+        <ul>
+          {researchArticles.map(article => {
+            return (
+              <li>
+                <a href={`/pdfs/${article.pdf}`}>
+                  {article.title} ({article.publisher})
+                </a>
+              </li>
+            )
+          })}
+        </ul>
         <h1>TOOLS</h1>
         <p>
           I will share practical tools that can help you understand learning
@@ -30,7 +44,7 @@ const ToolsPage = ({ data, location }) => {
   )
 }
 
-export default ToolsPage
+export default ResearchPage
 
 export const pageQuery = graphql`
   query {

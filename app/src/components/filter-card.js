@@ -3,7 +3,7 @@ import './filter-card.css'
 import './global.css'
 import { Tooltip } from 'react-tooltip'
 
-const FilterCard = ({ categories, id, selectFunction, theme }) => {
+const FilterCard = ({ categories, id, selectFunction, appTheme }) => {
   const { text, style } = categories[id]
   const [isSelected, setIsSelected] = useState(categories[id].isSelected)
 
@@ -86,7 +86,8 @@ const FilterCard = ({ categories, id, selectFunction, theme }) => {
             id={id}
             style={{
               ...iconSize,
-              ...(theme.isDark ? darkIcon : lightIcon),
+              ...darkIcon,
+              // ...(appTheme.isDark ? darkIcon : lightIcon),
             }}
             aria-label="Select Category"
             onClick={selectCategory}
@@ -102,7 +103,7 @@ const FilterCard = ({ categories, id, selectFunction, theme }) => {
       >
         {text}
       </p>
-      <Tooltip anchorId={id} variant={'light'} />
+      <Tooltip anchorId={id} variant="light" />
     </div>
   )
 }

@@ -7,7 +7,7 @@ import {
   mobileScrolling,
 } from '../utils/mobile'
 
-import Toggler from '../state/containers/theme'
+// import Toggler from '../state/containers/appTheme'
 import Menu from './menu'
 import Footer from './footer'
 import Subtitle from './subtitle'
@@ -86,7 +86,7 @@ const Layout = ({ location, title, children }) => {
           <h1 className="title" style={styles.mobileTitle}>
             <Title text={myName} />
           </h1>
-          <Toggler />
+          {/* <Toggler /> */}
         </div>
       </div>
     </>
@@ -103,7 +103,6 @@ const Layout = ({ location, title, children }) => {
             className="md:h-screen p-4 flex flex-col justify-center items-center"
             style={{ minHeight: 200 }}
           >
-            <Toggler />
             {desktopHeader}
           </div>
         </div>
