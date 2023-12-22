@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const numPages = Math.ceil(posts.length / postsPerPage)
   createPage({
     path: `/`,
-    component: path.resolve('./src/pages/blog-list.tsx'),
+    component: path.resolve('./src/pages/blog-list.jsx'),
     context: {
       numPages,
     },

@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 export default function HTML(props) {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'G-5CWRTWJN6E')
+  }, [])
+
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -18,6 +27,10 @@ export default function HTML(props) {
         ></script> */}
         {props.headComponents}
       </head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5CWRTWJN6E"
+      ></script>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
