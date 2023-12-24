@@ -10,6 +10,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import { rhythm } from '../utils/typography'
+import BuyMeACoffeeButton from './BuyMeACoffeeButton'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -79,7 +80,10 @@ const Bio = () => {
           Follow me on{' '}
           <a href={`https://linkedin.com/in/${social.linkedin}`}>LinkedIn</a>
           {', '}
-          or <Link to="/contact">contact me</Link> straightaway!
+          or <Link to="/contact">contact me</Link>!
+        </small>
+        <small>
+          <BuyMeACoffeeButton />
         </small>
       </div>
     </div>

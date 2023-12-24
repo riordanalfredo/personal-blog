@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Fade from 'react-reveal/Fade'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -11,6 +11,7 @@ import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
 import SocialMediaContainer from './contact/social-media'
+import BuyMeACoffeeButton from '../components/BuyMeACoffeeButton'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
@@ -56,7 +57,6 @@ const AboutPage = ({ data, location }) => {
   return (
     <Layout location={location} title={'Riordan Alfredo'}>
       <SEO title="A software engineer &amp; educator" />
-
       <div style={styles.outer}>
         <h1>RIORDAN DERVIN ALFREDO</h1>
         <p style={{ color: 'grey', marginTop: '-2rem' }}>{description}</p>
@@ -66,6 +66,11 @@ const AboutPage = ({ data, location }) => {
         {quote}
       </div>
       <AboutText isMobile={isMobile} />
+      <div>
+        <Link to={'https://riordanalfredo.github.io/me'}>
+          Do you want to see my original portfolio 👀
+        </Link>
+      </div>
       <SocialMediaContainer />
       <div style={{ alignSelf: 'flex-start' }}>
         <h3>Education</h3>

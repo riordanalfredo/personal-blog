@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { researchArticles } from '../assets/research'
+import BuyMeACoffeeButton from '../components/BuyMeACoffeeButton'
 
 const ResearchPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -39,6 +40,7 @@ const ResearchPage = ({ data, location }) => {
           process and teaching practices. Currently, it is still under
           development. Stay tuned!
         </p>
+        <BuyMeACoffeeButton />
       </div>
     </Layout>
   )

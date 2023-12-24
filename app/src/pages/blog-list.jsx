@@ -1,6 +1,6 @@
 // Gatsby supports TypeScript natively!
 import React from 'react'
-import { PageProps, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Intro from '../components/intro'
@@ -8,7 +8,6 @@ import { useMediaQuery, getIsMobileBoolean } from '../utils/mobile'
 import 'react-tooltip/dist/react-tooltip.css'
 
 import ReactGA from 'react-ga4'
-ReactGA.initialize('G-5CWRTWJN6E')
 
 import PostsContainer from '../state/containers/posts'
 
@@ -40,6 +39,8 @@ import PostsContainer from '../state/containers/posts'
 //     }[]
 //   }
 // }
+
+ReactGA.initialize('G-5CWRTWJN6E')
 
 const BlogIndex = ({ data, location }) => {
   const [width] = useMediaQuery()
