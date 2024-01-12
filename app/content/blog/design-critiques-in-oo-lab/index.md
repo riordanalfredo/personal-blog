@@ -1,5 +1,5 @@
 ---
-title: 'Using Design Critiques to assess group-based design-based assignment'
+title: 'Using Design Critiques to assess group-based design assignment'
 date: '2024-01-10T06:00:00Z'
 description: 'A learning design to assess group-based design project in the Information Technology subject (object-oriented design)'
 categories: [ideas, education, learning design, technology]
