@@ -16,6 +16,7 @@ export const filterCategories = {
       'teaching',
       'philosophy',
       'learning',
+      'learning design',
       'learning analytics',
     ],
     isSelected: true,
