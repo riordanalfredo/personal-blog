@@ -58,9 +58,6 @@ const FilterCard = ({ categories, id, selectFunction, appTheme }) => {
     background: `url(${style.imgUrlDark})`,
     backgroundColor: '#1e1e1e',
   }
-  const lightIcon = {
-    background: `url(${style.imgUrl})`,
-  }
 
   const selectedStyle = {
     ...styles.outerCircle,
