@@ -101,7 +101,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
           <h1 style={styles.h1}>{post.frontmatter.title}</h1>
           <p style={styles.info}>
-            {post.frontmatter.date}
+            {post.frontmatter.date} |
             {post.frontmatter.isNew && <sup style={styles.newText}>NEW</sup>}|
             Tags:{' '}
             {post.frontmatter.categories.map((e, index) => (
@@ -143,7 +143,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY")
         description
         categories
         isNew

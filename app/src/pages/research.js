@@ -22,7 +22,7 @@ const ResearchPage = ({ data, location }) => {
       <SEO title="Research Outputs" />
       <div style={styles.outer}>
         <h1>RESEARCH</h1>
-        <p>My published articles:</p>
+        <p>My published articles (first-author):</p>
         <ul>
           {researchArticles.map(article => {
             return (

@@ -74,8 +74,6 @@ const BlogIndex = ({ data, location }) => {
           <PostsContainer allPosts={allPosts} />
         </div>
       </div>
-
-      {/* <PageNavigation context={pageContext} /> */}
     </Layout>
   )
 }
@@ -89,7 +87,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           excerpt(pruneLength: 250)
@@ -97,7 +95,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM YYYY")
             title
             isNew
             description

@@ -33,7 +33,7 @@ const AboutText = ({ isMobile }) => {
       </p>
       <p>
         I am currently investigating "Human-Centred Design in Learning Analytics
-        Systems" as a Doctor of Philosophy student at Monash University. My
+        Systems" as a Doctor of Philosophy candidate at Monash University. My
         research topics and interests are in{' '}
         <code>
           human-centered AI, multimodal learning analytics, learning analytics
