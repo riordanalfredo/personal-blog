@@ -27,7 +27,7 @@ const ResearchPage = ({ data, location }) => {
           {researchArticles.map(article => {
             return (
               <li>
-                <a href={`/pdfs/${article.pdf}`}>
+                <a href={`/pdfs/${article.pdf}`} target="_blank">
                   {article.title} ({article.publisher})
                 </a>
               </li>

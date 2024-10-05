@@ -12,6 +12,7 @@ import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
 import SocialMediaContainer from './contact/social-media'
 import BuyMeACoffeeButton from '../components/BuyMeACoffeeButton'
+import { Button } from 'react-bootstrap'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
@@ -39,6 +40,13 @@ const AboutPage = ({ data, location }) => {
       alignSelf: 'center',
       textAlign: 'center',
     },
+    extra: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      gap: '1em',
+      justifyContent: 'center',
+    },
   }
 
   const quote = (
@@ -62,30 +70,33 @@ const AboutPage = ({ data, location }) => {
         <p style={{ color: 'grey', marginTop: '-2rem' }}>{description}</p>
       </div>
       <div style={styles.profile}>
-        <PhotoProfile />
-        {quote}
+        <PhotoProfile /> {quote}
       </div>
       <AboutText isMobile={isMobile} />
-      <div>
-        <Link to={'https://riordanalfredo.github.io/me'}>
-          Do you want to see my original portfolio 👀
-        </Link>
-      </div>
       <SocialMediaContainer />
       <div style={{ alignSelf: 'flex-start' }}>
         <h3>Education</h3>
         <p>PhD in Learning Analytics | Monash University | 2022 - present</p>
         <p>
           Graduate Diploma of Management (Learning) | Altec College, Melbourne |
-          2021 - 2022{' '}
+          2021 - 2022
         </p>
         <p>
           Bachelor of Software Engineering (Honours), H1 | Monash University |
-          2016 - 2019{' '}
+          2016 - 2019
         </p>
         <p>
-          Diploma of Engineering (Engineering) | Monash College | 2015 - 2016{' '}
+          Diploma of Engineering (Engineering) | Monash College | 2015 - 2016
         </p>
+      </div>
+
+      <div style={styles.extra}>
+        <Link href="/pdfs/riordan-resume-academic.pdf" target={'_blank'}>
+          Download my Curriculum Vitae (CV) here 📝
+        </Link>
+        <Link to={'https://riordanalfredo.github.io/me'}>
+          Do you want to see my original portfolio? 👀
+        </Link>
       </div>
       <CreditSection />
     </Layout>

@@ -22,6 +22,7 @@ ol {
   padding: 0 20px 20px 20px;
   margin: 1rem 0 0.5rem 0;
   border-radius: 1rem;
+  background-color: var(--shadow);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
