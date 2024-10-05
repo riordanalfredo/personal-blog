@@ -31,7 +31,7 @@ const Post = ({ node, title, isNew }) => {
             </h3>
             <small>
               {node.frontmatter.date}{' '}
-              {isNew && <small style={styles.newText}> NEW ARTICLE 🔥</small>}
+              {isNew && <small style={styles.newText}> | NEW ARTICLE 🔥</small>}
             </small>
           </header>
           <section>

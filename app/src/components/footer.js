@@ -1,5 +1,4 @@
 import React from 'react'
-import BuyMeACoffeeButton from './BuyMeACoffeeButton'
 
 const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import bmc from '../assets/bmc-full-logo-no-background.png'
@@ -19,7 +19,6 @@ const BuyMeACoffeeButton = () => {
         style={{
           marginLeft: '0.5em',
           cursor: 'pointer',
-          // height: '2.5rem',
           padding: '0.5rem',
           justifyContent: 'center',
           color: 'var(--shadow)',

@@ -29,7 +29,7 @@ const BackButton = () => {
       onClick={() => navigate('/')}
     >
       <LeftArrow />
-      <small>GO BACK</small>
+      <small>BACK</small>
     </Button>
   )
 }

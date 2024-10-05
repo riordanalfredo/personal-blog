@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import BuyMeACoffeeButton from './BuyMeACoffeeButton'
 
 const Intro = () => {
   const styles = {
@@ -38,7 +37,6 @@ const Intro = () => {
         opportunities (guest talks, programming, teaching, partnership, etc.). I
         hope you enjoy reading these articles as much as I do writing them!
       </p>
-      <BuyMeACoffeeButton />
     </div>
   )
 }
