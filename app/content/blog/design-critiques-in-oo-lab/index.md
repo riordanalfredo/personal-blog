@@ -4,7 +4,7 @@ date: '2024-01-10T06:00:00Z'
 description: 'A learning design to assess group-based design project in the Information Technology subject (object-oriented design)'
 categories: [ideas, education, learning design, technology]
 comments: true
-isNew: true
+isNew: false
 ---
 
 ### TLDR;

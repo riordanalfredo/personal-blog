@@ -12,7 +12,7 @@ categories:
     LA tools,
   ]
 comments: true
-isNew: true
+isNew: false
 ---
 
 Learning Analytics (LA) systems have been gaining popularity in recent years, with a growing interest in incorporating stakeholder perspectives. However, many LA systems still lean towards a technology-centric approach, potentially overlooking human values and the necessity of human oversight in automation. To address this issue, we proposed a new method for designing human-centred LA systems called SLADE.
