@@ -15,35 +15,35 @@ comments: true
 isNew: true
 ---
 
-![](stakeholders.png)
-
 ## The Human Touch in AI-Powered Education: What We've Learned
 
-As a researcher in the field of human-centered learning analytics (HCLA) and AI in education (AIED), I've been fascinated by how these technologies are reshaping our educational landscape. Recently, my colleagues and I conducted a systematic literature review to understand the current state of human-centered approaches in this rapidly evolving field. I'd like to share some key insights from our study that I believe are crucial for educators, researchers, and anyone interested in the future of education.
+As a researcher in the field of human-centered learning analytics (HCLA) and AI in education (AIED), I've been fascinated by how these technologies are reshaping our educational landscape. Recently, my colleagues and I conducted a systematic literature review to understand the current state of human-centered approaches in this rapidly evolving field. I'd like to share some key insights from our study that I believe are crucial for educators, researchers, and anyone interested in the future of learning and education.
+
+![End-users involvement in designing LA/AIED systems](endusers.png)
 
 ## The Promise and Perils We're Facing
 
-In our review, we saw how AI and learning analytics are opening up exciting possibilities for personalized learning and data-driven decision-making in education. However, we also encountered growing concerns about data privacy, algorithmic bias, and the potential loss of human agency. These concerns have led to an increased interest in human-centered design approaches.
+In our review, we saw how AI and learning analytics are opening up exciting possibilities for personalized learning and data-intensive decision-making in education. However, we also encountered growing concerns about data privacy, algorithmic bias, and the potential loss of human agency. These concerns have led to an increased interest in human-centered design approaches. In this paper, we divided them into five phases: 1. Planning, 2. Exploration, 3. Concept generation, 4. Evaluation, 5. Launch & Monitor.
 ![](design-phases.png)
 
-## Finding the Sweet Spot: Human Control vs. Automation
+## Finding the Sweet Spot: Human Control and AI Automation
 
 One of the most interesting aspects of our study was examining how different LA/AIED systems balance human control and computer automation. We found that many systems tend to fall into one of four categories:
 
-- Q1: Basic information delivery systems (low control, low automation)
+- Q1: Basic information delivery systems, such as a slides-deck (low control, low automation)
 - Q2: Customizable dashboards and educator-driven analytics (high control, low automation)
 - Q3: Fully automated feedback and recommendation systems (low control, high automation)
-- Q4: AI-assisted tools that empower users while leveraging advanced algorithms (high control, high automation)
+- Q4: AI-powered tools that empower users while leveraging advanced algorithms (high control, high automation)
 
 Interestingly, we noticed that many current systems focus on either high human control or high automation, but fewer strike a balance between the two. This suggests an opportunity for future development in creating more balanced systems.
 
-![](systems.png)
+![LA/AIED systems on HCAI](systems.png)
 
 ## The Missing Voices: A Stakeholder Gap
 
 One of our most concerning findings was the limited involvement of end-users, especially students, in the design process of LA/AIED systems. While there's growing recognition of the importance of stakeholder input, we found that actual implementation of co-design practices remains limited. This is a critical area for improvement if we want to create systems that truly meet the needs of learners and educators.
 
-![](endusers.png)
+![Stakeholder Involvement by Education Roles](stakeholders.png)
 
 ## Safety, Reliability, and Trust: Areas Needing Attention
 
