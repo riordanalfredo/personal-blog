@@ -1,7 +1,7 @@
 ---
 title: "Learning Analytics and AI in Education: Putting Humans Back in the Driver's Seat"
 date: '2024-10-05T07:00:00Z'
-description: 'Key findings from a systematic literature review on human-centered approaches in learning analytics and AI in education, highlighting the balance between human control and automation, stakeholder involvement, and areas for future research.'
+description: 'Key findings from a systematic literature review on human-centred approaches in learning analytics and AI in education, highlighting the balance between human control and automation, stakeholder involvement, and areas for future research.'
 categories:
   [
     research paper,
@@ -17,13 +17,13 @@ isNew: true
 
 ## The Human Touch in AI-Powered Education: What We've Learned
 
-As a researcher in the field of human-centered learning analytics (HCLA) and AI in education (AIED), I've been fascinated by how these technologies are reshaping our educational landscape. Recently, my colleagues and I conducted a systematic literature review to understand the current state of human-centered approaches in this rapidly evolving field. I'd like to share some key insights from our study that I believe are crucial for educators, researchers, and anyone interested in the future of learning and education.
+As a researcher in the field of human-centred learning analytics (HCLA) and AI in education (AIED), I've been fascinated by how these technologies are reshaping our educational landscape. Recently, my colleagues and I conducted a systematic literature review to understand the current state of human-centred approaches in this rapidly evolving field. I'd like to share some key insights from our study that I believe are crucial for educators, researchers, and anyone interested in the future of learning and education.
 
 ![End-users involvement in designing LA/AIED systems](endusers.png)
 
 ## The Promise and Perils We're Facing
 
-In our review, we saw how AI and learning analytics are opening up exciting possibilities for personalized learning and data-intensive decision-making in education. However, we also encountered growing concerns about data privacy, algorithmic bias, and the potential loss of human agency. These concerns have led to an increased interest in human-centered design approaches. In this paper, we divided them into five phases: 1. Planning, 2. Exploration, 3. Concept generation, 4. Evaluation, 5. Launch & Monitor.
+In our review, we saw how AI and learning analytics are opening up exciting possibilities for personalised learning and data-intensive decision-making in education. However, we also encountered growing concerns about data privacy, algorithmic bias, and the potential loss of agency. These concerns have led to an increased interest in human-centred design approaches. In this paper, we divided them into five phases: 1. Planning, 2. Exploration, 3. Concept generation, 4. Evaluation, 5. Launch & Monitor.
 ![](design-phases.png)
 
 ## Finding the Sweet Spot: Human Control and AI Automation
@@ -31,7 +31,7 @@ In our review, we saw how AI and learning analytics are opening up exciting poss
 One of the most interesting aspects of our study was examining how different LA/AIED systems balance human control and computer automation. We found that many systems tend to fall into one of four categories:
 
 - Q1: Basic information delivery systems, such as a slides-deck (low control, low automation)
-- Q2: Customizable dashboards and educator-driven analytics (high control, low automation)
+- Q2: Customisable dashboards and educator-driven analytics (high control, low automation)
 - Q3: Fully automated feedback and recommendation systems (low control, high automation)
 - Q4: AI-powered tools that empower users while leveraging advanced algorithms (high control, high automation)
 
@@ -53,12 +53,12 @@ Based on our findings, we've developed several recommendations for future work i
 
 - Increase stakeholder involvement throughout all design phases, from initial conception to deployment and evaluation.
 - Actively engage target end-users, particularly students, in determining the balance between human control and automation.
-- Prioritize safety, reliability, and trustworthiness as core principles in the development of LA/AIED systems.
+- Prioritise safety, reliability, and trustworthiness as core principles in the development of LA/AIED systems.
 
 ## What's next?
 
-As we continue to explore the potential of AI and learning analytics in education, I believe keeping the human element at the center of our designs is more important than ever. By involving educators and learners in the process, we can create technologies that truly enhance the learning experience while respecting human agency and ethical concerns.
+As we continue to explore the potential of AI and learning analytics in education, I believe keeping the human element at the centre of our designs is more important than ever. By involving educators and learners in the process, we can create technologies that truly enhance the learning experience while respecting human agency and ethical concerns.
 
-I hope these insights from our research serve as a valuable roadmap for anyone interested in the intersection of AI, learning analytics, and human-centered design in education. Let's work together to create educational technologies that empower rather than replace, augment rather than automate, and ultimately serve the diverse needs of learners and educators alike 🙌.
+I hope these insights from our research serve as a valuable roadmap for anyone interested in the intersection of AI, learning analytics, and human-centred design in education. Let's work together to create educational technologies that empower rather than replace, augment rather than automate, and ultimately serve the diverse needs of learners and educators alike 🙌.
 
 > Alfredo, R., Echeverria, V., Jin, Y., Yan, L., Swiecki, Z., Gašević, D., & Martinez-Maldonado, R. (2024). Human-centred learning analytics and AI in education: A systematic literature review. Computers and Education: Artificial Intelligence, 6, 100215. https://doi.org/10.1016/j.caeai.2024.100215
