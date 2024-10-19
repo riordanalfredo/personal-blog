@@ -12,7 +12,7 @@ categories:
     systematic literature reviews,
   ]
 comments: true
-isNew: true
+isNew: false
 ---
 
 ## The Human Touch in AI-Powered Education: What We've Learned
