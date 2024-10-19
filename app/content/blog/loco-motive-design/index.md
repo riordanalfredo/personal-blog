@@ -1,7 +1,7 @@
 ---
 title: '🚂 LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements'
 date: '2024-10-19T07:00:00Z'
-description: 'An approach to work with legacy code, focusing on iterative OO design steps, design costs, and UML class relationships to achieve software maintainability and flexibility.'
+description: 'An approach to work effectively with legacy code, focusing on iterative OO design steps, design costs, and UML class relationships to achieve software maintainability and flexibility.'
 categories:
   [design method, object-oriented design, java, code, software engineering]
 comments: true
@@ -33,7 +33,7 @@ First, let me address a common misconception I've observed among my students. Th
 To address this challenge, I've developed an approach called LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements. This approach is divided into three key areas:
 
 1. **Design Expenses**: Understanding the cost implications of design decisions.
-2. **Six Design Steps**: A structured approach to modernising legacy code.
+2. **Six Design Steps**: A structured approach to work with legacy code.
 3. **UML Class Relationships**: Utilising visual representations to identify and prevent design smells.
    Let's dive in:
 
@@ -53,8 +53,8 @@ Now, let me walk you through the six steps of my OO design process:
 2. **Extend/implement method, then override it**: Sometimes, you need to tweak existing behaviour. Just be careful not to break the contract. A classic example is overriding `toString()` in your custom class.
 3. **Store instance as an attribute**: This can be trickier than it looks due to privacy leaks and object mutability. Remember when we talked about storing Date objects in class? That's where defensive copying comes in handy.
 4. **Create/design class**: This is where you get to flex your creative muscles. You might need to create a custom `Logger` class that fits your specific project requirements.
-5. **Create/design interface**: This is where we put `composition over inheritance` into practice. Think about defining a `PaymentProcessor` interface for various payment methods.
-6. **Create/design abstract class and extend from it**: Please use this sparingly. It can lead to complex hierarchies and tight coupling (e.g., parent's class call). But it has its place, like an abstract Shape class for Circle and Rectangle subclasses.
+5. **Create/design interface**: This is where we put "Composition over Inheritance" into practice. Think about defining a `PaymentProcessor` interface for various payment methods.
+6. **Create/design abstract class and extend from it**: Please use this sparingly. It can lead to complex hierarchies and tight coupling (e.g., parent's class call). But it has its place, like an abstract `Shape` class for `Circle` and `Rectangle` subclasses.
 
 Crucially, this process is iterative. After completing each step, we circle back to the first step to reassess our design. This iterative approach ensures that we:
 
@@ -62,7 +62,7 @@ Crucially, this process is iterative. After completing each step, we circle back
 2. Avoid unnecessary complexity by always considering simpler options first.
 3. Align with the "Fail Fast" principle by identifying issues early in the design process.
 
-For example, after creating a new class (step 4), we return to step 1 to see if we can now use or reuse methods from this new class before moving on to more complex solutions. This iterative cycle continues until we've addressed the design challenge adequately, always preferring simpler solutions when possible. This stepwise, iterative approach encourages careful consideration before implementing more complex solutions, aligning with the "Composition over Inheritance" principle. It also helps us maintain flexibility in our design, allowing us to adapt to changing requirements or new insights as we progress through the modernisation of legacy code.
+For example, after creating a new class (step 4), we return to step 1 to see if we can now use or reuse methods from existing classes, including the newly created one, before considering more complex solutions. This iterative cycle continues through each step, always starting back at the simplest option. This stepwise, iterative approach encourages careful consideration before implementing more complex solutions, aligning with the "Composition over Inheritance" principle. It also helps us maintain flexibility in our design, allowing us to adapt to changing requirements or new insights as we work with legacy code that we cannot directly modify. By consistently revisiting simpler options, we ensure that we're not unnecessarily complicating our design when interacting with existing systems.
 
 By following this cyclical process, we ensure that each design decision is thoroughly evaluated and that we're not unnecessarily escalating the complexity of our solution. I reckon this approach is particularly valuable when working with legacy systems, where incremental improvements are often more practical and less risky than wholesale rewrites.
 
@@ -76,7 +76,7 @@ Pay special attention to association, implementation, and generalisation relatio
 
 ## Limitations
 
-While the **LOCO-MOTIVE** approach has proven to be a valuable framework for modernising legacy code in my projects and with my students, it’s good to keep in mind a few points that can help you maximise its effectiveness. First off, this approach is based on my personal experiences rather than rigorous scientific research. This means it’s adaptable and can evolve as you encounter different projects and challenges, allowing you to tailor it to your specific needs.
+While the **LOCO-MOTIVE** approach has proven to be a valuable framework for working with legacy code and external libraries in my projects and with my students, it's good to keep in mind a few points that can help you maximise its effectiveness. First off, this approach is based on my personal experiences rather than rigorous scientific research. This means it's adaptable and can evolve as you encounter different projects and challenges, allowing you to tailor it to your specific needs when interacting with code you cannot modify. The iterative nature of the design steps encourages flexibility, enabling you to find the most appropriate way to work with existing systems while maintaining good design principles.
 
 Additionally, while **LOCO-MOTIVE** simplifies complex scenarios into manageable steps, this flexibility encourages you to think critically and creatively about each situation. It’s an opportunity to explore alternative strategies that might work better for your unique context. The categorisation of design expenses into cheap, moderate, and expensive is also subjective, which I believe it can open up room for discussion and collaboration within your team. This can lead to richer conversations about design choices and foster a culture of shared learning. Not every project will benefit equally from this approach, but that’s a chance for you to experiment with other techniques and find what works best for your specific environment. It may not work if you are employing functional programming paradigm. Yet, embracing this variability can enhance your problem-solving skills and adaptability as a developer.
 
@@ -84,7 +84,7 @@ Finally, while there may be some initial challenges in getting everyone on board
 
 ## Conclusion
 
-By following this LOCO-MOTIVE approach, we can modernise legacy code while avoiding common pitfalls like overuse of abstraction or violation of SOLID principles. This approach encourages a "Fail Fast" approach, allowing us to identify and address design issues early in the development process. Remember, when working with legacy systems, it's crucial to balance the need for improvement with the risks of introducing new complexities. LOCO-MOTIVE provides a structured way to make these decisions, ensuring our refactoring efforts lead to more maintainable and flexible code.
+By following this LOCO-MOTIVE approach, we can work with legacy code effectively while avoiding common pitfalls like overuse of abstraction or violation of SOLID principles. This approach encourages a "Fail Fast Principle", allowing us to identify and address design issues early in the development process. Remember, when working with legacy systems, it's crucial to balance the need for improvement with the risks of introducing new complexities. LOCO-MOTIVE provides a structured way to make these decisions, ensuring our refactoring efforts lead to more maintainable and flexible code.
 
 I hope you find this approach helpful in your OO design journey. Remember, practice makes perfect, so don't be afraid to apply these concepts in your projects. If you have any questions, feel free to reach out. Cheers!
 
