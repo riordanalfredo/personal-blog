@@ -1,7 +1,7 @@
 ---
 title: '🚂 LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements'
 date: '2024-10-19T07:00:00Z'
-description: 'Key findings from a systematic literature review on human-centred approaches in learning analytics and AI in education, highlighting the balance between human control and automation, stakeholder involvement, and areas for future research.'
+description: 'An approach to work with legacy code, focusing on iterative OO design steps, design costs, and UML class relationships to achieve software maintainability and flexibility.'
 categories:
   [design method, object-oriented design, java, code, software engineering]
 comments: true
