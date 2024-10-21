@@ -1,16 +1,18 @@
 ---
-title: '🚂 LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements'
+title: 'Bridging Theory and Practice: Six Object Oriented Design Steps'
 date: '2024-10-19T07:00:00Z'
-description: 'An approach to work effectively with legacy code, focusing on iterative OO design steps, design costs, and UML class relationships to achieve software maintainability and flexibility.'
+description: 'LOCO-MOTIVE, an approach to work effectively with legacy code, focusing on iterative OO design steps, design costs, and UML class relationships to achieve software maintainability and flexibility.'
 categories:
   [design method, object-oriented design, java, code, software engineering]
 comments: true
 isNew: true
 ---
 
+# 🚂 LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements
+
 Over the years, while teaching and diving into various Object-Oriented (OO) projects with Java, I've noticed something pretty interesting: there’s often a big gap between what we learn in theory and how we actually use those concepts in the real world. One of the trickiest challenges? Working with code that we can’t touch—like those frameworks and libraries that come with their own quirks. We often end up dealing with what we call “legacy code.”
 
-To tackle this challenge, I’ve come up with an approach I like to call LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements. This approach is all about bridging that gap between OO theory and practical implementation. It’s especially handy when you’re wrestling with legacy codebases or trying to integrate new libraries—scenarios you’re definitely going to face in your future jobs or even in your advanced uni projects. So, what’s the deal with LOCO-MOTIVE? Let’s jump into this approach and see how it can level up your OO design skills. Enjoy 🙌!
+To tackle this challenge, I’ve come up with an approach I like to call _LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements_. This approach is all about bridging that gap between OO theory and practical implementation. It’s especially handy when you’re wrestling with legacy codebases or trying to integrate new libraries—scenarios you’re definitely going to face in your future jobs or even in your advanced uni projects. So, what’s the deal with LOCO-MOTIVE? Let’s jump into this approach and see how it can level up your OO design skills. Enjoy 🙌!
 
 ![Six Design Steps](design-steps.jpg)
 
