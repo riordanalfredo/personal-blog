@@ -55,22 +55,17 @@ This was my initial experience with generative art. Typing prompts like “a sam
 
 **Tools**: ChatGPT Image Creator, Bing Image Creator, Midjourney, DALL-E, Nightcafe.
 
-### **Q4: High Human Control, High AI Automation**
+### **Q4: High Human Control, High Computer Automation**
 
 The final quadrant represents true collaboration between human creativity and AI capabilities. Here, users actively guide the process by fine-tuning parameters and making manual adjustments to achieve highly customised results.
 
 Recently, I have focused my efforts on this collaborative approach. With limited hand-drawing skills, I’ve learned about different models/checkpoints, prompt best practices, and parameter tweaking. I use [Stable Diffusion’s AUTOMATIC1111 interface](https://github.com/AUTOMATIC1111/stable-diffusion-webui), offering a robust platform for creative exploration.
 
-My current favourite is the Juggernaut model, and I follow this prompting guide [https://learn.rundiffusion.com/prompting-guide-for-juggernaut-x/](https://learn.rundiffusion.com/prompting-guide-for-juggernaut-x/). Additionally, I’ve discovered that incorporating LoRAs can adjust styles and subjects within the images effectively. Key parameters I utilise include **sampling steps**, **CFG scales**, and the **inPainting** feature, along with extensions like **ControlNet** and **Regional Prompter**.
-
-Here is my favourite setting:
-Sampling Method: DPM++ 2M SDE Karras
-Sampling Steps: 30-40
-CFG Scale: 3-6 (less is a bit more realistic)
+My current favourite is the Juggernaut model, and I follow this prompting guide [https://learn.rundiffusion.com/prompting-guide-for-juggernaut-x/](https://learn.rundiffusion.com/prompting-guide-for-juggernaut-x/). Additionally, I’ve discovered that incorporating LoRAs can adjust styles and subjects within the images effectively. Key parameters I utilise include **sampling steps**, **CFG scales**, and the **inPainting** feature, along with extensions like **ControlNet** and **Regional Prompter**. My setting: Sampling Method: DPM++ 2M SDE Karras | Sampling Steps: 30-40 | CFG Scale: 3-6 (less is a bit more realistic).
 
 I am currently advancing it further by using [ComfyUI](https://github.com/comfyanonymous/ComfyUI), which offers a node-based interface giving more control. It is slightly more complex but enjoyable to learn. Additionally, I always apply final touches in GIMP (similar to Adobe Photoshop) to enhance art that I really like. Collaborating with GenAI at this level has allowed me to create designs that feel uniquely mine while leveraging the power of AI.
 
-**Tools:** Stable Diffusion (with AUTOMATIC1111 Web UI or ComfyUI), ControlNet for precise control over image composition, LoRAs for custom styles or subjects.
+**Tools:** Stable Diffusion (with AUTOMATIC1111 Web UI or ComfyUI), ControlNet for precise control over image composition, LoRAs for custom styles or subjects, Midjourney and DALL-E with their extra paremeters and prompting best practices.
 
 ![Generative art steps in HCAI framework](hcai-genAi.jpg)
 
@@ -96,7 +91,7 @@ If you’re interested in exploring generative art and moving toward Q4-level ma
 1. **Experiment with user-friendly platforms:** Begin with Midjourney or DALL-E to understand basic prompting. You can visit Nightcafe where everyone is super friendly, and it is mostly free.
 2. **Learn prompt engineering:** Practice crafting detailed prompts that yield better results.
 3. **Set up Stable Diffusion:** Install AUTOMATIC1111’s Web UI—it’s beginner-friendly yet powerful. Here is the website:
-4. **Explore advanced features:** Experiment with sampling steps and CFG scales to see how they affect outputs. I recommend use `Script` option at the bottom, and select X/Y/Z plot to produce multiple images with different parameters tweaking.
+4. **Explore advanced features:** Experiment with sampling steps and CFG scales to see how they affect outputs. I recommend use `Script` option at the bottom, and select X/Y/Z plot to produce multiple images with different parameters tweaking. See Figure 3 below.
 5. **Try ControlNet:** Use it to guide compositions by providing sketches or outlines.
 6. **Leverage LoRAs:** These are great for achieving specific artistic styles. Include them in the prompt, and adjust the weight. You can explore and learn how to use it: https://civitai.com/
 7. **Join communities:** Platforms like Reddit’s r/StableDiffusion or Discord servers dedicated to generative art are invaluable for learning tips and sharing your creations.
