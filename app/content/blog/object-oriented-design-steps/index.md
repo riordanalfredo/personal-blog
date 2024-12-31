@@ -5,7 +5,7 @@ description: 'LOCO-MOTIVE, an approach to work effectively with legacy code, foc
 categories:
   [design method, object-oriented design, java, code, software engineering]
 comments: true
-isNew: true
+isNew: false
 ---
 
 # 🚂 LOCO-MOTIVE: Legacy-Oriented COde MOdernisation through Valuable Iterative Enhancements

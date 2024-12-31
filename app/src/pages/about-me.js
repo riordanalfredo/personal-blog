@@ -11,8 +11,6 @@ import PhotoProfile from './about-me/photo-profile'
 import AboutText from './about-me/about-text'
 import CreditSection from './about-me/credits'
 import SocialMediaContainer from './contact/social-media'
-import BuyMeACoffeeButton from '../components/BuyMeACoffeeButton'
-import { Button } from 'react-bootstrap'
 
 const AboutPage = ({ data, location }) => {
   const [width] = useMediaQuery()
