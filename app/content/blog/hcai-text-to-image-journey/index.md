@@ -17,9 +17,9 @@ comments: true
 isNew: true
 ---
 
-Over the past two weeks, I’ve been diving into the world of generative AI (GenAI) for creating images. This journey has been both personal and professional, connecting to my past in unexpected ways. Back in high school, I ran a print-on-demand business designing varsity jackets for my cohort. While the business was successful, I struggled to create original designs. Coming up with something unique—especially complex illustrations—was time-consuming and frustrating.
+Over the past two weeks, I’ve been diving into the world of generative AI (GenAI) for creating images. This journey has been both personal and professional, connecting to my past in unexpected ways. Back in high school, I ran a print-on-demand business designing varsity jackets for my cohort. While the business was successful, I struggled to create original designs because I'm lacking of hand drawing skills. Coming up with something unique (especially complex illustrations) was time-consuming and frustrating.
 
-Fast forward to today, I’ve realized how GenAI could have been a game-changer for that process. Tools like Stable Diffusion could have helped me brainstorm ideas, refine designs, and experiment with creative variations effortlessly.
+Fast forward to today, I’ve realised how GenAI could have been a game-changer for that process. Tools like Stable Diffusion could have helped me brainstorm ideas, refine designs, and experiment with creative variations effortlessly.
 
 As someone deeply embedded in research on human-AI collaboration, this exploration has also been reflective. My perspective is shaped by [Ben Shneiderman’s Human-Centered AI (HCAI) framework](https://www.tandfonline.com/doi/full/10.1080/10447318.2020.1741118?scroll=top&needAccess=true) (or [free access here](https://arxiv.org/pdf/2002.04087)), which emphasises balancing human control and computer automation (AI) for optimal outcomes. I built on this framework for my PhD work, presenting my own adaptation -- [SLADE](https://rioalfredo.com/pdfs/lak24-slade.pdf) -- at the Learning Analytics and Knowledge Conference in 2024 (LAK24). Revisiting these ideas through my experience with GenAI has given me new insights into how humans and AI can collaborate creatively.
 
@@ -74,7 +74,7 @@ I am currently advancing it further by using [ComfyUI](https://github.com/comfya
 
 ![Generative art steps in HCAI framework](hcai-genAi.jpg)
 
-Figure 2. A map of generative art steps in HCAI two-dimensional framework. Q1 is simple stick figure of a samura, Q2 is a proper sketch of a samurai by [akira337 from DeviantArt](https://www.deviantart.com/akira337/art/Samurai-1-118361713), Q3 is a simple prompt "a samurai holding a katana sketch" in Stable Diffusion, and Q4 using the same prompt with additional parameters tweaking and a LoRA by [HailoKnight](https://civitai.com/models/312766/soul-knight-by-hailoknight?modelVersionId=350951).
+Figure 2. A map of generative art steps in HCAI two-dimensional framework. Q1 is simple stick figure of a samurai, Q2 is a proper sketch of a samurai by [akira337 from DeviantArt](https://www.deviantart.com/akira337/art/Samurai-1-118361713), Q3 is a simple prompt "a samurai holding a katana sketch" (the swords are distorted), and Q4 using the same prompt with additional parameters tweaking and a LoRA by [HailoKnight](https://civitai.com/models/312766/soul-knight-by-hailoknight?modelVersionId=350951).
 
 ## 🤔 Lessons Learned: Moving From Q3 to Q4
 
@@ -120,6 +120,6 @@ Take the image generation journey I've just described, tools and practices in Q4
 
 These examples highlight how GenAI can go beyond automating tasks to become a collaborative partner in the learning process. By integrating these tools thoughtfully, educators can help students develop not only technical skills but also critical thinking and creativity -- qualities essential for modern software engineers.
 
-As we continue exploring these technologies, it’s important to move beyond narrow questions like, “How do we address students using ChatGPT for writing essays or code?” Instead, we should ask, “How can other forms of AI, such as text-to-image, video generation, or multimodal tools, enhance learning for both students and educators?” The HCAI-inspired quadrant framework serves as a metaphor for thoughtfully integrating AI into education while preserving human agency, extending beyond traditional text-based assessments like essays, documentation, or reflections.
+As we continue exploring these technologies, it’s important to move beyond narrow questions like, “How do we address students using ChatGPT for writing essays or code?” Instead, we should ask, “How can other forms of AI, such as text-to-image, video generation, or multimodal tools, enhance learning for both students and educators?” The HCAI two-dimensional framework can serve as a metaphor for thoughtfully integrating AI into education while preserving human agency, extending beyond traditional text-based assessments like essays, documentation, or reflections.
 
 While more research is needed to address technical barriers, skill gaps, assessment validity, academic integrity, and ethical considerations, I firmly believe that GenAI has transformative potential when used responsibly. It’s time for educators and researchers to broaden their focus beyond text-based GenAI and embrace the diverse possibilities these tools offer to transform learning experiences. What do you think? 😊
