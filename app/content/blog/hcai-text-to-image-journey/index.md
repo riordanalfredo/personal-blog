@@ -106,12 +106,12 @@ For artists concerned about AI-generated art, it’s important to recognise the 
 
 Reflecting on this journey has deepened my understanding of how humans and machines can collaborate creatively -- not just in art but across learning environments. As a researcher in learning analytics and software engineering educator, I notice current educational discourse around GenAI remains narrow 😳 -- focused mainly on text-based tools like ChatGPT as solutions for automating tasks (like generating codes) or addressing cheating concerns. I am sharing the same view with this research article: https://www.nature.com/articles/s41562-024-02004-5 or https://arxiv.org/pdf/2408.12143.
 
-Take the image generation journey I've just described, tools and practices in Q4 could help students in:
+Take the image generation journey I've just described, tools and practices in Q4 could help my software engineering students in:
 
 - Write a complex prompt about a concept, such as "microservices architecture for an e-commerce platform”, receive a visual diagram (i.e., UML) that they can critique or refine further (with better prompts).
 - Develop multimedia storytelling skills, where students could use text-to-image tools to generate visuals for technical presentations or even create AI-generated videos to explain concepts like DevOps pipelines or version control workflows.
 - Generate mockups for user interfaces based on textual descriptions, which can spark rich classroom discussions by rapidly producing multiple prototype UI/UX design samples. This approach encourages students to critically analyse design variations, compare different interpretations of the same requirements, and develop a more nuanced understanding of UI design principles.
-- and many more
+- and many more (I believe there are more examples out there as it really depends on the learning context)
 
 These examples highlight how GenAI can go beyond automating tasks to become a collaborative partner in the learning process. By integrating these tools thoughtfully, educators can help students develop not only technical skills but also critical thinking and creativity -- qualities essential for modern software engineers.
 
